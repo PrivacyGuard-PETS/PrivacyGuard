@@ -1,0 +1,4106 @@
+{
+    "alfred-workflow[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "This SmartApp allows you to interact with the things in your physical graph through Alfred.",
+        "filenameStr": "Alfred Workflow",
+        "inputMap": {
+            "locks": [
+                "capability.lock",
+                "Which Locks?",
+                "Allow Alfred to Control These Things...",
+                "lock"
+            ],
+            "switches": [
+                "capability.switch",
+                "Which Switches?",
+                "Allow Alfred to Control These Things...",
+                "switch"
+            ]
+        }
+    },
+    "auto-humidity-vent[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "When the humidity reaches a specified level, activate one or more vent fans until the humidity is reduced to a specified level.",
+        "filenameStr": "Auto Humidity Vent",
+        "inputMap": {
+            "emeters": [
+                "capability.energyMeter",
+                "Energy Meters",
+                "Select the vent fan energy meters to monitor...",
+                "power"
+            ],
+            "fans": [
+                "capability.switch",
+                "Vent Fans",
+                "Select the vent fans to control...",
+                "vent"
+            ],
+            "humidity_sensor": [
+                "capability.relativeHumidityMeasurement",
+                "Humidity Sensor",
+                "Choose a humidity sensor...",
+                "humidity"
+            ]
+        }
+    },
+    "beacon-control[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Execute a Hello, Home phrase, turn on or off some lights, and/or lock or unlock your door when you enter or leave a monitored region",
+        "filenameStr": "Beacon Control",
+        "inputMap": {
+            "arrivalLocks": [
+                "capability.lock",
+                "Unlock the door",
+                "What do you want to do on arrival?",
+                "lock"
+            ],
+            "arrivalOffSwitches": [
+                "capability.switch",
+                "Turn off some switches",
+                "What do you want to do on arrival?",
+                "switch"
+            ],
+            "arrivalOnSwitches": [
+                "capability.switch",
+                "Turn on some switches",
+                "What do you want to do on arrival?",
+                "switch"
+            ],
+            "beacons": [
+                "capability.beacon",
+                "Select your beacon(s)",
+                "Where do you want to watch?",
+                "beacon"
+            ],
+            "departLocks": [
+                "capability.lock",
+                "Lock the door",
+                "What do you want to do on departure?",
+                "lock"
+            ],
+            "departOffSwitches": [
+                "capability.switch",
+                "Turn off some switches",
+                "What do you want to do on departure?",
+                "switch"
+            ],
+            "departOnSwitches": [
+                "capability.switch",
+                "Turn on some switches",
+                "What do you want to do on departure?",
+                "switch"
+            ],
+            "phones": [
+                "device.mobilePresence",
+                "Select your phone(s)",
+                "Who do you want to watch for?",
+                "presence"
+            ]
+        }
+    },
+    "beaconthings-manager[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "SmartApp to interact with the BeaconThings iOS app. Use this app to integrate iBeacons into your smart home.",
+        "filenameStr": "BeaconThings Manager",
+        "inputMap": {}
+    },
+    "big-turn-off[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights off when the SmartApp is tapped or activated",
+        "filenameStr": "Big Turn OFF",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "",
+                "When I touch the app, turn off...",
+                "light"
+            ]
+        }
+    },
+    "big-turn-on[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights on when the SmartApp is tapped or activated.",
+        "filenameStr": "Big Turn ON",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "",
+                "When I touch the app, turn on...",
+                "light"
+            ]
+        }
+    },
+    "bon-voyage[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitors a set of SmartSense Presence tags or smartphones and triggers a mode change when everyone has left.  Used in conjunction with Big Turn Off or Make It So to turn off lights, appliances, adjust the thermostat, turn on security apps, and more.",
+        "filenameStr": "Bon Voyage",
+        "inputMap": {
+            "people": [
+                "capability.presenceSensor",
+                "",
+                "When all of these people leave home",
+                "presence"
+            ]
+        }
+    },
+    "bose-soundtouch-control[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control your Bose\u00ae SoundTouch\u00ae when certain actions take place in your home.",
+        "filenameStr": "Bose\u00ae SoundTouch\u00ae Control",
+        "inputMap": {
+            "bose": [
+                "capability.musicPlayer",
+                "Bose\u00ae SoundTouch\u00ae music player",
+                "",
+                "player"
+            ]
+        }
+    },
+    "bright-when-dark-and-or-bright-after-sunset[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn ON light(s) and/or dimmer(s) when there's movement and the room is dark with illuminance threshold and/or between sunset and sunrise. Then turn OFF after X minute(s) when the brightness of the room is above the illuminance threshold or turn OFF after X minute(s) when there is no movement.",
+        "filenameStr": "Bright When Dark And/Or Bright After Sunset",
+        "inputMap": {
+            "dimmers": [
+                "capability.switchLevel",
+                "Dimmer(s)?",
+                "Control these dimmer(s)...",
+                "light"
+            ],
+            "lightSensor": [
+                "capability.illuminanceMeasurement",
+                "Light Sensor?",
+                "Using this light sensor...",
+                "illuminance"
+            ],
+            "lights": [
+                "capability.switch",
+                "Light(s)?",
+                "Control these light(s)...",
+                "light"
+            ],
+            "motionSensor": [
+                "capability.motionSensor",
+                "Where?",
+                "Turning ON when there's movement...",
+                "motion"
+            ]
+        }
+    },
+    "brighten-dark-places[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights on when a open/close sensor opens and the space is dark.",
+        "filenameStr": "Brighten Dark Places",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "Where?",
+                "When the door opens...",
+                "door"
+            ],
+            "luminance1": [
+                "capability.illuminanceMeasurement",
+                "Where?",
+                "And it's dark...",
+                "illuminance"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on a light...",
+                "light"
+            ]
+        }
+    },
+    "brighten-my-path[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights on when motion is detected.",
+        "filenameStr": "Brighten My Path",
+        "inputMap": {
+            "motion1": [
+                "capability.motionSensor",
+                "Where?",
+                "When there's movement...",
+                "motion"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on a light...",
+                "light"
+            ]
+        }
+    },
+    "button-controller[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control devices with buttons like the Aeon Labs Minimote",
+        "filenameStr": "Button Controller",
+        "inputMap": {
+            "buttonDevice": [
+                "capability.button",
+                "Button",
+                "",
+                "button"
+            ],
+            "lights_$buttonNumber_held": [
+                "capability.switch",
+                "Held",
+                "Lights",
+                "light"
+            ],
+            "lights_$buttonNumber_pushed": [
+                "capability.switch",
+                "Pushed",
+                "Lights",
+                "light"
+            ],
+            "locks_$buttonNumber_held": [
+                "capability.lock",
+                "Held",
+                "Locks",
+                "lock"
+            ],
+            "locks_$buttonNumber_pushed": [
+                "capability.lock",
+                "Pushed",
+                "Locks",
+                "lock"
+            ],
+            "sirens_$buttonNumber_held": [
+                "capability.alarm",
+                "Held",
+                "Sirens",
+                "alarm"
+            ],
+            "sirens_$buttonNumber_pushed": [
+                "capability.alarm",
+                "Pushed",
+                "Sirens",
+                "alarm"
+            ],
+            "sonos_$buttonNumber_held": [
+                "capability.musicPlayer",
+                "Held",
+                "Sonos",
+                "player"
+            ],
+            "sonos_$buttonNumber_pushed": [
+                "capability.musicPlayer",
+                "Pushed",
+                "Sonos",
+                "player"
+            ]
+        }
+    },
+    "camera-power-scheduler[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn the power on and off at a specific time. ",
+        "filenameStr": "Camera Power Scheduler",
+        "inputMap": {
+            "switch1": [
+                "capability.switch",
+                "",
+                "Camera power...",
+                "power"
+            ]
+        }
+    },
+    "cameras-on-when-im-away[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn cameras on when I'm away",
+        "filenameStr": "Cameras On When I'm Away",
+        "inputMap": {
+            "people": [
+                "capability.presenceSensor",
+                "",
+                "When all of these people are home...",
+                "presence"
+            ],
+            "switches1": [
+                "capability.switch",
+                "",
+                "Turn off camera power...",
+                "camera"
+            ]
+        }
+    },
+    "carpool-notifier[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send notifications to your carpooling buddies when you arrive to pick them up. If the person you are picking up is home, and has been for 5 minutes or more, they will get a notification when you arrive.",
+        "filenameStr": "Carpool Notifier",
+        "inputMap": {
+            "driver": [
+                "capability.presenceSensor",
+                "When this person arrives",
+                "",
+                "presence"
+            ],
+            "rider": [
+                "capability.presenceSensor",
+                "But only when this person is not with you",
+                "",
+                "presence"
+            ]
+        }
+    },
+    "close-the-valve[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Close a selected valve if moisture is detected, and get notified by SMS and push notification.",
+        "filenameStr": "Close The Valve",
+        "inputMap": {
+            "sensor": [
+                "capability.waterSensor",
+                "Where?",
+                "When water is sensed...",
+                "water"
+            ],
+            "valve": [
+                "capability.valve",
+                "Which?",
+                "Close the valve...",
+                "valve"
+            ]
+        }
+    },
+    "co2-vent[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn on a switch when CO2 levels are too high",
+        "filenameStr": "CO2 Vent",
+        "inputMap": {
+            "sensor": [
+                "capability.carbonDioxideMeasurement",
+                "Sensor",
+                "CO2 Sensor",
+                "dioxide"
+            ],
+            "switches": [
+                "capability.switch",
+                "Switches",
+                "Ventilation Fan",
+                "vent"
+            ]
+        }
+    },
+    "coffee-after-shower[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "This app is designed simply to turn on your coffee machine while you are taking a shower.",
+        "filenameStr": "Coffee After Shower",
+        "inputMap": {
+            "bathroom": [
+                "capability.relativeHumidityMeasurement",
+                "Which humidity sensor?",
+                "Bathroom humidity sensor",
+                "humidity"
+            ],
+            "coffee": [
+                "capability.switch",
+                "Which switch?",
+                "Coffee maker to turn on",
+                "coffee"
+            ]
+        }
+    },
+    "color-coordinator[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Ties multiple colored lights to one specific light's settings",
+        "filenameStr": "Color Coordinator",
+        "inputMap": {
+            "master": [
+                "capability.colorControl",
+                "Colored Light",
+                "Master Light",
+                "light"
+            ],
+            "slaves": [
+                "capability.colorControl",
+                "Colored Lights",
+                "Lights that follow the master settings",
+                "light"
+            ]
+        }
+    },
+    "curb-control[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "This SmartApp allows you to interact with the switches in your physical graph through Curb.",
+        "filenameStr": "Curb Control",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "Which Switches?",
+                "Allow Curb to Control These Things...",
+                "switch"
+            ]
+        }
+    },
+    "curb-energy-manager[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Maximize your energy savings with CURB",
+        "filenameStr": "CURB Energy Manager",
+        "inputMap": {
+            "circuits": [
+                "capability.powerMeter",
+                "Circuits to send alerts on",
+                "Threshold Settings",
+                "power"
+            ],
+            "meter": [
+                "capability.powerMeter",
+                "Select Power Meter to Trigger throttling on ('Net' in most cases)",
+                "Threshold Settings",
+                "power"
+            ],
+            "switches": [
+                "capability.switch",
+                "Select your Load Controllers",
+                "Controlled Appliances",
+                "switch"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "Select your Thermostat",
+                "Controlled Appliances",
+                "thermostat"
+            ]
+        }
+    },
+    "curb-energy-monitor[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Gain insight into energy usage throughout your home.",
+        "filenameStr": "CURB Energy Monitor",
+        "inputMap": {}
+    },
+    "curling-iron[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turns on an outlet when the user is present and off after a period of time",
+        "filenameStr": "Curling Iron",
+        "inputMap": {
+            "motionSensors": [
+                "capability.motionSensor",
+                "Motion here",
+                "When someone's around because of...",
+                "motion"
+            ],
+            "outlets": [
+                "capability.switch",
+                "Which?",
+                "Turn on these outlet(s)",
+                "outlet"
+            ],
+            "presenceSensors": [
+                "capability.presenceSensor",
+                "And (optionally) these sensors being present",
+                "When someone's around because of...",
+                "presence"
+            ]
+        }
+    },
+    "darken-behind-me[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights off after a period of no motion being observed.",
+        "filenameStr": "Darken Behind Me",
+        "inputMap": {
+            "motion1": [
+                "capability.motionSensor",
+                "Where?",
+                "When there's no movement...",
+                "motion"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn off a light...",
+                "light"
+            ]
+        }
+    },
+    "device-tile-controller[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "A controller SmartApp to install virtual devices into your location in order to simulate various native Device Tiles.",
+        "filenameStr": "Device Tile Controller",
+        "inputMap": {}
+    },
+    "door-jammed-notification[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Sends a SmartThings notification and text messages when your CoopBoss detects a door jam.",
+        "filenameStr": "Door Jammed Notification",
+        "inputMap": {
+            "doorSensor": [
+                "capability.doorControl",
+                "Select CoopBoss",
+                "When the door state changes",
+                "door"
+            ]
+        }
+    },
+    "door-knocker[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Alert if door is knocked, but not opened.",
+        "filenameStr": "Door Knocker",
+        "inputMap": {
+            "knockSensor": [
+                "capability.accelerationSensor",
+                "Where?",
+                "When Someone Knocks?",
+                "door"
+            ],
+            "openSensor": [
+                "capability.contactSensor",
+                "Where?",
+                "But not when they open this door?",
+                "door"
+            ]
+        }
+    },
+    "door-lock-code-distress-message[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Sends a text to someone when a specific code is entered",
+        "filenameStr": "Door Lock Code Distress Message",
+        "inputMap": {
+            "lock1": [
+                "capability.lock",
+                "",
+                "Choose Locks",
+                "lock"
+            ]
+        }
+    },
+    "door-state-to-color-light-hue-bulb[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Change the color of your Hue bulbs based on your coop's door status.",
+        "filenameStr": "Door State to Color Light (Hue Bulb)",
+        "inputMap": {
+            "bulbs": [
+                "capability.colorControl",
+                "pick a bulb",
+                "When the door opens/closese...",
+                "light"
+            ],
+            "doorSensor": [
+                "capability.doorControl",
+                "Select CoopBoss",
+                "When the door opens/closese...",
+                "door"
+            ]
+        }
+    },
+    "double-tap[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn on or off any number of switches when an existing switch is tapped twice in a row.",
+        "filenameStr": "Double Tap",
+        "inputMap": {
+            "master": [
+                "capability.switch",
+                "Where?",
+                "When this switch is double-tapped...",
+                "switch"
+            ],
+            "offSwitches": [
+                "capability.switch",
+                "",
+                "And turn off but not on all of these switches",
+                "switch"
+            ],
+            "onSwitches": [
+                "capability.switch",
+                "",
+                "And turn on but not off all of these switches",
+                "switch"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Turn on or off all of these switches as well",
+                "switch"
+            ]
+        }
+    },
+    "dry-the-wetspot[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turns switch on and off based on moisture sensor input.",
+        "filenameStr": "Dry the Wetspot",
+        "inputMap": {
+            "pump": [
+                "capability.switch",
+                "Which?",
+                "Turn on a pump...",
+                "pump"
+            ],
+            "sensor": [
+                "capability.waterSensor",
+                "Where?",
+                "When water is sensed...",
+                "water"
+            ]
+        }
+    },
+    "elder-care-daily-routine[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Stay connected to your loved ones. Get notified if they are not up and moving around by a specified time and/or if they have not opened a cabinet or door according to a set schedule.",
+        "filenameStr": "Elder Care: Daily Routine",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "",
+                "or a door or cabinet hasn't been opened (optional, leave blank to not require)...",
+                "door"
+            ],
+            "motion1": [
+                "capability.motionSensor",
+                "Where?",
+                "If there's no movement (optional, leave blank to not require)...",
+                "motion"
+            ]
+        }
+    },
+    "elder-care-slip-fall[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitors motion sensors in bedroom and bathroom during the night and detects if occupant does not return from the bathroom after a specified period of time.",
+        "filenameStr": "Elder Care: Slip & Fall",
+        "inputMap": {
+            "bathroomMotion": [
+                "capability.motionSensor",
+                "",
+                "Bathroom motion detector",
+                "motion"
+            ],
+            "bedroomMotion": [
+                "capability.motionSensor",
+                "",
+                "Bedroom motion detector(s)",
+                "motion"
+            ]
+        }
+    },
+    "energy-alerts[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Get notified if you're using too much energy",
+        "filenameStr": "Energy Alerts",
+        "inputMap": {
+            "meter": [
+                "capability.powerMeter",
+                "When This Power Meter...",
+                "",
+                "power"
+            ]
+        }
+    },
+    "energy-saver[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn things off if you're using too much energy",
+        "filenameStr": "Energy Saver",
+        "inputMap": {
+            "meter": [
+                "capability.powerMeter",
+                "When This Power Meter...",
+                "",
+                "power"
+            ],
+            "switches": [
+                "capability.switch",
+                "Turn Off These Switches",
+                "",
+                "switch"
+            ]
+        }
+    },
+    "enhanced-auto-lock-door[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Automatically locks a specific door after X minutes when closed  and unlocks it when open after X seconds.",
+        "filenameStr": "Enhanced Auto Lock Door",
+        "inputMap": {
+            "contact": [
+                "capability.contactSensor",
+                "",
+                "Select the door contact sensor:",
+                "door"
+            ],
+            "lock1": [
+                "capability.lock",
+                "",
+                "Select the door lock:",
+                "lock"
+            ]
+        }
+    },
+    "every-element[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Every element demonstration app",
+        "filenameStr": "Every Element",
+        "inputMap": {
+            "capabilityMultiple": [
+                "capability.switch",
+                "This is required",
+                "multiple: true",
+                "switch"
+            ],
+            "capabilityRequired": [
+                "capability.switch",
+                "This has an image",
+                "with image",
+                "camera"
+            ],
+            "deviceMultiple": [
+                "device.switch",
+                "This is required",
+                "multiple: true",
+                "switch"
+            ],
+            "deviceRequired": [
+                "device.switch",
+                "This has an image",
+                "with image",
+                "camera"
+            ]
+        }
+    },
+    "feed-my-pet[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Setup a schedule for when your pet is fed. Purchase any SmartThings certified pet food feeder and install the Feed My Pet app, and set the time. You and your pet are ready to go. Your life just got smarter.",
+        "filenameStr": "Feed My Pet",
+        "inputMap": {
+            "feeder": [
+                "device.PetFeederShield",
+                "Where?",
+                "Choose your pet feeder...",
+                "feeder"
+            ]
+        }
+    },
+    "flood-alert[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Get a push notification or text message when water is detected where it doesn't belong.",
+        "filenameStr": "Flood Alert!",
+        "inputMap": {
+            "alarm": [
+                "capability.waterSensor",
+                "Where?",
+                "When there's water detected...",
+                "water"
+            ]
+        }
+    },
+    "forgiving-security[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Alerts you if something happens while you're away.  Has a settable grace period to compensate for presence sensors that may take a few seconds to be noticed.",
+        "filenameStr": "Forgiving Security",
+        "inputMap": {
+            "alarms": [
+                "capability.alarm",
+                "Which Alarms?",
+                "Alarms to go off?",
+                "alarm"
+            ],
+            "contacts": [
+                "capability.contactSensor",
+                "Contact Sensors",
+                "Things to secure?",
+                "door"
+            ],
+            "lights": [
+                "capability.switch",
+                "Turn on which lights?",
+                "Alarms to go off?",
+                "light"
+            ],
+            "motions": [
+                "capability.motionSensor",
+                "Motion Sensors",
+                "Things to secure?",
+                "motion"
+            ]
+        }
+    },
+    "foscam-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect and take pictures using your Foscam camera from inside the Smartthings app.",
+        "filenameStr": "Foscam (Connect)",
+        "inputMap": {}
+    },
+    "garage-door-monitor[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitor your garage door and get a text message if it is open too long",
+        "filenameStr": "Garage Door Monitor",
+        "inputMap": {
+            "multisensor": [
+                "capability.threeAxis",
+                "Which?",
+                "When the garage door is open...",
+                "door"
+            ]
+        }
+    },
+    "garage-door-opener[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Open your garage door when a switch is turned on.",
+        "filenameStr": "Garage Door Opener",
+        "inputMap": {
+            "switch1": [
+                "capability.switch",
+                "",
+                "When the garage door switch is turned on, open the garage door...",
+                "door"
+            ]
+        }
+    },
+    "gentle-wake-up[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Dim your lights up slowly, allowing you to wake up more naturally.",
+        "filenameStr": "Gentle Wake Up",
+        "inputMap": {
+            "completionMusicPlayer": [
+                "capability.musicPlayer",
+                "Speak Using This Music Player",
+                "Notifications",
+                "player"
+            ],
+            "completionSwitches": [
+                "capability.switch",
+                "Set these switches",
+                "Switches",
+                "switch"
+            ],
+            "dimmers": [
+                "capability.sensor",
+                "Please remove the above devices from this list.",
+                "",
+                "light"
+            ]
+        }
+    },
+    "gideon-smart-home[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Gideon Smart Home SmartApp allows you to connect and control all of your SmartThings devices through the Gideon app, making your SmartThings devices even smarter.",
+        "filenameStr": "Gideon Smart Home",
+        "inputMap": {
+            "batteries": [
+                "capability.battery",
+                "",
+                "Control these batteries...",
+                "battery"
+            ],
+            "colors": [
+                "capability.colorControl",
+                "",
+                "Control the color for these devices...",
+                "light"
+            ],
+            "contact": [
+                "capability.contactSensor",
+                "",
+                "Control these contact sensors...",
+                "door"
+            ],
+            "garage": [
+                "capability.garageDoorControl",
+                "",
+                "Control these garage doors...",
+                "garage"
+            ],
+            "kelvin": [
+                "capability.colorTemperature",
+                "",
+                "Control the color temperature for these devices...",
+                "light"
+            ],
+            "locks": [
+                "capability.lock",
+                "",
+                "Control these locks...",
+                "lock"
+            ],
+            "meters": [
+                "capability.powerMeter",
+                "",
+                "Control these power meters...",
+                "power"
+            ],
+            "motions": [
+                "capability.motionSensor",
+                "",
+                "Control these motion sensors...",
+                "motion"
+            ],
+            "outlets": [
+                "capability.outlet",
+                "",
+                "Control these outlets...",
+                "outlet"
+            ],
+            "presence_sensors": [
+                "capability.presenceSensor",
+                "",
+                "Control these presence sensors...",
+                "presence"
+            ],
+            "shades": [
+                "capability.windowShade",
+                "",
+                "Control these window shades...",
+                "window"
+            ],
+            "smoke_alarms": [
+                "capability.smokeDetector",
+                "",
+                "Control these smoke alarms...",
+                "smoke"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Control these switches...",
+                "switch"
+            ],
+            "switchlevels": [
+                "capability.switchLevel",
+                "",
+                "Control these switch levels...",
+                "switch"
+            ],
+            "temperature_sensors": [
+                "capability.temperatureMeasurement",
+                "",
+                "Control these temperature sensors...",
+                "temperature"
+            ],
+            "water_sensors": [
+                "capability.waterSensor",
+                "",
+                "Control these water sensors...",
+                "water"
+            ]
+        }
+    },
+    "gideon[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Gideon AI Smart app allows you to connect and control all of your SmartThings devices through the Gideon AI app, making your SmartThings devices even smarter.",
+        "filenameStr": "Gideon",
+        "inputMap": {
+            "locks": [
+                "capability.lock",
+                "",
+                "Control these locks...",
+                "lock"
+            ],
+            "motions": [
+                "capability.motionSensor",
+                "",
+                "Control these motion sensors...",
+                "motion"
+            ],
+            "outlets": [
+                "capability.switch",
+                "",
+                "Control these outlets...",
+                "outlet"
+            ],
+            "presence_sensors": [
+                "capability.presenceSensor",
+                "",
+                "Control these presence sensors...",
+                "presence"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Control these switches...",
+                "switch"
+            ],
+            "temperature_sensors": [
+                "capability.temperatureMeasurement",
+                "",
+                "Control these locks...",
+                "temperature"
+            ]
+        }
+    },
+    "gidjit-hub[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Act as an endpoint so user's of Gidjit can quickly access and control their devices and execute routines. Users can do this quickly as Gidjit filters these actions  based on their environment",
+        "filenameStr": "Gidjit Hub",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "Control/Monitor your switches",
+                "Allow Gidjit to have access, thereby allowing you to quickly control and monitor your following devices. Privacy Policy can be found at http://priv.gidjit.com/privacy.html",
+                "switch"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "Control/Monitor your thermostats",
+                "Allow Gidjit to have access, thereby allowing you to quickly control and monitor your following devices. Privacy Policy can be found at http://priv.gidjit.com/privacy.html",
+                "thermostat"
+            ],
+            "windowShades": [
+                "capability.windowShade",
+                "Control/Monitor your window shades",
+                "Allow Gidjit to have access, thereby allowing you to quickly control and monitor your following devices. Privacy Policy can be found at http://priv.gidjit.com/privacy.html",
+                "window"
+            ]
+        }
+    },
+    "good-night-house[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Some on, some off with delay for bedtime, Lock The Doors",
+        "filenameStr": "Good Night House",
+        "inputMap": {
+            "lock1": [
+                "capability.lock",
+                "",
+                "Lock theses locks...",
+                "lock"
+            ],
+            "switchesoff": [
+                "capability.switch",
+                "",
+                "When I touch the app turn these lights off\u2026",
+                "light"
+            ],
+            "switcheson": [
+                "capability.switch",
+                "",
+                "When I touch the app turn these lights on\u2026",
+                "light"
+            ]
+        }
+    },
+    "good-night[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes mode when motion ceases after a specific time of night.",
+        "filenameStr": "Good Night",
+        "inputMap": {
+            "motionSensors": [
+                "capability.motionSensor",
+                "Where?",
+                "When there is no motion on any of these sensors",
+                "motion"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "And (optionally) these switches are all off",
+                "switch"
+            ]
+        }
+    },
+    "goodnight-ubi[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "An app to coordinate bedtime activities between Ubi and SmartThings.  This app will activate when a Virtual Tile is triggers (Setup custom behavior in Ubi to turn on this tile when you say goodnight to ubi).  This app will then turn off selected lights after a specified number of minutes.  It will also check if any doors or windows are open.  If they are, Ubi will tell you which ones are open.  Finally, the app will say goodnight to hello home if requested.",
+        "filenameStr": "Goodnight Ubi",
+        "inputMap": {
+            "doors": [
+                "capability.contactSensor",
+                "",
+                "Which doors and windows should I check?",
+                "door"
+            ],
+            "theSwitches": [
+                "capability.switch",
+                "",
+                "Which light switches will I be turning off?",
+                "light"
+            ],
+            "trigger": [
+                "capability.switch",
+                "Which virtual tile is the trigger?",
+                "Enter Ubi information:",
+                "switch"
+            ]
+        }
+    },
+    "greetings-earthling[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitors a set of presence detectors and triggers a mode change when someone arrives at home.",
+        "filenameStr": "Greetings Earthling",
+        "inputMap": {
+            "people": [
+                "capability.presenceSensor",
+                "",
+                "When one of these people arrive at home",
+                "presence"
+            ]
+        }
+    },
+    "habit-helper[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Add something you want to be reminded about each day and get a text message to help you form positive habits.",
+        "filenameStr": "Habit Helper",
+        "inputMap": {}
+    },
+    "hall-light-welcome-home[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn on the hall light if someone comes home (presence) and the door opens.",
+        "filenameStr": "Hall Light: Welcome Home",
+        "inputMap": {
+            "lights": [
+                "capability.switch",
+                "Switch Turned On",
+                "Hall Light?",
+                "light"
+            ],
+            "people": [
+                "capability.presenceSensor",
+                "",
+                "People to watch for?",
+                "presence"
+            ],
+            "sensors": [
+                "capability.contactSensor",
+                "",
+                "Front Door?",
+                "door"
+            ]
+        }
+    },
+    "has-barkley-been-fed[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Setup a schedule to be reminded to feed your pet. Purchase any SmartThings certified pet food feeder and install the Feed My Pet app, and set the time. You and your pet are ready to go. Your life just got smarter.",
+        "filenameStr": "Has Barkley Been Fed?",
+        "inputMap": {
+            "feeder1": [
+                "capability.contactSensor",
+                "Where?",
+                "Choose your pet feeder...",
+                "feeder"
+            ]
+        }
+    },
+    "hello-home-phrase-director[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitor a set of presence sensors and activate Hello, Home phrases based on whether your home is empty or occupied.  Each presence status change will check against the current 'sun state' to run phrases based on occupancy and whether the sun is up or down.",
+        "filenameStr": "Hello, Home Phrase Director",
+        "inputMap": {
+            "people": [
+                "capability.presenceSensor",
+                "Monitor These Presences",
+                "Who?",
+                "presence"
+            ]
+        }
+    },
+    "hub-ip-notifier[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Listen for local IP changes when your hub registers.",
+        "filenameStr": "Hub IP Notifier",
+        "inputMap": {}
+    },
+    "hue-mood-lighting[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Sets the colors and brightness level of your Philips Hue lights to match your mood.",
+        "filenameStr": "Hue Mood Lighting",
+        "inputMap": {
+            "hues": [
+                "capability.colorControl",
+                "Which Hue Bulbs?",
+                "Control these bulbs...",
+                "light"
+            ]
+        }
+    },
+    "humidity-alert[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Notify me when the humidity rises above or falls below the given threshold. It will turn on a switch when it rises above the first threshold and off when it falls below the second threshold.",
+        "filenameStr": "Humidity Alert!",
+        "inputMap": {
+            "humiditySensor1": [
+                "capability.relativeHumidityMeasurement",
+                "",
+                "Monitor the humidity of:",
+                "humidity"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Control this switch:",
+                "switch"
+            ]
+        }
+    },
+    "ifttt[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Put the internet to work for you.",
+        "filenameStr": "IFTTT",
+        "inputMap": {
+            "accelerationSensors": [
+                "capability.accelerationSensor",
+                "Which Vibration Sensors?",
+                "Allow IFTTT to control these things...",
+                "accelerometer"
+            ],
+            "alarms": [
+                "capability.alarm",
+                "Which Sirens?",
+                "Allow IFTTT to control these things...",
+                "alarm"
+            ],
+            "contactSensors": [
+                "capability.contactSensor",
+                "Which Contact Sensors?",
+                "Allow IFTTT to control these things...",
+                "door"
+            ],
+            "humiditySensors": [
+                "capability.relativeHumidityMeasurement",
+                "Which Relative Humidity Sensors?",
+                "Allow IFTTT to control these things...",
+                "humidity"
+            ],
+            "lightSensors": [
+                "capability.illuminanceMeasurement",
+                "Which Light Sensors?",
+                "Allow IFTTT to control these things...",
+                "illuminance"
+            ],
+            "locks": [
+                "capability.lock",
+                "Which Locks?",
+                "Allow IFTTT to control these things...",
+                "lock"
+            ],
+            "motionSensors": [
+                "capability.motionSensor",
+                "Which Motion Sensors?",
+                "Allow IFTTT to control these things...",
+                "motion"
+            ],
+            "presenceSensors": [
+                "capability.presenceSensor",
+                "Which Presence Sensors?",
+                "Allow IFTTT to control these things...",
+                "presence"
+            ],
+            "switches": [
+                "capability.switch",
+                "Which Switches?",
+                "Allow IFTTT to control these things...",
+                "switch"
+            ],
+            "temperatureSensors": [
+                "capability.temperatureMeasurement",
+                "Which Temperature Sensors?",
+                "Allow IFTTT to control these things...",
+                "temperature"
+            ],
+            "waterSensors": [
+                "capability.waterSensor",
+                "Which Water Sensors?",
+                "Allow IFTTT to control these things...",
+                "water"
+            ]
+        }
+    },
+    "initial-state-event-streamer[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "A SmartThings SmartApp to allow SmartThings events to be viewable inside an Initial State Event Bucket in your https://www.initialstate.com account.",
+        "filenameStr": "Initial State Event Streamer",
+        "inputMap": {
+            "accelerometers": [
+                "capability.accelerationSensor",
+                "Accelerometers",
+                "Choose which devices to monitor...",
+                "accelerometer"
+            ],
+            "alarms": [
+                "capability.alarm",
+                "Alarms",
+                "Choose which devices to monitor...",
+                "alarm"
+            ],
+            "batteries": [
+                "capability.battery",
+                "Batteries",
+                "Choose which devices to monitor...",
+                "battery"
+            ],
+            "beacons": [
+                "capability.beacon",
+                "Beacons",
+                "Choose which devices to monitor...",
+                "beacon"
+            ],
+            "colors": [
+                "capability.colorControl",
+                "Color Controllers",
+                "Choose which devices to monitor...",
+                "light"
+            ],
+            "contacts": [
+                "capability.contactSensor",
+                "Contact Sensors",
+                "Choose which devices to monitor...",
+                "door"
+            ],
+            "cos": [
+                "capability.carbonMonoxideDetector",
+                "Carbon  Monoxide Detectors",
+                "Choose which devices to monitor...",
+                "monoxide"
+            ],
+            "doorsControllers": [
+                "capability.doorControl",
+                "Door Controllers",
+                "Choose which devices to monitor...",
+                "door"
+            ],
+            "energyMeters": [
+                "capability.energyMeter",
+                "Energy Meters",
+                "Choose which devices to monitor...",
+                "power"
+            ],
+            "humidities": [
+                "capability.relativeHumidityMeasurement",
+                "Humidity Meters",
+                "Choose which devices to monitor...",
+                "humidity"
+            ],
+            "illuminances": [
+                "capability.illuminanceMeasurement",
+                "Illuminance Meters",
+                "Choose which devices to monitor...",
+                "illuminance"
+            ],
+            "locks": [
+                "capability.lock",
+                "Locks",
+                "Choose which devices to monitor...",
+                "lock"
+            ],
+            "motions": [
+                "capability.motionSensor",
+                "Motion Sensors",
+                "Choose which devices to monitor...",
+                "motion"
+            ],
+            "musicPlayers": [
+                "capability.musicPlayer",
+                "Music Players",
+                "Choose which devices to monitor...",
+                "player"
+            ],
+            "peds": [
+                "capability.stepSensor",
+                "Pedometers",
+                "Choose which devices to monitor...",
+                "step"
+            ],
+            "powerMeters": [
+                "capability.powerMeter",
+                "Power Meters",
+                "Choose which devices to monitor...",
+                "power"
+            ],
+            "presences": [
+                "capability.presenceSensor",
+                "Presence Sensors",
+                "Choose which devices to monitor...",
+                "presence"
+            ],
+            "relaySwitches": [
+                "capability.relaySwitch",
+                "Relay Switches",
+                "Choose which devices to monitor...",
+                "switch"
+            ],
+            "sleepSensors": [
+                "capability.sleepSensor",
+                "Sleep Sensors",
+                "Choose which devices to monitor...",
+                "sleep"
+            ],
+            "smokeDetectors": [
+                "capability.smokeDetector",
+                "Smoke Detectors",
+                "Choose which devices to monitor...",
+                "smoke"
+            ],
+            "switchLevels": [
+                "capability.switchLevel",
+                "Switch Levels",
+                "Choose which devices to monitor...",
+                "switch"
+            ],
+            "switches": [
+                "capability.switch",
+                "Switches",
+                "Choose which devices to monitor...",
+                "switch"
+            ],
+            "temperatures": [
+                "capability.temperatureMeasurement",
+                "Temperature Sensors",
+                "Choose which devices to monitor...",
+                "temperature"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "Thermostats",
+                "Choose which devices to monitor...",
+                "thermostat"
+            ],
+            "valves": [
+                "capability.valve",
+                "Valves",
+                "Choose which devices to monitor...",
+                "valve"
+            ],
+            "waterSensors": [
+                "capability.waterSensor",
+                "Water Sensors",
+                "Choose which devices to monitor...",
+                "water"
+            ]
+        }
+    },
+    "it-moved[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send a text when movement is detected",
+        "filenameStr": "It Moved",
+        "inputMap": {
+            "accelerationSensor": [
+                "capability.accelerationSensor",
+                "Where?",
+                "When movement is detected...",
+                "motion"
+            ]
+        }
+    },
+    "its-too-cold[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitor the temperature and when it drops below your setting get a text and/or turn on a heater or additional appliance.",
+        "filenameStr": "It's Too Cold",
+        "inputMap": {
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on a heater...",
+                "heater"
+            ],
+            "temperatureSensor1": [
+                "capability.temperatureMeasurement",
+                "",
+                "Monitor the temperature...",
+                "temperature"
+            ]
+        }
+    },
+    "its-too-hot[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitor the temperature and when it rises above your setting get a notification and/or turn on an A/C unit or fan.",
+        "filenameStr": "It's Too Hot",
+        "inputMap": {
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on which A/C or fan...",
+                "fan"
+            ],
+            "temperatureSensor1": [
+                "capability.temperatureMeasurement",
+                "",
+                "Monitor the temperature...",
+                "temperature"
+            ]
+        }
+    },
+    "jawbone-button-notifier[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send push notifications or text messages with your Jawbone Up when you hold the button.",
+        "filenameStr": "Jawbone Button Notifier",
+        "inputMap": {
+            "jawbone": [
+                "device.jawboneUser",
+                "",
+                "Use this Jawbone as a notification button and...",
+                "wristband"
+            ]
+        }
+    },
+    "jawbone-up-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect your Jawbone UP to SmartThings",
+        "filenameStr": "Jawbone UP (Connect)",
+        "inputMap": {}
+    },
+    "jenkins-notifier[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn off and on devices based on the state that your Jenkins Build is in.",
+        "filenameStr": "Jenkins Notifier",
+        "inputMap": {
+            "hues": [
+                "capability.colorControl",
+                "Which Hue Bulbs?",
+                "Or Change These Bulbs...",
+                "light"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "On Failed Build Turn On...",
+                "switch"
+            ]
+        }
+    },
+    "keep-me-cozy-ii[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Works the same as Keep Me Cozy, but enables you to pick an alternative temperature sensor in a separate space from the thermostat. Focuses on making you comfortable where you are spending your time rather than where the thermostat is located.",
+        "filenameStr": "Keep Me Cozy II",
+        "inputMap": {
+            "sensor": [
+                "capability.temperatureMeasurement",
+                "Temp Sensors",
+                "Optionally choose temperature sensor to use instead of the thermostat's...",
+                "temperature"
+            ],
+            "thermostat": [
+                "capability.thermostat",
+                "",
+                "Choose thermostat...",
+                "thermostat"
+            ]
+        }
+    },
+    "keep-me-cozy[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes your thermostat settings automatically in response to a mode change.  Often used with Bon Voyage, Rise and Shine, and other Mode Magic SmartApps to automatically keep you comfortable while you're present and save you energy and money while you are away.",
+        "filenameStr": "Keep Me Cozy",
+        "inputMap": {
+            "thermostat": [
+                "capability.thermostat",
+                "",
+                "Choose thermostat... ",
+                "thermostat"
+            ]
+        }
+    },
+    "laundry-monitor[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Sends a message and (optionally) turns on or blinks a light to indicate that laundry is done.",
+        "filenameStr": "Laundry Monitor",
+        "inputMap": {
+            "sensor1": [
+                "capability.accelerationSensor",
+                "",
+                "Tell me when this washer/dryer has stopped...",
+                "washer"
+            ],
+            "switches": [
+                "capability.switch",
+                "Which lights?",
+                "And by turning on these lights (optional)",
+                "light"
+            ]
+        }
+    },
+    "left-it-open[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Notifies you when you have left a door or window open longer that a specified amount of time.",
+        "filenameStr": "Left It Open",
+        "inputMap": {
+            "contact": [
+                "capability.contactSensor",
+                "",
+                "Monitor this door or window",
+                "door"
+            ]
+        }
+    },
+    "let-there-be-dark[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights off when a Contact Sensor is opened and turn them back on when it is closed, ONLY if the Lights were previouly on",
+        "filenameStr": "Let There Be Dark!",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "Where?",
+                "When the door opens",
+                "door"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn off a light",
+                "light"
+            ]
+        }
+    },
+    "let-there-be-light[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights on when a SmartSense Multi is opened and turn them off when it is closed.",
+        "filenameStr": "Let There Be Light!",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "Where?",
+                "When the door opens/closes...",
+                "door"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on/off a light...",
+                "light"
+            ]
+        }
+    },
+    "life360-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Life360 Service Manager",
+        "filenameStr": "Life360 (Connect)",
+        "inputMap": {}
+    },
+    "light-follows-me[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights on when motion is detected and then off again once the motion stops for a set period of time.",
+        "filenameStr": "Light Follows Me",
+        "inputMap": {
+            "motion1": [
+                "capability.motionSensor",
+                "Where?",
+                "Turn on when there's movement...",
+                "motion"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Turn on/off light(s)...",
+                "light"
+            ]
+        }
+    },
+    "light-up-the-night[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights on when it gets dark and off when it becomes light again.",
+        "filenameStr": "Light Up the Night",
+        "inputMap": {
+            "lightSensor": [
+                "capability.illuminanceMeasurement",
+                "",
+                "Monitor the luminosity...",
+                "illuminance"
+            ],
+            "lights": [
+                "capability.switch",
+                "",
+                "Turn on a light...",
+                "light"
+            ]
+        }
+    },
+    "lighting-director[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control up to 4 sets (scenarios) of lights based on motion, door contacts and illuminance levels.",
+        "filenameStr": "Lighting Director",
+        "inputMap": {
+            "A_acceleration": [
+                "capability.accelerationSensor",
+                "Or using these acceleration sensors...",
+                "Devices included in the scenario",
+                "accelerometer"
+            ],
+            "A_contact": [
+                "capability.contactSensor",
+                "Or using these contact sensors...",
+                "Devices included in the scenario",
+                "door"
+            ],
+            "A_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "Devices included in the scenario",
+                "light"
+            ],
+            "A_lock": [
+                "capability.lock",
+                "Or using these locks...",
+                "Devices included in the scenario",
+                "lock"
+            ],
+            "A_luxSensors": [
+                "capability.illuminanceMeasurement",
+                "On these lux sensors",
+                "Scenario settings",
+                "illuminance"
+            ],
+            "A_motion": [
+                "capability.motionSensor",
+                "Using these motion sensors...",
+                "Devices included in the scenario",
+                "motion"
+            ],
+            "A_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices included in the scenario",
+                "switch"
+            ],
+            "B_acceleration": [
+                "capability.accelerationSensor",
+                "Or using these acceleration sensors...",
+                "Devices included in the scenario",
+                "accelerometer"
+            ],
+            "B_contact": [
+                "capability.contactSensor",
+                "Or using these contact sensors...",
+                "Devices included in the scenario",
+                "door"
+            ],
+            "B_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "Devices included in the scenario",
+                "light"
+            ],
+            "B_lock": [
+                "capability.lock",
+                "Or using these locks...",
+                "Devices included in the scenario",
+                "lock"
+            ],
+            "B_luxSensors": [
+                "capability.illuminanceMeasurement",
+                "On these lux sensors",
+                "Scenario settings",
+                "illuminance"
+            ],
+            "B_motion": [
+                "capability.motionSensor",
+                "Using these motion sensors...",
+                "Devices included in the scenario",
+                "motion"
+            ],
+            "B_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices included in the scenario",
+                "switch"
+            ],
+            "C_acceleration": [
+                "capability.accelerationSensor",
+                "Or using these acceleration sensors...",
+                "Devices included in the scenario",
+                "accelerometer"
+            ],
+            "C_contact": [
+                "capability.contactSensor",
+                "Or using these contact sensors...",
+                "Devices included in the scenario",
+                "door"
+            ],
+            "C_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "Devices included in the scenario",
+                "light"
+            ],
+            "C_lock": [
+                "capability.lock",
+                "Or using these locks...",
+                "Devices included in the scenario",
+                "lock"
+            ],
+            "C_luxSensors": [
+                "capability.illuminanceMeasurement",
+                "On these lux sensors",
+                "Scenario settings",
+                "illuminance"
+            ],
+            "C_motion": [
+                "capability.motionSensor",
+                "Using these motion sensors...",
+                "Devices included in the scenario",
+                "motion"
+            ],
+            "C_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices included in the scenario",
+                "switch"
+            ],
+            "D_acceleration": [
+                "capability.accelerationSensor",
+                "Or using these acceleration sensors...",
+                "Devices included in the scenario",
+                "accelerometer"
+            ],
+            "D_contact": [
+                "capability.contactSensor",
+                "Or using these contact sensors...",
+                "Devices included in the scenario",
+                "door"
+            ],
+            "D_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "Devices included in the scenario",
+                "light"
+            ],
+            "D_lock": [
+                "capability.lock",
+                "Or using these locks...",
+                "Devices included in the scenario",
+                "lock"
+            ],
+            "D_luxSensors": [
+                "capability.illuminanceMeasurement",
+                "On these lux sensors",
+                "Scenario settings",
+                "illuminance"
+            ],
+            "D_motion": [
+                "capability.motionSensor",
+                "Using these motion sensors...",
+                "Devices included in the scenario",
+                "motion"
+            ],
+            "D_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices included in the scenario",
+                "switch"
+            ]
+        }
+    },
+    "lights-off-when-closed[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn your lights off when an open/close sensor closes.",
+        "filenameStr": "Lights Off, When Closed",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "Where?",
+                "When the door closes...",
+                "door"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn off a light...",
+                "light"
+            ]
+        }
+    },
+    "lights-off-with-no-motion-and-presence[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn lights off when no motion and presence is detected for a set period of time.",
+        "filenameStr": "Lights Off with No Motion and Presence",
+        "inputMap": {
+            "motionSensor": [
+                "capability.motionSensor",
+                "Choose motion sensor",
+                "Turn off when there is no motion and presence",
+                "motion"
+            ],
+            "presenceSensors": [
+                "capability.presenceSensor",
+                "Choose presence sensors",
+                "Turn off when there is no motion and presence",
+                "presence"
+            ],
+            "switches": [
+                "capability.switch",
+                "Choose light switches",
+                "Light switches to turn off",
+                "light"
+            ]
+        }
+    },
+    "lock-it-at-a-specific-time[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Make sure a door is locked at a specific time.  Option to add door contact sensor to only lock if closed.",
+        "filenameStr": "Lock it at a specific time",
+        "inputMap": {
+            "contact": [
+                "capability.contactSensor",
+                "Which contact sensor?",
+                "Make sure it's closed first...",
+                "door"
+            ],
+            "lock": [
+                "capability.lock",
+                "",
+                "Make sure this is locked",
+                "lock"
+            ]
+        }
+    },
+    "lock-it-when-i-leave[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Locks a deadbolt or lever lock when a SmartSense Presence tag or smartphone leaves a location.",
+        "filenameStr": "Lock It When I Leave",
+        "inputMap": {
+            "lock1": [
+                "capability.lock",
+                "",
+                "Lock the lock...",
+                "lock"
+            ],
+            "presence1": [
+                "capability.presenceSensor",
+                "Who?",
+                "When I leave...",
+                "presence"
+            ]
+        }
+    },
+    "logitech-harmony-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Allows you to integrate your Logitech Harmony account with SmartThings.",
+        "filenameStr": "Logitech Harmony (Connect)",
+        "inputMap": {
+            "accelerationSensors": [
+                "capability.accelerationSensor",
+                "Which Vibration Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "accelerometer"
+            ],
+            "alarms": [
+                "capability.alarm",
+                "Which Sirens?",
+                "Allow Logitech Harmony to control these things...",
+                "alarm"
+            ],
+            "contactSensors": [
+                "capability.contactSensor",
+                "Which Contact Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "door"
+            ],
+            "humiditySensors": [
+                "capability.relativeHumidityMeasurement",
+                "Which Relative Humidity Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "humidity"
+            ],
+            "lightSensors": [
+                "capability.illuminanceMeasurement",
+                "Which Light Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "illuminance"
+            ],
+            "locks": [
+                "capability.lock",
+                "Which Locks?",
+                "Allow Logitech Harmony to control these things...",
+                "lock"
+            ],
+            "motionSensors": [
+                "capability.motionSensor",
+                "Which Motion Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "motion"
+            ],
+            "presenceSensors": [
+                "capability.presenceSensor",
+                "Which Presence Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "presence"
+            ],
+            "switches": [
+                "capability.switch",
+                "Which Switches?",
+                "Allow Logitech Harmony to control these things...",
+                "switch"
+            ],
+            "temperatureSensors": [
+                "capability.temperatureMeasurement",
+                "Which Temperature Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "temperature"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "Which Thermostats?",
+                "Allow Logitech Harmony to control these things...",
+                "thermostat"
+            ],
+            "waterSensors": [
+                "capability.waterSensor",
+                "Which Water Sensors?",
+                "Allow Logitech Harmony to control these things...",
+                "water"
+            ]
+        }
+    },
+    "mail-arrived[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send a text when mail arrives in your mailbox using a SmartSense Multi on your mailbox door. Note: battery life may be impacted in cold climates.",
+        "filenameStr": "Mail Arrived",
+        "inputMap": {
+            "accelerationSensor": [
+                "capability.accelerationSensor",
+                "Where?",
+                "When mail arrives...",
+                "mailbox"
+            ]
+        }
+    },
+    "make-it-so[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Saves the states of a specified set switches and thermostat setpoints and restores them at each mode change. To use 1) Set the mode, 2) Change switches and setpoint to where you want them for that mode, and 3) Install or update the app. Changing to that mode or touching the app will set the devices to the saved state.",
+        "filenameStr": "Make It So",
+        "inputMap": {
+            "locks": [
+                "capability.lock",
+                "",
+                "Locks",
+                "lock"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Switches",
+                "switch"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "",
+                "Thermostats",
+                "thermostat"
+            ]
+        }
+    },
+    "medicine-management-contact-sensor[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "This supports devices with capabilities of ContactSensor and ColorControl (LED). It sends an in-app and ambient light notification if you forget to open the drawer or cabinet where meds are stored. A reminder will be set to a single time per day. If the draw or cabinet isn't opened within 60 minutes of that reminder, an in-app message will be sent. If the draw or cabinet still isn't opened after an additional 10 minutes, then an LED light turns red until the draw or cabinet is opened",
+        "filenameStr": "Medicine Management - Contact Sensor",
+        "inputMap": {
+            "deviceContactSensor": [
+                "capability.contactSensor",
+                "Opened Sensor",
+                "My Medicine Draw/Cabinet",
+                "medicine"
+            ],
+            "deviceLight": [
+                "capability.colorControl",
+                "Smart light",
+                "My LED Light",
+                "light"
+            ]
+        }
+    },
+    "medicine-management-temp-motion[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "This only supports devices with capabilities TemperatureMeasurement, AccelerationSensor and ColorControl (LED). Supports two use cases. First, will notifies via in-app if the fridge where meds are stored exceeds a temperature threshold set in degrees. Secondly, sends an in-app and ambient light notification if you forget to take your meds by sensing movement of the medicine box in the fridge. A reminder will be set to a single time per day. If the box isn't moved within 60 minutes of that reminder, an in-app message will be sent. If the box still isn't moved after an additional 10 minutes, then an LED light turns red until the box is moved",
+        "filenameStr": "Medicine Management - Temp-Motion",
+        "inputMap": {
+            "deviceAccelerationSensor": [
+                "capability.accelerationSensor",
+                "Movement",
+                "My Medicine in the Refrigerator",
+                "medicine"
+            ],
+            "deviceLight": [
+                "capability.colorControl",
+                "Smart light",
+                "My LED Light",
+                "light"
+            ],
+            "deviceTemperatureMeasurement": [
+                "capability.temperatureMeasurement",
+                "Temperature",
+                "My Medicine in the Refrigerator",
+                "temperature"
+            ]
+        }
+    },
+    "medicine-reminder[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Set up a reminder so that if you forget to take your medicine (determined by whether a cabinet or drawer has been opened) by specified time you get a notification or text message.",
+        "filenameStr": "Medicine Reminder",
+        "inputMap": {
+            "cabinet1": [
+                "capability.contactSensor",
+                "Where?",
+                "Choose your medicine cabinet...",
+                "medicine"
+            ]
+        }
+    },
+    "mini-hue-controller[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control one or more Hue bulbs using an Aeon MiniMote.",
+        "filenameStr": "Mini Hue Controller",
+        "inputMap": {
+            "bulbs": [
+                "capability.colorControl",
+                "Hue light bulbs",
+                "Control these lights",
+                "light"
+            ],
+            "controller": [
+                "capability.button",
+                "Aeon minimote",
+                "Using this controller",
+                "button"
+            ]
+        }
+    },
+    "monitor-on-sense[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn on switch when vibration is sensed",
+        "filenameStr": "Monitor on Sense",
+        "inputMap": {
+            "accelerationSensor": [
+                "capability.accelerationSensor",
+                "Which Sensor?",
+                "When vibration is sensed...",
+                "accelerometer"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on switch...",
+                "switch"
+            ]
+        }
+    },
+    "mood-cube[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Set your lighting by rotating a cube containing a SmartSense Multi",
+        "filenameStr": "Mood Cube",
+        "inputMap": {
+            "cube": [
+                "capability.threeAxis",
+                "SmartSense Multi sensor",
+                "Use the orientation of this cube",
+                "cube"
+            ],
+            "lights": [
+                "capability.switch",
+                "Lights, switches & dimmers",
+                "To control these lights",
+                "light"
+            ]
+        }
+    },
+    "my-light-toggle[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Toggle lights on/off with a motion sensor",
+        "filenameStr": "My Light Toggle",
+        "inputMap": {
+            "masterToggle": [
+                "capability.switch",
+                "Reference switch",
+                "Master switch for the toggle reference...",
+                "switch"
+            ],
+            "motionToggler": [
+                "capability.motionSensor",
+                "Motion Here",
+                "When this sensor detects motion...",
+                "motion"
+            ],
+            "switchesToToggle": [
+                "capability.switch",
+                "These go on/off",
+                "Toggle lights...",
+                "light"
+            ]
+        }
+    },
+    "netatmo-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Integrate your Netatmo devices with SmartThings",
+        "filenameStr": "Netatmo (Connect)",
+        "inputMap": {}
+    },
+    "nfc-tag-toggle[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Allows toggling of a switch, lock, or garage door based on an NFC Tag touch event",
+        "filenameStr": "NFC Tag Toggle",
+        "inputMap": {
+            "garageDoor": [
+                "capability.doorControl",
+                "Garage door controller",
+                "Select devices to control",
+                "door"
+            ],
+            "lock": [
+                "capability.lock",
+                "Lock",
+                "Select devices to control",
+                "lock"
+            ],
+            "switch1": [
+                "capability.switch",
+                "Light or switch",
+                "Select devices to control",
+                "switch"
+            ],
+            "tag": [
+                "capability.touchSensor",
+                "NFC Tag",
+                "Select an NFC tag",
+                "tag"
+            ]
+        }
+    },
+    "nobody-home[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "When everyone leaves, change mode.  If at least one person home, switch mode based on sun position.",
+        "filenameStr": "Nobody Home",
+        "inputMap": {
+            "people": [
+                "capability.presenceSensor",
+                "",
+                "When all of these people leave home",
+                "presence"
+            ]
+        }
+    },
+    "notify-me-when-it-opens[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Get a push message sent to your phone when an open/close sensor is opened.",
+        "filenameStr": "Notify Me When It Opens",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "Where?",
+                "When the door opens...",
+                "door"
+            ]
+        }
+    },
+    "notify-me-when[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Receive notifications when anything happens in your home.",
+        "filenameStr": "Notify Me When",
+        "inputMap": {
+            "acceleration": [
+                "capability.accelerationSensor",
+                "Acceleration Detected",
+                "Choose one or more, when...",
+                "accelerometer"
+            ],
+            "arrivalPresence": [
+                "capability.presenceSensor",
+                "Arrival Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "button": [
+                "capability.button",
+                "Button Pushed",
+                "Choose one or more, when...",
+                "button"
+            ],
+            "contact": [
+                "capability.contactSensor",
+                "Contact Opens",
+                "Choose one or more, when...",
+                "door"
+            ],
+            "contactClosed": [
+                "capability.contactSensor",
+                "Contact Closes",
+                "Choose one or more, when...",
+                "door"
+            ],
+            "departurePresence": [
+                "capability.presenceSensor",
+                "Departure Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "motion": [
+                "capability.motionSensor",
+                "Motion Here",
+                "Choose one or more, when...",
+                "motion"
+            ],
+            "mySwitch": [
+                "capability.switch",
+                "Switch Turned On",
+                "Choose one or more, when...",
+                "switch"
+            ],
+            "mySwitchOff": [
+                "capability.switch",
+                "Switch Turned Off",
+                "Choose one or more, when...",
+                "switch"
+            ],
+            "smoke": [
+                "capability.smokeDetector",
+                "Smoke Detected",
+                "Choose one or more, when...",
+                "smoke"
+            ],
+            "water": [
+                "capability.waterSensor",
+                "Water Sensor Wet",
+                "Choose one or more, when...",
+                "water"
+            ]
+        }
+    },
+    "notify-me-with-hue[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes the color and brightness of Philips Hue bulbs when any of a variety of SmartThings is activated.  Supports motion, contact, acceleration, moisture and presence sensors as well as switches.",
+        "filenameStr": "Notify Me With Hue",
+        "inputMap": {
+            "acceleration": [
+                "capability.accelerationSensor",
+                "Acceleration Detected",
+                "Choose one or more, when...",
+                "accelerometer"
+            ],
+            "arrivalPresence": [
+                "capability.presenceSensor",
+                "Arrival Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "button1": [
+                "capability.button",
+                "Button Press",
+                "Choose one or more, when...",
+                "button"
+            ],
+            "contact": [
+                "capability.contactSensor",
+                "Contact Opens",
+                "Choose one or more, when...",
+                "door"
+            ],
+            "contactClosed": [
+                "capability.contactSensor",
+                "Contact Closes",
+                "Choose one or more, when...",
+                "door"
+            ],
+            "departurePresence": [
+                "capability.presenceSensor",
+                "Departure Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "hues": [
+                "capability.colorControl",
+                "Which Hue Bulbs?",
+                "Control these bulbs...",
+                "light"
+            ],
+            "motion": [
+                "capability.motionSensor",
+                "Motion Here",
+                "Choose one or more, when...",
+                "motion"
+            ],
+            "mySwitch": [
+                "capability.switch",
+                "Switch Turned On",
+                "Choose one or more, when...",
+                "switch"
+            ],
+            "mySwitchOff": [
+                "capability.switch",
+                "Switch Turned Off",
+                "Choose one or more, when...",
+                "switch"
+            ],
+            "smoke": [
+                "capability.smokeDetector",
+                "Smoke Detected",
+                "Choose one or more, when...",
+                "smoke"
+            ],
+            "water": [
+                "capability.waterSensor",
+                "Water Sensor Wet",
+                "Choose one or more, when...",
+                "water"
+            ]
+        }
+    },
+    "obything-music-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Use this free SmartApp in conjunction with the ObyThing Music app for your Mac to control and automate music and more with iTunes and SmartThings.",
+        "filenameStr": "ObyThing Music (Connect)",
+        "inputMap": {}
+    },
+    "once-a-day[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn on one or more switches at a specified time and turn them off at a later time.",
+        "filenameStr": "Once a Day",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "",
+                "Select switches to control...",
+                "switch"
+            ]
+        }
+    },
+    "opent2t-smartapp-test[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "SmartApp for end to end SmartThings scenarios via OpenT2T",
+        "filenameStr": "OpenT2T SmartApp Test",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "Which Switches and Lights?",
+                "Allow Microsoft to control these things...",
+                "light"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "Which Thermostat?",
+                "Allow Microsoft to control these things...",
+                "thermostat"
+            ]
+        }
+    },
+    "photo-burst-when[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Take a burst of photos and send a push notification when...",
+        "filenameStr": "Photo Burst When...",
+        "inputMap": {
+            "acceleration": [
+                "capability.accelerationSensor",
+                "Acceleration Detected",
+                "Choose one or more, when...",
+                "accelerometer"
+            ],
+            "arrivalPresence": [
+                "capability.presenceSensor",
+                "Arrival Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "camera": [
+                "capability.imageCapture",
+                "",
+                "Take a burst of pictures",
+                "camera"
+            ],
+            "contact": [
+                "capability.contactSensor",
+                "Contact Opens",
+                "Choose one or more, when...",
+                "door"
+            ],
+            "departurePresence": [
+                "capability.presenceSensor",
+                "Departure Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "motion": [
+                "capability.motionSensor",
+                "Motion Here",
+                "Choose one or more, when...",
+                "motion"
+            ],
+            "mySwitch": [
+                "capability.switch",
+                "Switch Turned On",
+                "Choose one or more, when...",
+                "switch"
+            ]
+        }
+    },
+    "plantlink-connector[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "This SmartApp connects to myplantlink.com and forwards the device data to it so it can calculate easy to read plant status for your specific plant's needs.",
+        "filenameStr": "PlantLink Connector",
+        "inputMap": {
+            "plantlinksensors": [
+                "capability.sensor",
+                "Select PlantLink sensors",
+                "",
+                ""
+            ]
+        }
+    },
+    "power-allowance[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Save energy or restrict total time an appliance (like a curling iron or TV) can be in use.  When a switch turns on, automatically turn it back off after a set number of minutes you specify.",
+        "filenameStr": "Power Allowance",
+        "inputMap": {
+            "theSwitch": [
+                "capability.switch",
+                "",
+                "When a switch turns on...",
+                "switch"
+            ]
+        }
+    },
+    "presence-change-push[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Get a push notification when a SmartSense Presence tag or smartphone arrives at or departs from a location.",
+        "filenameStr": "Presence Change Push",
+        "inputMap": {
+            "presence": [
+                "capability.presenceSensor",
+                "Which sensor?",
+                "When a presence sensor arrives or departs this location..",
+                "presence"
+            ]
+        }
+    },
+    "presence-change-text[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send me a text message when my presence status changes.",
+        "filenameStr": "Presence Change Text",
+        "inputMap": {
+            "presence": [
+                "capability.presenceSensor",
+                "Which sensor?",
+                "When a presence sensor arrives or departs this location..",
+                "presence"
+            ]
+        }
+    },
+    "quirky-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect your Quirky to SmartThings.",
+        "filenameStr": "Quirky (Connect)",
+        "inputMap": {}
+    },
+    "ready-for-rain[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Warn if doors or windows are open when inclement weather is approaching.",
+        "filenameStr": "Ready For Rain",
+        "inputMap": {
+            "sensors": [
+                "capability.contactSensor",
+                "",
+                "Things to check?",
+                "door"
+            ]
+        }
+    },
+    "ridiculously-automated-garage-door[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitors arrival and departure of car(s) and 1) opens door when car arrives, 2) closes door after car has departed (for N minutes), 3) opens door when car door motion is detected, 4) closes door when door was opened due to arrival and interior door is closed.",
+        "filenameStr": "Ridiculously Automated Garage Door",
+        "inputMap": {
+            "carDoorSensors": [
+                "capability.accelerationSensor",
+                "Car door sensor(s)",
+                "Car(s) using this garage door",
+                "door"
+            ],
+            "cars": [
+                "capability.presenceSensor",
+                "Presence sensor",
+                "Car(s) using this garage door",
+                "presence"
+            ],
+            "doorSensor": [
+                "capability.contactSensor",
+                "Which sensor?",
+                "Garage door",
+                "door"
+            ],
+            "doorSwitch": [
+                "capability.momentary",
+                "Which switch?",
+                "Garage door",
+                "door"
+            ],
+            "interiorDoorSensor": [
+                "capability.contactSensor",
+                "Contact sensor?",
+                "Interior door (optional)",
+                "door"
+            ]
+        }
+    },
+    "rise-and-shine[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes mode when someone wakes up after a set time in the morning.",
+        "filenameStr": "Rise and Shine",
+        "inputMap": {
+            "motionSensors": [
+                "capability.motionSensor",
+                "",
+                "When there's motion on any of these sensors",
+                "motion"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "And (optionally) turn on these appliances",
+                "switch"
+            ]
+        }
+    },
+    "routine-director[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitor a set of presence sensors and activate routines based on whether your home is empty or occupied.  Each presence status change will check against the current 'sun state' to run routines based on occupancy and whether the sun is up or down.",
+        "filenameStr": "Routine Director",
+        "inputMap": {
+            "people": [
+                "capability.presenceSensor",
+                "Monitor These Presences",
+                "Who?",
+                "presence"
+            ]
+        }
+    },
+    "safe-watch[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Watch a series of sensors for any anomalies for securing a safe.",
+        "filenameStr": "Safe Watch",
+        "inputMap": {
+            "axis": [
+                "capability.threeAxis",
+                "Three-Axis Sensor",
+                "Things to secure?",
+                "sensor"
+            ],
+            "contact": [
+                "capability.contactSensor",
+                "Contact Sensor",
+                "Things to secure?",
+                "door"
+            ],
+            "knock": [
+                "capability.accelerationSensor",
+                "Knock Sensor",
+                "Things to secure?",
+                "door"
+            ],
+            "motion": [
+                "capability.motionSensor",
+                "Motion Sensor",
+                "Things to secure?",
+                "motion"
+            ],
+            "people": [
+                "capability.presenceSensor",
+                "",
+                "When which people are away?",
+                "presence"
+            ],
+            "temp": [
+                "capability.temperatureMeasurement",
+                "Temperature Sensor",
+                "Temperature monitor?",
+                "temperature"
+            ]
+        }
+    },
+    "scheduled-mode-change[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes mode at a specific time of day.",
+        "filenameStr": "Scheduled Mode Change",
+        "inputMap": {}
+    },
+    "send-ham-bridge-command-when[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Sends a command to your HAM Bridge server when SmartThings are activated.",
+        "filenameStr": "Send HAM Bridge Command When",
+        "inputMap": {
+            "acceleration": [
+                "capability.accelerationSensor",
+                "Acceleration Detected",
+                "Choose one or more, when...",
+                "accelerometer"
+            ],
+            "arrivalPresence": [
+                "capability.presenceSensor",
+                "Arrival Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "contact": [
+                "capability.contactSensor",
+                "Contact Opens",
+                "Choose one or more, when...",
+                "door"
+            ],
+            "contactClosed": [
+                "capability.contactSensor",
+                "Contact Closes",
+                "Choose one or more, when...",
+                "door"
+            ],
+            "departurePresence": [
+                "capability.presenceSensor",
+                "Departure Of",
+                "Choose one or more, when...",
+                "presence"
+            ],
+            "motion": [
+                "capability.motionSensor",
+                "Motion Here",
+                "Choose one or more, when...",
+                "motion"
+            ],
+            "mySwitch": [
+                "capability.switch",
+                "Switch Turned On",
+                "Choose one or more, when...",
+                "switch"
+            ],
+            "mySwitchOff": [
+                "capability.switch",
+                "Switch Turned Off",
+                "Choose one or more, when...",
+                "switch"
+            ],
+            "smoke": [
+                "capability.smokeDetector",
+                "Smoke Detected",
+                "Choose one or more, when...",
+                "smoke"
+            ],
+            "water": [
+                "capability.waterSensor",
+                "Water Sensor Wet",
+                "Choose one or more, when...",
+                "water"
+            ]
+        }
+    },
+    "severe-weather-alert[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Get a push notification when severe weather is in your area.",
+        "filenameStr": "Severe Weather Alert",
+        "inputMap": {}
+    },
+    "shabbat-and-holiday-modes[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes the mode at candle lighting and back after havdalah.  Uses the HebCal.com API to look for days that are shabbat or chag and pull real time candle lighting and havdalah times to change modes automatically",
+        "filenameStr": "Shabbat and Holiday Modes",
+        "inputMap": {}
+    },
+    "simple-control[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Integrate SmartThings with your Simple Control activities.",
+        "filenameStr": "Simple Control",
+        "inputMap": {
+            "colorControls": [
+                "capability.colorControl",
+                "Which Color Controllers?",
+                "Allow Simple Control to Monitor and Control These Things...",
+                "light"
+            ],
+            "doorControls": [
+                "capability.doorControl",
+                "Which Door Controls?",
+                "Allow Simple Control to Monitor and Control These Things...",
+                "door"
+            ],
+            "locks": [
+                "capability.lock",
+                "Which Locks?",
+                "Allow Simple Control to Monitor and Control These Things...",
+                "lock"
+            ],
+            "musicPlayers": [
+                "capability.musicPlayer",
+                "Which Music Players?",
+                "Allow Simple Control to Monitor and Control These Things...",
+                "player"
+            ],
+            "switchLevels": [
+                "capability.switchLevel",
+                "Which Adjustable Switches?",
+                "Allow Simple Control to Monitor and Control These Things...",
+                "switch"
+            ],
+            "switches": [
+                "capability.switch",
+                "Which Switches?",
+                "Allow Simple Control to Monitor and Control These Things...",
+                "switch"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "Which Thermostats?",
+                "Allow Simple Control to Monitor and Control These Things...",
+                "thermostat"
+            ]
+        }
+    },
+    "simple-sync-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Integrate SmartThings with your Simple Control activities via Simple Sync.",
+        "filenameStr": "Simple Sync Connect",
+        "inputMap": {}
+    },
+    "simple-sync-trigger[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Trigger Simple Control activities when certain actions take place in your home.",
+        "filenameStr": "Simple Sync Trigger",
+        "inputMap": {
+            "agent": [
+                "capability.mediaController",
+                "Simple Sync",
+                "",
+                "player"
+            ]
+        }
+    },
+    "single-button-controller[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Use your Aeon Panic Button to setup events when the button is used",
+        "filenameStr": "Single Button Controller",
+        "inputMap": {
+            "buttonDevice": [
+                "device.aeonKeyFob",
+                "Button",
+                "",
+                "button"
+            ],
+            "lights_1_held": [
+                "capability.switch",
+                "Held",
+                "Lights",
+                "light"
+            ],
+            "lights_1_pushed": [
+                "capability.switch",
+                "Pushed",
+                "Lights",
+                "light"
+            ],
+            "locks_1_held": [
+                "capability.lock",
+                "Held",
+                "Locks",
+                "lock"
+            ],
+            "locks_1_pushed": [
+                "capability.lock",
+                "Pushed",
+                "Locks",
+                "lock"
+            ],
+            "sonos_1_held": [
+                "capability.musicPlayer",
+                "Held",
+                "Sonos",
+                "player"
+            ],
+            "sonos_1_pushed": [
+                "capability.musicPlayer",
+                "Pushed",
+                "Sonos",
+                "player"
+            ]
+        }
+    },
+    "sleepy-time[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Use Jawbone sleep mode events to automatically execute Hello, Home phrases. Automatially put the house to bed or wake it up in the morning by pushing the button on your UP.",
+        "filenameStr": "Sleepy Time",
+        "inputMap": {
+            "jawbone": [
+                "device.jawboneUser",
+                "Jawbone UP",
+                "Select your Jawbone UP",
+                "wristband"
+            ]
+        }
+    },
+    "smart-alarm[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "A multi-zone virtual alarm panel, featuring customizable security zones. Setting of an alarm can activate sirens, turn on light switches, push notification and text message. Alarm is armed and disarmed simply by setting SmartThings location 'mode'.",
+        "filenameStr": "Smart Alarm",
+        "inputMap": {
+            "alarms": [
+                "capability.alarm",
+                "Which sirens?",
+                "Sirens",
+                "alarm"
+            ],
+            "audioPlayer": [
+                "capability.musicPlayer",
+                "Which audio players?",
+                "Audio Notifications",
+                "player"
+            ],
+            "cameras": [
+                "capability.imageCapture",
+                "Which cameras?",
+                "Cameras",
+                "camera"
+            ],
+            "pushbullet": [
+                "device.pushbullet",
+                "Which Pushbullet devices?",
+                "Pushbullet Notifications",
+                "alarm"
+            ],
+            "remotes": [
+                "capability.button",
+                "Which remote controls?",
+                "Remote Control Options",
+                "button"
+            ],
+            "switches": [
+                "capability.switch",
+                "Which switches?",
+                "Switches",
+                "switch"
+            ],
+            "z_contact": [
+                "capability.contactSensor",
+                "Which contact sensors?",
+                "Add/Remove Zones",
+                "door"
+            ],
+            "z_motion": [
+                "capability.motionSensor",
+                "Which motion sensors?",
+                "Add/Remove Zones",
+                "motion"
+            ],
+            "z_movement": [
+                "capability.accelerationSensor",
+                "Which movement sensors?",
+                "Add/Remove Zones",
+                "motion"
+            ],
+            "z_smoke": [
+                "capability.smokeDetector",
+                "Which smoke & CO sensors?",
+                "Add/Remove Zones",
+                "smoke"
+            ],
+            "z_water": [
+                "capability.waterSensor",
+                "Which moisture sensors?",
+                "Add/Remove Zones",
+                "water"
+            ]
+        }
+    },
+    "smart-auto-lock-unlock[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Automatically locks door X minutes after being closed and keeps door unlocked if door is open.",
+        "filenameStr": "Smart Auto Lock / Unlock",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "",
+                "Select the door contact sensor:",
+                "door"
+            ],
+            "lock1": [
+                "capability.lock",
+                "",
+                "Select the door lock:",
+                "lock"
+            ]
+        }
+    },
+    "smart-care-daily-routine[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Stay connected to your loved ones. Get notified if they are not up and moving around by a specified time and/or if they have not opened a cabinet or door according to a set schedule.",
+        "filenameStr": "Smart Care: Daily Routine",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "",
+                "or a door or cabinet hasn\u2019t been opened (optional, leave blank to not require)...",
+                "door"
+            ],
+            "motion1": [
+                "capability.motionSensor",
+                "Where?",
+                "If there\u2019s no movement (optional, leave blank to not require)...",
+                "motion"
+            ]
+        }
+    },
+    "smart-care-detect-motion[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitors motion sensors in bedroom and bathroom during the night and detects if occupant does not return from the bathroom after a specified period of time.",
+        "filenameStr": "Smart Care - Detect Motion",
+        "inputMap": {
+            "bathroomMotion": [
+                "capability.motionSensor",
+                "",
+                "Bathroom motion detector",
+                "motion"
+            ],
+            "bedroomMotion": [
+                "capability.motionSensor",
+                "",
+                "Bedroom motion detector(s)",
+                "motion"
+            ]
+        }
+    },
+    "smart-energy-service[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "With visible realtime energy usage status, have good energy habits and enrich your life\r\n",
+        "filenameStr": "Smart Energy Service",
+        "inputMap": {}
+    },
+    "smart-home-ventilation[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Allows for setting up various schedule scenarios for turning on and off home ventilation switches.",
+        "filenameStr": "Smart Home Ventilation",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "Switches",
+                "Select ventilation switches...",
+                "vent"
+            ]
+        }
+    },
+    "smart-humidifier[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn on/off humidifier based on relative humidity from a sensor.",
+        "filenameStr": "Smart Humidifier",
+        "inputMap": {
+            "humiditySensor1": [
+                "capability.relativeHumidityMeasurement",
+                "",
+                "Monitor the humidity of:",
+                "humidity"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Control Humidifier:",
+                "humidifier"
+            ]
+        }
+    },
+    "smart-light-timer-x-minutes-unless-already-on[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turns on a switch for X minutes, then turns it off. Unless, the switch is already on, in which case it stays on. If the switch is toggled while the timer is running, the timer is canceled.",
+        "filenameStr": "Smart Light Timer, X minutes unless already on",
+        "inputMap": {
+            "contacts": [
+                "capability.contactSensor",
+                "Select Contacts",
+                "Or, turn on when one of these contacts opened",
+                "door"
+            ],
+            "motions": [
+                "capability.motionSensor",
+                "Select motion detectors",
+                "Turn on when there's movement...",
+                "motion"
+            ],
+            "switches": [
+                "capability.switch",
+                "Select Lights",
+                "Turn on/off light(s)...",
+                "light"
+            ]
+        }
+    },
+    "smart-nightlight[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turns on lights when it's dark and motion is detected. Turns lights off when it becomes light or some time after motion ceases.",
+        "filenameStr": "Smart Nightlight",
+        "inputMap": {
+            "lightSensor": [
+                "capability.illuminanceMeasurement",
+                "",
+                "Using either on this light sensor (optional) or the local sunrise and sunset",
+                "illuminance"
+            ],
+            "lights": [
+                "capability.switch",
+                "",
+                "Control these lights...",
+                "light"
+            ],
+            "motionSensor": [
+                "capability.motionSensor",
+                "Where?",
+                "Turning on when it's dark and there's movement...",
+                "motion"
+            ]
+        }
+    },
+    "smart-security[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Alerts you when there are intruders but not when you just got up for a glass of water in the middle of the night",
+        "filenameStr": "Smart Security",
+        "inputMap": {
+            "alarms": [
+                "capability.alarm",
+                "Which Alarm(s)",
+                "Alarm settings and actions",
+                "alarm"
+            ],
+            "intrusionContacts": [
+                "capability.contactSensor",
+                "Contact Sensors",
+                "Sensors detecting an intruder",
+                "door"
+            ],
+            "intrusionMotions": [
+                "capability.motionSensor",
+                "Motion Sensors",
+                "Sensors detecting an intruder",
+                "motion"
+            ],
+            "lights": [
+                "capability.switch",
+                "Flash these lights (optional)",
+                "Alarm settings and actions",
+                "light"
+            ],
+            "residentMotions": [
+                "capability.motionSensor",
+                "Motion Sensors",
+                "Sensors detecting residents",
+                "motion"
+            ]
+        }
+    },
+    "smart-turn-it-on[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turns on selected device(s) at a set time on selected days of the week only if a selected person is present and turns off selected device(s) after a set time.",
+        "filenameStr": "Smart turn it on",
+        "inputMap": {
+            "presenceOne": [
+                "capability.presenceSensor",
+                "Select Person",
+                "For Whom?",
+                "presence"
+            ],
+            "switchOne": [
+                "capability.switch",
+                "Select Light",
+                "Turn on which device?",
+                "light"
+            ]
+        }
+    },
+    "smart-windows[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Compares two temperatures \u2013 indoor vs outdoor, for example \u2013 then sends an alert if windows are open (or closed!). If you don't use an external temperature device, your location will be used instead.",
+        "filenameStr": "Smart Windows",
+        "inputMap": {
+            "inTemp": [
+                "capability.temperatureMeasurement",
+                "Indoor",
+                "Select temperature devices to monitor...",
+                "temperature"
+            ],
+            "outTemp": [
+                "capability.temperatureMeasurement",
+                "Outdoor (optional)",
+                "Select temperature devices to monitor...",
+                "temperature"
+            ],
+            "sensors": [
+                "capability.contactSensor",
+                "",
+                "Select windows to check...",
+                "window"
+            ]
+        }
+    },
+    "smartblock-chat-sender[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send chat messages into Minecraft via the SmartBlock mod",
+        "filenameStr": "SmartBlock Chat Sender",
+        "inputMap": {}
+    },
+    "smartblock-linker[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "A SmartApp that links SmartBlocks to switches",
+        "filenameStr": "SmartBlock Linker",
+        "inputMap": {
+            "linkedSmartBlock": [
+                "capability.switch",
+                "Linked SmartBlock",
+                "",
+                "switch"
+            ],
+            "linkedSwitch": [
+                "capability.switch",
+                "Linked Switch",
+                "",
+                "switch"
+            ]
+        }
+    },
+    "smartblock-manager[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "A SmartApp for managing SmartBlocks",
+        "filenameStr": "SmartBlock Manager",
+        "inputMap": {}
+    },
+    "smartblock-notifier[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "A SmartApp that notifies you when things are happening around your SmartBlocks",
+        "filenameStr": "SmartBlock Notifier",
+        "inputMap": {
+            "smartBlock": [
+                "capability.switch",
+                "Which SmartBlock would you like to monitor?",
+                "Get notifications for this SmartBlock",
+                "notification"
+            ]
+        }
+    },
+    "smartweather-station-controller[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Updates SmartWeather Station Tile devices every hour.",
+        "filenameStr": "SmartWeather Station Controller",
+        "inputMap": {
+            "weatherDevices": [
+                "device.smartweatherStationTile",
+                "",
+                "",
+                "weather"
+            ]
+        }
+    },
+    "sonos-music-modes[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Plays a different selected song or station for each mode.",
+        "filenameStr": "Sonos Music Modes",
+        "inputMap": {
+            "sonos": [
+                "capability.musicPlayer",
+                "Sonos player",
+                "",
+                "player"
+            ]
+        }
+    },
+    "sonos-remote-control[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control your Sonos system with an Aeon Minimote",
+        "filenameStr": "Sonos Remote Control",
+        "inputMap": {
+            "buttonDevice": [
+                "capability.button",
+                "Minimote",
+                "Select your devices",
+                "button"
+            ],
+            "sonos": [
+                "capability.musicPlayer",
+                "Sonos",
+                "Select your devices",
+                "player"
+            ]
+        }
+    },
+    "speaker-control[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Play or pause your Speaker when certain actions take place in your home.",
+        "filenameStr": "Speaker Control",
+        "inputMap": {
+            "sonos": [
+                "capability.musicPlayer",
+                "Speaker music player",
+                "",
+                "player"
+            ]
+        }
+    },
+    "speaker-mood-music[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Plays a selected song or station.",
+        "filenameStr": "Speaker Mood Music",
+        "inputMap": {
+            "sonos": [
+                "capability.musicPlayer",
+                "On this Speaker player",
+                "",
+                "player"
+            ]
+        }
+    },
+    "speaker-notify-with-sound[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Play a sound or custom message through your Speaker when the mode changes or other events occur.",
+        "filenameStr": "Speaker Notify with Sound",
+        "inputMap": {
+            "sonos": [
+                "capability.musicPlayer",
+                "On this Speaker player",
+                "",
+                "player"
+            ]
+        }
+    },
+    "speaker-weather-forecast[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Play a weather report through your Speaker when the mode changes or other events occur",
+        "filenameStr": "Speaker Weather Forecast",
+        "inputMap": {
+            "sonos": [
+                "capability.musicPlayer",
+                "On this Speaker player",
+                "",
+                "player"
+            ]
+        }
+    },
+    "sprayer-controller-2[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control Sprayers for a period of time a number of times per hour",
+        "filenameStr": "Sprayer Controller 2",
+        "inputMap": {
+            "valves1": [
+                "capability.switch",
+                "",
+                "Select First Valve(s):",
+                "valve"
+            ]
+        }
+    },
+    "spruce-scheduler[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Setup schedules for Spruce irrigation controller",
+        "filenameStr": "Spruce Scheduler",
+        "inputMap": {
+            "contacts": [
+                "capability.contactSensor",
+                "Select water delay contact sensors",
+                "",
+                "door"
+            ],
+            "sensor${state.app}": [
+                "capability.relativeHumidityMeasurement",
+                "Select moisture sensor?",
+                "",
+                "humidity"
+            ],
+            "switches": [
+                "capability.switch",
+                "Spruce Irrigation Controller:",
+                "Spruce schedule Settings",
+                "sprinkler"
+            ],
+            "sync": [
+                "capability.switch",
+                "Select Master Controller",
+                "",
+                "switch"
+            ],
+            "toggles": [
+                "capability.switch",
+                "Select water delay switches",
+                "",
+                "switch"
+            ]
+        }
+    },
+    "stelpro-get-remote-temperature[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Retrieves the temperature from a sensor and sends it to a specific Stelpro thermostat.",
+        "filenameStr": "Stelpro Get Remote Temperature",
+        "inputMap": {
+            "sensor": [
+                "capability.temperatureMeasurement",
+                "Select a remote temperature reading device",
+                "Choose remote device to read temperature from... ",
+                "temperature"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "Select Stelpro Thermostats",
+                "Choose the Stelpro thermostats that will receive the remote device's temperature... ",
+                "thermostat"
+            ]
+        }
+    },
+    "step-notifier[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Use a step tracker device to track daily step goals and trigger various device actions when your goals are met!",
+        "filenameStr": "Step Notifier",
+        "inputMap": {
+            "hues": [
+                "capability.colorControl",
+                "Which Hue Bulbs?",
+                "Change the Color of the Lights",
+                "light"
+            ],
+            "jawbone": [
+                "device.jawboneUser",
+                "Jawbone UP",
+                "Select your Jawbone UP",
+                "wristband"
+            ],
+            "lights": [
+                "capability.switch",
+                "Which Lights?",
+                "Flash the Lights",
+                "light"
+            ],
+            "sonos": [
+                "capability.musicPlayer",
+                "On this Sonos player",
+                "Play a song on the Sonos",
+                "player"
+            ]
+        }
+    },
+    "sunrise-sunset[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes mode and controls lights based on local sunrise and sunset times.",
+        "filenameStr": "Sunrise/Sunset",
+        "inputMap": {
+            "sunriseOff": [
+                "capability.switch",
+                "Turn off?",
+                "At sunrise...",
+                "light"
+            ],
+            "sunriseOn": [
+                "capability.switch",
+                "Turn on?",
+                "At sunrise...",
+                "light"
+            ],
+            "sunsetOff": [
+                "capability.switch",
+                "Turn off?",
+                "At sunset...",
+                "light"
+            ],
+            "sunsetOn": [
+                "capability.switch",
+                "Turn on?",
+                "At sunset...",
+                "light"
+            ]
+        }
+    },
+    "switch-activates-home-phrase-or-mode[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Ties a Hello, Home phrase or mode to a switch's state. Perfect for use with IFTTT.",
+        "filenameStr": "Switch Activates Home Phrase or Mode",
+        "inputMap": {
+            "controlSwitch": [
+                "capability.switch",
+                "Switch",
+                "Choose a switch to use...",
+                "switch"
+            ]
+        }
+    },
+    "switch-activates-home-phrase[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Ties a Hello, Home phrase to a switch's state. Perfect for use with IFTTT.",
+        "filenameStr": "Switch Activates Home Phrase",
+        "inputMap": {
+            "controlSwitch": [
+                "capability.switch",
+                "Switch",
+                "Choose a switch to use...",
+                "switch"
+            ]
+        }
+    },
+    "switch-changes-mode[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Ties a mode to a switch's state. Perfect for use with IFTTT.",
+        "filenameStr": "Switch Changes Mode",
+        "inputMap": {
+            "controlSwitch": [
+                "capability.switch",
+                "Switch",
+                "Choose a switch to use...",
+                "switch"
+            ]
+        }
+    },
+    "talking-alarm-clock[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control up to 4 waking schedules using a Sonos speaker as an alarm.",
+        "filenameStr": "Talking Alarm Clock",
+        "inputMap": {
+            "A_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "",
+                "light"
+            ],
+            "A_humidity": [
+                "capability.relativeHumidityMeasurement",
+                "Speak local humidity (from device)",
+                "",
+                "humidity"
+            ],
+            "A_localTemp": [
+                "capability.temperatureMeasurement",
+                "Speak local temperature (from device)",
+                "",
+                "temperature"
+            ],
+            "A_sonos": [
+                "capability.musicPlayer",
+                "Choose a Sonos speaker",
+                "Alarm settings",
+                "player"
+            ],
+            "A_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices to control in this alarm scenario",
+                "alarm"
+            ],
+            "A_thermostats": [
+                "capability.thermostat",
+                "Thermostat to control...",
+                "",
+                "thermostat"
+            ],
+            "B_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "",
+                "light"
+            ],
+            "B_humidity": [
+                "capability.relativeHumidityMeasurement",
+                "Speak local humidity (from device)",
+                "",
+                "humidity"
+            ],
+            "B_localTemp": [
+                "capability.temperatureMeasurement",
+                "Speak local temperature (from device)",
+                "",
+                "temperature"
+            ],
+            "B_sonos": [
+                "capability.musicPlayer",
+                "Choose a Sonos speaker",
+                "Alarm settings",
+                "player"
+            ],
+            "B_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices to control in this alarm scenario",
+                "alarm"
+            ],
+            "B_thermostats": [
+                "capability.thermostat",
+                "Thermostat to control...",
+                "",
+                "thermostat"
+            ],
+            "C_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "",
+                "light"
+            ],
+            "C_humidity": [
+                "capability.relativeHumidityMeasurement",
+                "Speak local humidity (from device)",
+                "",
+                "humidity"
+            ],
+            "C_localTemp": [
+                "capability.temperatureMeasurement",
+                "Speak local temperature (from device)",
+                "",
+                "temperature"
+            ],
+            "C_sonos": [
+                "capability.musicPlayer",
+                "Choose a Sonos speaker",
+                "Alarm settings",
+                "player"
+            ],
+            "C_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices to control in this alarm scenario",
+                "alarm"
+            ],
+            "C_thermostats": [
+                "capability.thermostat",
+                "Thermostat to control...",
+                "",
+                "thermostat"
+            ],
+            "D_dimmers": [
+                "capability.switchLevel",
+                "Dim the following...",
+                "",
+                "light"
+            ],
+            "D_humidity": [
+                "capability.relativeHumidityMeasurement",
+                "Speak local humidity (from device)",
+                "",
+                "humidity"
+            ],
+            "D_localTemp": [
+                "capability.temperatureMeasurement",
+                "Speak local temperature (from device)",
+                "",
+                "temperature"
+            ],
+            "D_sonos": [
+                "capability.musicPlayer",
+                "Choose a Sonos speaker",
+                "Alarm settings",
+                "player"
+            ],
+            "D_switches": [
+                "capability.switch",
+                "Control the following switches...",
+                "Devices to control in this alarm scenario",
+                "alarm"
+            ],
+            "D_thermostats": [
+                "capability.thermostat",
+                "Thermostat to control...",
+                "",
+                "thermostat"
+            ],
+            "summarySonos": [
+                "capability.musicPlayer",
+                "Choose a Sonos speaker",
+                "",
+                "player"
+            ]
+        }
+    },
+    "tcp-bulbs-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect your TCP bulbs to SmartThings using Cloud to Cloud integration. You must create a remote login acct on TCP Mobile App.",
+        "filenameStr": "Tcp Bulbs (Connect)",
+        "inputMap": {}
+    },
+    "tesla-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Integrate your Tesla car with SmartThings.",
+        "filenameStr": "Tesla (Connect)",
+        "inputMap": {}
+    },
+    "text-me-when-it-opens[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Get a text message sent to your phone when an open/close sensor is opened.",
+        "filenameStr": "Text Me When It Opens",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "Where?",
+                "When the door opens...",
+                "door"
+            ]
+        }
+    },
+    "text-me-when-theres-motion-and-im-not-here[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send a text message when there is motion while you are away.",
+        "filenameStr": "Text Me When There's Motion and I'm Not Here",
+        "inputMap": {
+            "motion1": [
+                "capability.motionSensor",
+                "Where?",
+                "When there's movement...",
+                "motion"
+            ],
+            "presence1": [
+                "capability.presenceSensor",
+                "Who?",
+                "While I'm out...",
+                "presence"
+            ]
+        }
+    },
+    "the-big-switch[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turns on, off and dim a collection of lights based on the state of a specific switch.",
+        "filenameStr": "The Big Switch",
+        "inputMap": {
+            "dimSwitches": [
+                "capability.switchLevel",
+                "",
+                "And Dim these switches",
+                "light"
+            ],
+            "master": [
+                "capability.switch",
+                "Where?",
+                "When this switch is turned on, off or dimmed",
+                "switch"
+            ],
+            "offSwitches": [
+                "capability.switch",
+                "",
+                "And turn off but not on all of these switches",
+                "switch"
+            ],
+            "onSwitches": [
+                "capability.switch",
+                "",
+                "And turn on but not off all of these switches",
+                "switch"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Turn on or off all of these switches as well",
+                "switch"
+            ]
+        }
+    },
+    "the-flasher[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Flashes a set of lights in response to motion, an open/close event, or a switch.",
+        "filenameStr": "The Flasher",
+        "inputMap": {
+            "acceleration": [
+                "capability.accelerationSensor",
+                "Acceleration Sensor?",
+                "When any of the following devices trigger...",
+                "accelerometer"
+            ],
+            "contact": [
+                "capability.contactSensor",
+                "Contact Sensor?",
+                "When any of the following devices trigger...",
+                "door"
+            ],
+            "motion": [
+                "capability.motionSensor",
+                "Motion Sensor?",
+                "When any of the following devices trigger...",
+                "motion"
+            ],
+            "myPresence": [
+                "capability.presenceSensor",
+                "Presence Sensor?",
+                "When any of the following devices trigger...",
+                "presence"
+            ],
+            "mySwitch": [
+                "capability.switch",
+                "Switch?",
+                "When any of the following devices trigger...",
+                "switch"
+            ],
+            "switches": [
+                "capability.switch",
+                "These lights",
+                "Then flash...",
+                "light"
+            ]
+        }
+    },
+    "the-gun-case-moved[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Send a text when your gun case moves",
+        "filenameStr": "The Gun Case Moved",
+        "inputMap": {
+            "accelerationSensor": [
+                "capability.accelerationSensor",
+                "Where?",
+                "When the gun case moves...",
+                "gun"
+            ]
+        }
+    },
+    "thermostat-auto-off[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Automatically turn off thermostat when windows/doors open. Turn it back on when everything is closed up.",
+        "filenameStr": "Thermostat Auto Off",
+        "inputMap": {
+            "sensors": [
+                "capability.contactSensor",
+                "Sensors",
+                "Open/Close",
+                "door"
+            ],
+            "thermostat": [
+                "capability.thermostat",
+                "Thermostat",
+                "Control",
+                "thermostat"
+            ]
+        }
+    },
+    "thermostat-mode-director[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Changes mode of your thermostat based on the temperature range of a specified temperature sensor and shuts off the thermostat if any windows/doors are open.",
+        "filenameStr": "Thermostat Mode Director",
+        "inputMap": {
+            "doors": [
+                "capability.contactSensor",
+                "Low temp?",
+                "If these doors/windows are open turn off thermostat regardless of outdoor temperature",
+                "door"
+            ],
+            "sensor": [
+                "capability.temperatureMeasurement",
+                "Which?",
+                "Which temperature sensor will control your thermostat?",
+                "temperature"
+            ],
+            "thermostat": [
+                "capability.thermostat",
+                "Which?",
+                "Choose thermostat...",
+                "thermostat"
+            ],
+            "thermostat1": [
+                "capability.thermostat",
+                "Which?",
+                "Choose a thermostats to boost",
+                "thermostat"
+            ]
+        }
+    },
+    "thermostat-window-check[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "If your heating or cooling system come on, it gives you notice if there are any windows or doors left open, preventing the system from working optimally.",
+        "filenameStr": "Thermostat Window Check",
+        "inputMap": {
+            "sensors": [
+                "capability.contactSensor",
+                "",
+                "Things to check?",
+                "door"
+            ],
+            "thermostats": [
+                "capability.thermostat",
+                "",
+                "Thermostats to monitor",
+                "thermostat"
+            ]
+        }
+    },
+    "thermostats[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Receive notifications when anything happens in your home.",
+        "filenameStr": "Thermostats",
+        "inputMap": {
+            "carbonMonoxideDevices": [
+                "capability.carbonMonoxideDetector",
+                "Carbon Monoxide Detected",
+                "Choose one or more, when...",
+                "monoxide"
+            ],
+            "smokeDevices": [
+                "capability.smokeDetector",
+                "Smoke Detected",
+                "Choose one or more, when...",
+                "smoke"
+            ],
+            "thermostatDevices": [
+                "capability.thermostat",
+                "Thermostats",
+                "Turn off these thermostats",
+                "thermostat"
+            ]
+        }
+    },
+    "turn-it-on-for-5-minutes[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "When a SmartSense Multi is opened, a switch will be turned on, and then turned off after 5 minutes.",
+        "filenameStr": "Turn It On For 5 Minutes",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "",
+                "When it opens...",
+                "door"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on a switch for 5 minutes...",
+                "switch"
+            ]
+        }
+    },
+    "turn-it-on-when-im-here[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn something on when you arrive and back off when you leave.",
+        "filenameStr": "Turn It On When I'm Here",
+        "inputMap": {
+            "presence1": [
+                "capability.presenceSensor",
+                "Who?",
+                "When I arrive and leave...",
+                "presence"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on/off a light...",
+                "light"
+            ]
+        }
+    },
+    "turn-it-on-when-it-opens[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn something on when an open/close sensor opens.",
+        "filenameStr": "Turn It On When It Opens",
+        "inputMap": {
+            "contact1": [
+                "capability.contactSensor",
+                "Where?",
+                "When the door opens...",
+                "door"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Turn on a light...",
+                "light"
+            ]
+        }
+    },
+    "turn-off-with-motion[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turns off a device if there is motion",
+        "filenameStr": "Turn Off With Motion",
+        "inputMap": {
+            "motion1": [
+                "capability.motionSensor",
+                "Where?",
+                "Turn off when there's movement...",
+                "motion"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Turn off/on light(s)...",
+                "light"
+            ]
+        }
+    },
+    "turn-on-only-if-i-arrive-after-sunset[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Turn something on only if you arrive after sunset and back off anytime you leave.",
+        "filenameStr": "Turn On Only If I Arrive After Sunset",
+        "inputMap": {
+            "presence1": [
+                "capability.presenceSensor",
+                "Who?",
+                "When I arrive and leave...",
+                "presence"
+            ],
+            "switch1": [
+                "capability.switch",
+                "",
+                "Turn on/off a light...",
+                "light"
+            ]
+        }
+    },
+    "ubi[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Add your Ubi device to your SmartThings Account",
+        "filenameStr": "Ubi",
+        "inputMap": {
+            "contactSensors": [
+                "capability.contactSensor",
+                "Which Contact Sensors?",
+                "Allow a web application to control these things...",
+                "door"
+            ],
+            "locks": [
+                "capability.lock",
+                "Which Locks?",
+                "Allow a web application to control these things...",
+                "lock"
+            ],
+            "motions": [
+                "capability.motionSensor",
+                "Which Motion Sensors?",
+                "Allow a web application to control these things...",
+                "motion"
+            ],
+            "presenceSensors": [
+                "capability.presenceSensor",
+                "Which Presence Sensors?",
+                "Allow a web application to control these things...",
+                "presence"
+            ],
+            "switches": [
+                "capability.switch",
+                "Which Switches?",
+                "Allow a web application to control these things...",
+                "switch"
+            ]
+        }
+    },
+    "undead-early-warning[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Undead Early Warning",
+        "filenameStr": "Undead Early Warning",
+        "inputMap": {
+            "contacts": [
+                "capability.contactSensor",
+                "Where could they come from?",
+                "When the door opens...",
+                "door"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Turn on the lights!",
+                "light"
+            ]
+        }
+    },
+    "unlock-it-when-i-arrive[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Unlocks the door when you arrive at your location.",
+        "filenameStr": "Unlock It When I Arrive",
+        "inputMap": {
+            "lock1": [
+                "capability.lock",
+                "",
+                "Unlock the lock...",
+                "lock"
+            ],
+            "presence1": [
+                "capability.presenceSensor",
+                "Who?",
+                "When I arrive...",
+                "presence"
+            ]
+        }
+    },
+    "vacation-lighting-director[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Randomly turn on/off lights to simulate the appearance of a occupied home while you are away.",
+        "filenameStr": "Vacation Lighting Director",
+        "inputMap": {
+            "people": [
+                "capability.presenceSensor",
+                "If these people are home do not change light status",
+                "People",
+                "presence"
+            ],
+            "switches": [
+                "capability.switch",
+                "Switches",
+                "Light switches to turn on/off",
+                "light"
+            ]
+        }
+    },
+    "vinli-home-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Allows Vinli users to connect their car to SmartThings",
+        "filenameStr": "Vinli Home Connect",
+        "inputMap": {
+            "locks": [
+                "capability.lock",
+                "",
+                "Allow external service to control these things...",
+                "lock"
+            ],
+            "switches": [
+                "capability.switch",
+                "",
+                "Allow external service to control these things...",
+                "car"
+            ]
+        }
+    },
+    "virtual-device-creator[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Creates virtual devices",
+        "filenameStr": "Virtual Device Creator",
+        "inputMap": {}
+    },
+    "virtual-thermostat[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Control a space heater or window air conditioner in conjunction with any temperature sensor, like a SmartSense Multi.",
+        "filenameStr": "Virtual Thermostat",
+        "inputMap": {
+            "motion": [
+                "capability.motionSensor",
+                "Motion",
+                "When there's been movement from (optional, leave blank to not require motion)...",
+                "motion"
+            ],
+            "outlets": [
+                "capability.switch",
+                "Outlets",
+                "Select the heater or air conditioner outlet(s)... ",
+                "conditioner"
+            ],
+            "sensor": [
+                "capability.temperatureMeasurement",
+                "Sensor",
+                "Choose a temperature sensor... ",
+                "temperature"
+            ]
+        }
+    },
+    "wattvision-manager[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Monitor your whole-house energy use by connecting to your Wattvision account",
+        "filenameStr": "Wattvision Manager",
+        "inputMap": {}
+    },
+    "weather-underground-pws-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect your SmartSense Temp/Humidity sensor to your Weather Underground Personal Weather Station.",
+        "filenameStr": "Weather Underground PWS Connect",
+        "inputMap": {
+            "humidity": [
+                "capability.relativeHumidityMeasurement",
+                "Humidity",
+                "Select a sensor",
+                "humidity"
+            ],
+            "temp": [
+                "capability.temperatureMeasurement",
+                "Temperature",
+                "Select a sensor",
+                "temperature"
+            ]
+        }
+    },
+    "weather-windows[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Compares two temperatures \u2013 indoor vs outdoor, for example \u2013 then sends an alert if windows are open (or closed!). If you don't use an external temperature device, your zipcode will be used instead.",
+        "filenameStr": "Weather Windows",
+        "inputMap": {
+            "inTemp": [
+                "capability.temperatureMeasurement",
+                "Indoor",
+                "Select temperature devices to monitor...",
+                "temperature"
+            ],
+            "outTemp": [
+                "capability.temperatureMeasurement",
+                "Outdoor (optional)",
+                "Select temperature devices to monitor...",
+                "temperature"
+            ],
+            "sensors": [
+                "capability.contactSensor",
+                "",
+                "Select windows to check...",
+                "door"
+            ]
+        }
+    },
+    "weatherbug-home[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "WeatherBug Home",
+        "filenameStr": "WeatherBug Home",
+        "inputMap": {
+            "thermostatDevice": [
+                "capability.thermostat",
+                "",
+                "Select thermostats",
+                "thermostat"
+            ]
+        }
+    },
+    "when-its-going-to-rain[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Is your shed closed? Are your windows shut? Is the grill covered? Are your dogs indoors? Will the lawn and plants need to be watered tomorrow?",
+        "filenameStr": "When It's Going to Rain",
+        "inputMap": {
+            "sensors": [
+                "capability.contactSensor",
+                "",
+                "Things to check...",
+                "door"
+            ]
+        }
+    },
+    "whole-house-fan[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Toggle a whole house fan (switch) when: Outside is cooler than inside, Inside is above x temp, Thermostat is off",
+        "filenameStr": "Whole House Fan",
+        "inputMap": {
+            "contacts": [
+                "capability.contactSensor",
+                "Windows/Doors",
+                "Windows/Doors",
+                "door"
+            ],
+            "fans": [
+                "capability.switch",
+                "Vent Fan",
+                "Indoor",
+                "fan"
+            ],
+            "inTemp": [
+                "capability.temperatureMeasurement",
+                "Indoor Thermometer",
+                "Indoor",
+                "temperature"
+            ],
+            "outTemp": [
+                "capability.temperatureMeasurement",
+                "Outdoor Thermometer",
+                "Outdoor",
+                "temperature"
+            ],
+            "thermostat": [
+                "capability.thermostat",
+                "Thermostat",
+                "Thermostat",
+                "thermostat"
+            ]
+        }
+    },
+    "withings-manager[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect With Withings",
+        "filenameStr": "Withings Manager",
+        "inputMap": {}
+    },
+    "withings[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect your Withings scale to SmartThings.",
+        "filenameStr": "Withings",
+        "inputMap": {}
+    },
+    "working-from-home[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "If after a particular time of day a certain person is still at home, trigger a 'Working From Home' action.",
+        "filenameStr": "Working From Home",
+        "inputMap": {
+            "person": [
+                "capability.presenceSensor",
+                "Who?",
+                "When this person",
+                "presence"
+            ]
+        }
+    },
+    "yoics-connect[SmartThingsCommunity@SmartThingsPublic].groovy": {
+        "descriptionStr": "Connect and Control your Yoics Enabled Devices",
+        "filenameStr": "Yoics (Connect)",
+        "inputMap": {
+            "switches": [
+                "capability.switch",
+                "",
+                "Turn on which Lights when taking pictures",
+                "light"
+            ]
+        }
+    }
+}

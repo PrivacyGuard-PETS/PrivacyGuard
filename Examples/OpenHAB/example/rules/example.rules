@@ -1,0 +1,6 @@
+rule "turn off your A/C after leaving home"
+when
+    Item Sensor_Working_Room_Door_Presence received command OFF
+then
+    DaikinACUnitLR_Power.sendCommand(OFF);
+end

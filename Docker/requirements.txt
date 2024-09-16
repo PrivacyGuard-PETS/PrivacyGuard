@@ -1,0 +1,10 @@
+matplotlib
+networkx
+numpy
+openpyxl
+pandas
+pyside6
+scikit-learn
+scipy
+seaborn
+spacy

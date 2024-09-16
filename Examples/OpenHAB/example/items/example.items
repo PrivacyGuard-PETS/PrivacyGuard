@@ -1,0 +1,18 @@
+Switch		Sensor_Stairs_Upstairs_Presence		"Stairs Upstairs Presence Sensor [%s]"		{ channel="deconz:presencesensor:homezigbee:sensor-stairs-upstairs-presence:presence" }
+DateTime	Sensor_Stairs_Upstairs_LastUpdated	"Last Update [%1$td.%1$tm.%1$tY %1$tH:%1$tM]"	{ channel="deconz:presencesensor:homezigbee:sensor-stairs-upstairs-presence:last_updated" }
+DateTime	Sensor_Stairs_Upstairs_LastSeen		"Last Seen [%1$td.%1$tm.%1$tY %1$tH:%1$tM]"	{ channel="deconz:presencesensor:homezigbee:sensor-stairs-upstairs-presence:last_seen" }
+Number		Sensor_Stairs_Upstairs_BatteryLevel	"Battery Level [%d %%]"				{ channel="deconz:presencesensor:homezigbee:sensor-stairs-upstairs-presence:battery_level" }
+Switch		Sensor_Stairs_Upstairs_BatteryLow	"Battery Low"					{ channel="deconz:presencesensor:homezigbee:sensor-stairs-upstairs-presence:battery_low" }
+
+Switch		Sensor_Working_Room_Door_Presence	"Working Room Door Presence Sensor [%s]"	{ channel="deconz:presencesensor:homezigbee:sensor-working-room-door-presence:presence" }
+DateTime	Sensor_Working_Room_Door_LastUpdated	"Last Update [%1$td.%1$tm.%1$tY %1$tH:%1$tM]"	{ channel="deconz:presencesensor:homezigbee:sensor-working-room-door-presence:last_updated" }
+DateTime	Sensor_Working_Room_Door_LastSeen	"Last Seen [%1$td.%1$tm.%1$tY %1$tH:%1$tM]"	{ channel="deconz:presencesensor:homezigbee:sensor-working-room-door-presence:last_seen" }
+Number		Sensor_Working_Room_Door_BatteryLevel	"Battery Level [%d %%]"				{ channel="deconz:presencesensor:homezigbee:sensor-working-room-door-presence:battery_level" }
+Switch		Sensor_Working_Room_Door_BatteryLow	"Battery Low"					{ channel="deconz:presencesensor:homezigbee:sensor-working-room-door-presence:battery_low" }
+
+Switch DaikinACUnitLR_Power                "Power"                                                 { channel="daikin:ac_unit:192_168_0_121:power" }
+Number DaikinACUnitLR_SetPoint             "SetPoint"                                    { channel="daikin:ac_unit:192_168_0_121:settemp" }
+String DaikinACUnitLR_Mode                 "Mode"                 <ac_mode>                          { channel="daikin:ac_unit:192_168_0_121:mode" }
+String DaikinACUnitLR_Fan                  "Fan"              <fan>                              { channel="daikin:ac_unit:192_168_0_121:fanspeed" }
+Number DaikinACUnitLR_IndoorTemperatureF   "IndoorTemp"                                         { channel="daikin:ac_unit:192_168_0_121:indoortemp" }
+Number DaikinACUnitLR_OutdoorTemperatureF  "OutdoorTemp"               [ "CurrentTemperature" ] { channel="daikin:ac_unit:192_168_0_121:outdoortemp" }

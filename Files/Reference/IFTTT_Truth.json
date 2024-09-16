@@ -1,0 +1,2477 @@
+{
+    "Nh3UXYL9-shutter-up-down-with-button-widget": {
+        "description": "This applet enable users to move UP/DOWN a shutter with a button widget",
+        "friendly_id": "Nh3UXYL9-shutter-up-down-with-button-widget",
+        "name": "Shutter UP/DOWN with button widget",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "up down action blind",
+                "name": "Roller shutter control",
+                "description": "Move up / down a roller shutter",
+                "service_slug": "view_prod",
+                "service_name": "Vimar VIEW",
+                "device": "window",
+                "state": ""
+            }
+        ]
+    },
+    "VBFhfmr7-get-notified-if-refrigerator-door-is-left-open-too-long": {
+        "description": "Your Philips Hue lights will change color to blue and you will receive a notification, if refrigerator door is left open too long.\n",
+        "friendly_id": "VBFhfmr7-get-notified-if-refrigerator-door-is-left-open-too-long",
+        "name": "Get notified if refrigerator door is left open too long",
+        "triggers": [
+            {
+                "id": "refrigerator door opened too long",
+                "name": "Refrigerator door open too long",
+                "description": "This trigger fires every time your refrigerator door was left open too long.",
+                "service_slug": "hc_fridge",
+                "service_name": "Home Connect Fridge Freezer",
+                "device": "refrigerator",
+                "state": "open"
+            }
+        ],
+        "actions": [
+            {
+                "id": "send notification",
+                "name": "Send a notification from the IFTTT app",
+                "description": "This action will send a notification to your devices from the IFTTT app.",
+                "service_slug": "if_notifications",
+                "service_name": "Notifications",
+                "device": "notification",
+                "state": ""
+            },
+            {
+                "id": "blink all hue",
+                "name": "Blink lights",
+                "description": "This Action will briefly turn your hue lights off then back on.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "F6aLXwhF-remind-me-when-a-google-calendar-event-is-starting-soon": {
+        "description": "When a Google Calendar event is within 15 minutes away, your Nanoleaf Aurora will change to the color you select. Most useful if your Aurora is in the same room where you work =)",
+        "friendly_id": "F6aLXwhF-remind-me-when-a-google-calendar-event-is-starting-soon",
+        "name": "Remind me when a Google Calendar event is starting soon",
+        "triggers": [
+            {
+                "id": "any event starts",
+                "name": "Any event starts",
+                "description": "This Trigger fires a set number of minutes before the starting time of any event on your Google Calendar.",
+                "service_slug": "google_calendar",
+                "service_name": "Google Calendar",
+                "device": "calendar",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "change color request",
+                "name": "Change Nanoleaf Light Panels or Canvas color",
+                "description": "This action will change the color of the Nanoleaf Light Panels or Canvas that you select from the device dropdown on this screen. You can enter either a hex value or a keyword for the color. Need help choosing a color? Bookmark nanoleaf.me/ifttt for easy access to a list and color picker.",
+                "service_slug": "nanoleaf",
+                "service_name": "Nanoleaf Smarter Series",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "TkDGUsgM-if-i-sleep-over-8-hours-zap-me": {
+        "description": "I don't want to sleep more then 8 hours! ",
+        "friendly_id": "TkDGUsgM-if-i-sleep-over-8-hours-zap-me",
+        "name": "If I sleep over 8 hours, Zap me ",
+        "triggers": [
+            {
+                "id": "sleep duration above",
+                "name": "Sleep duration above",
+                "description": "This Trigger fires every time your Misfit Shine logs sleep with a duration above the target hours you specify.",
+                "service_slug": "misfit",
+                "service_name": "Misfit",
+                "device": "sleep",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "zap",
+                "name": "Zap",
+                "description": "This Action will give you a mild zap from your Pavlok.",
+                "service_slug": "pavlok",
+                "service_name": "PAVLOK",
+                "device": "alarm",
+                "state": ""
+            }
+        ]
+    },
+    "zceYWGqD-arm-blink-with-google-home": {
+        "description": "Tell Your Google Home to \"Arm Blink\"",
+        "friendly_id": "zceYWGqD-arm-blink-with-google-home",
+        "name": "Arm Blink With Google Home",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "network arm",
+                "name": "Arm system",
+                "description": "This Action will set your Blink system to Armed.",
+                "service_slug": "blink_eu",
+                "service_name": "Blink (Europe)",
+                "device": "camera",
+                "state": "on"
+            }
+        ]
+    },
+    "mF3MGHUf-get-notified-when-the-doorbell-rings": {
+        "description": "Get a notification on your Kronaby watch whenever someone rings your Ring Doorbell.",
+        "friendly_id": "mF3MGHUf-get-notified-when-the-doorbell-rings",
+        "name": "Get notified when the doorbell rings",
+        "triggers": [
+            {
+                "id": "new ding",
+                "name": "New Ring Detected",
+                "description": "This Trigger fires every time somebody rings your Ring Doorbell.",
+                "service_slug": "ring",
+                "service_name": "Ring",
+                "device": "doorbell",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "notify",
+                "name": "Send a notification to your Kronaby watch",
+                "description": "This action will send a vibration to your Kronaby watch",
+                "service_slug": "kronaby",
+                "service_name": "Kronaby",
+                "device": "watch",
+                "state": ""
+            }
+        ]
+    },
+    "C4hCGRqW-set-the-temp-of-a-nest-thermostat-with-a-notion-sensor": {
+        "description": "Automatically set your Nest Thermostat to a certain temperature when a Notion Sensor detects it's too hot or too cold.",
+        "friendly_id": "C4hCGRqW-set-the-temp-of-a-nest-thermostat-with-a-notion-sensor",
+        "name": "Set the temp of a Nest Thermostat with a Notion Sensor",
+        "triggers": [
+            {
+                "id": "temperature",
+                "name": "Temperature crosses a threshold",
+                "description": "This trigger fires when the current temperature goes above or below your set temperature thresholds.",
+                "service_slug": "notion",
+                "service_name": "Notion",
+                "device": "temperature",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set temperature",
+                "name": "Set temperature",
+                "description": "This Action will set a Nest Thermostat to the temperature you specify. NOTE: works only when Nest is set to Home.",
+                "service_slug": "nest_thermostat",
+                "service_name": "Nest Thermostat",
+                "device": "thermostat",
+                "state": ""
+            }
+        ]
+    },
+    "QfQEjDqY-boil-your-ikettle-with-button": {
+        "description": "Add a button widget to your device to boil your iKettle. ",
+        "friendly_id": "QfQEjDqY-boil-your-ikettle-with-button",
+        "name": "Boil your iKettle with Button",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "boil kettle",
+                "name": "Boil the kettle",
+                "description": "This action will boil a Smarter iKettle 3.0.",
+                "service_slug": "smarter",
+                "service_name": "Smarter",
+                "device": "boiler",
+                "state": ""
+            }
+        ]
+    },
+    "SsJXUegv-turn-off-your-wiz-lights-with-a-simple-push-of-a-physical-button": {
+        "description": "Click, double click, or hold a Flic Smart Button to turn your WiZ lights off. You choose exactly which lights to control. Simple enough for anyone to use! ",
+        "friendly_id": "SsJXUegv-turn-off-your-wiz-lights-with-a-simple-push-of-a-physical-button",
+        "name": "Turn off your WiZ lights with a simple push of a (physical!) button",
+        "triggers": [
+            {
+                "id": "click",
+                "name": "Flic is clicked",
+                "description": "This Trigger fires every time you click the selected Flic.",
+                "service_slug": "flic",
+                "service_name": "Flic",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn off",
+                "name": "Turn off the light",
+                "description": "This action will turn off the selected light(s).",
+                "service_slug": "wiz",
+                "service_name": "WiZ",
+                "device": "light",
+                "state": "off"
+            }
+        ]
+    },
+    "KGsQeC6d-close-all-your-garage-doors-when-it-starts-raining": {
+        "description": "Close all your Tailwind garage doors when it starts raining",
+        "friendly_id": "KGsQeC6d-close-all-your-garage-doors-when-it-starts-raining",
+        "name": "Close all your garage doors when it starts raining",
+        "triggers": [
+            {
+                "id": "current condition is",
+                "name": "Current condition changes to",
+                "description": "This Trigger monitors changes in the current weather condition. When one of those conditions is met the Trigger fires. Currently only these simple conditions are supported: Rain, Snow, Cloudy, Clear. ",
+                "service_slug": "weather",
+                "service_name": "Weather Underground",
+                "device": "weather",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "close all garage door",
+                "name": "Close all garage doors",
+                "description": "This action will close your all garage door from selected device",
+                "service_slug": "tailwind",
+                "service_name": "Tailwind",
+                "device": "door",
+                "state": "close"
+            }
+        ]
+    },
+    "zRgQXChf-turn-on-your-plug-at-sunrise": {
+        "description": "When the sun rises, your plug will be turned on.",
+        "friendly_id": "zRgQXChf-turn-on-your-plug-at-sunrise",
+        "name": "Turn on your plug at sunrise",
+        "triggers": [
+            {
+                "id": "sun rises",
+                "name": "Sunrise",
+                "description": "This Trigger fires within 15 minutes of the sunrise in your location.",
+                "service_slug": "weather",
+                "service_name": "Weather Underground",
+                "device": "weather",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set plug on",
+                "name": "Turn on plug for a specific duration",
+                "description": "This Action will turn your Hive plug on for a specific duration.",
+                "service_slug": "hive_active_plug",
+                "service_name": "Hive Active Plug\u2122",
+                "device": "outlet",
+                "state": "on"
+            }
+        ]
+    },
+    "ATR9EuDh-blink-lights-when-it-starts-snowing": {
+        "description": "Don't miss those first snow flakes! Get notified with a gentle blink of your LIFX lights.",
+        "friendly_id": "ATR9EuDh-blink-lights-when-it-starts-snowing",
+        "name": "Blink lights when it starts snowing",
+        "triggers": [
+            {
+                "id": "current condition is",
+                "name": "Current condition changes to",
+                "description": "This Trigger monitors changes in the current weather condition. When one of those conditions is met the Trigger fires. Currently only these simple conditions are supported: Rain, Snow, Cloudy, Clear. ",
+                "service_slug": "weather",
+                "service_name": "Weather Underground",
+                "device": "weather",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "blink",
+                "name": "Blink lights",
+                "description": "This Action will make your lights quickly blink the color of your choice.",
+                "service_slug": "lifx",
+                "service_name": "LIFX",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "tbCXU9pg-blink-hue-when-air-quality-goes-bad": {
+        "description": "Create your own visual alert by blinking your Philips Hue lights when air quality goes bad.",
+        "friendly_id": "tbCXU9pg-blink-hue-when-air-quality-goes-bad",
+        "name": "Blink Hue when air quality goes bad",
+        "triggers": [
+            {
+                "id": "sensor notification",
+                "name": "uHoo air quality alert",
+                "description": "This trigger fires when your air quality goes above or below the target level.",
+                "service_slug": "uhoo",
+                "service_name": "uHoo",
+                "device": "conditioner",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "blink all hue",
+                "name": "Blink lights",
+                "description": "This Action will briefly turn your hue lights off then back on.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "XMhRiyEn-close-my-garage-door-at-9pm-if-open": {
+        "description": "Use beam to make sure that your garage door is closed by 9pm. This can be used to make sure you do not leave your door open all night accidentally. ",
+        "friendly_id": "XMhRiyEn-close-my-garage-door-at-9pm-if-open",
+        "name": "Close my garage door at 9pm, if open",
+        "triggers": [
+            {
+                "id": "every day at",
+                "name": "Every day at",
+                "description": "This Trigger fires every single day at a specific time set by you.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "close garage door",
+                "name": "Close garage door",
+                "description": "This action will ask the controller to close the garage door you specify. If the garage door is already closed, then the door will remain closed.",
+                "service_slug": "beam",
+                "service_name": "beam",
+                "device": "door",
+                "state": "close"
+            }
+        ]
+    },
+    "bdjunRhS-if-i-sleep-for-too-long-blink-all-lights-to-wake-me-up-hue-fitbit": {
+        "description": "If I sleep for too long, blink all lights to wake me up. #Hue #Fitbit",
+        "friendly_id": "bdjunRhS-if-i-sleep-for-too-long-blink-all-lights-to-wake-me-up-hue-fitbit",
+        "name": "If I sleep for too long, blink all lights to wake me up. #Hue #Fitbit",
+        "triggers": [
+            {
+                "id": "sleep-duration-above",
+                "name": "Sleep duration above",
+                "description": "This Trigger fires every time you log sleep above the target hours you specify.",
+                "service_slug": "fitbit",
+                "service_name": "Fitbit",
+                "device": "sleep",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "blink all hue",
+                "name": "Blink lights",
+                "description": "This Action will briefly turn your hue lights off then back on.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "QdQF4isU-turn-on-your-hive-view-monitoring-when-you-leave-home": {
+        "description": "Your Hive View monitoring will turn on when you leave an area you chose.",
+        "friendly_id": "QdQF4isU-turn-on-your-hive-view-monitoring-when-you-leave-home",
+        "name": "Turn on your Hive View monitoring when you leave home",
+        "triggers": [
+            {
+                "id": "exit region location",
+                "name": "You exit an area",
+                "description": "This Trigger fires every time you exit an area you specify.",
+                "service_slug": "location",
+                "service_name": "Location",
+                "device": "location",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "camera monitoring on",
+                "name": "Turn on Hive View monitoring",
+                "description": "This action will turn your Hive View camera monitoring on.",
+                "service_slug": "hive_view",
+                "service_name": "Hive View",
+                "device": "camera",
+                "state": "on"
+            }
+        ]
+    },
+    "TkfU8qNX-turn-off-security-with-button-widget": {
+        "description": "Turn off security with button widget",
+        "friendly_id": "TkfU8qNX-turn-off-security-with-button-widget",
+        "name": "Turn off security with button widget",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "switch all security off",
+                "name": "GATE - Switch all security off",
+                "description": "This Action will switch off all your security devices.",
+                "service_slug": "wattio_smarthome",
+                "service_name": "Wattio SmartHome",
+                "device": "camera",
+                "state": "off"
+            }
+        ]
+    },
+    "LeSipzGU-ask-google-assistant-to-send-a-command-to-my-robot": {
+        "description": "Ask Google Assistant to send a command to my robot.",
+        "friendly_id": "LeSipzGU-ask-google-assistant-to-send-a-command-to-my-robot",
+        "name": "Ask Google Assistant to send a command to my robot",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "command",
+                "name": "Send command",
+                "description": "This action will send a command to the robot",
+                "service_slug": "electrolux",
+                "service_name": "Purei9",
+                "device": "cleaner",
+                "state": ""
+            }
+        ]
+    },
+    "drshpKzT-amazon-echo-alarm-wemo-on": {
+        "description": "This recipe controls the Amazon Echo alarm feature and activates the Wemo Light bulbs to the ON position.",
+        "friendly_id": "drshpKzT-amazon-echo-alarm-wemo-on",
+        "name": "Amazon Echo Alarm - Wemo On",
+        "triggers": [
+            {
+                "id": "alarm fired",
+                "name": "Your Alarm goes off",
+                "description": "This Trigger fires every time your alarm goes off.",
+                "service_slug": "amazon_alexa",
+                "service_name": "Amazon Alexa",
+                "device": "alarm",
+                "state": "off"
+            }
+        ],
+        "actions": [
+            {
+                "id": "led turn on",
+                "name": "Turn on",
+                "description": "Turns on the selected WeMo light. If it is already on it stays on.",
+                "service_slug": "wemo_lighting",
+                "service_name": "WeMo Lighting",
+                "device": "light",
+                "state": "on"
+            }
+        ]
+    },
+    "qEhxsAdD-arm-blink-when-your-vacation-starts": {
+        "description": "When Google Calendar event \"vacation\" (or your custom name) starts, arm Blink",
+        "friendly_id": "qEhxsAdD-arm-blink-when-your-vacation-starts",
+        "name": "Arm Blink When Your Vacation Starts",
+        "triggers": [
+            {
+                "id": "event from search starts",
+                "name": "Event from search starts",
+                "description": "This Trigger fires a set number of minutes before the starting time of an event on your Google Calendar that contains a specific keyword or phrase. The search looks at the event\u2019s Title, Description, and Location.",
+                "service_slug": "google_calendar",
+                "service_name": "Google Calendar",
+                "device": "calendar",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "network arm",
+                "name": "Arm system",
+                "description": "This Action will set your Blink system to Armed.",
+                "service_slug": "blink",
+                "service_name": "Blink",
+                "device": "camera",
+                "state": "on"
+            }
+        ]
+    },
+    "ba9sDAMm-flash-hue-light-if-radon-level-is-high": {
+        "description": "If your Airthings device detects high radon levels above the set threshold, your Hue light will briefly blink.",
+        "friendly_id": "ba9sDAMm-flash-hue-light-if-radon-level-is-high",
+        "name": "Flash Hue Light if radon level is high",
+        "triggers": [
+            {
+                "id": "radon-above",
+                "name": "Radon level above threshold",
+                "description": "This trigger fires when the radon level for a device rises above the provided threshold.",
+                "service_slug": "airthings",
+                "service_name": "Airthings",
+                "device": "radiator",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "blink all hue",
+                "name": "Blink lights",
+                "description": "This Action will briefly turn your hue lights off then back on.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "iBWsxYgD-set-your-air-purifier-to-sleep-mode-at-night": {
+        "description": "Automatically set your air purifier to sleep mode at night and enjoy its quietness and air-cleaning capability.",
+        "friendly_id": "iBWsxYgD-set-your-air-purifier-to-sleep-mode-at-night",
+        "name": "Set your air purifier to Sleep Mode at night",
+        "triggers": [
+            {
+                "id": "every day at",
+                "name": "Every day at",
+                "description": "This Trigger fires every single day at a specific time set by you.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "change mode",
+                "name": "Change mode",
+                "description": "This action changes modes (Auto, Sleep).",
+                "service_slug": "vesyncIftttAirPurifier",
+                "service_name": "Levoit Air Purifier",
+                "device": "purifier",
+                "state": ""
+            }
+        ]
+    },
+    "dqYKE64Q-turn-your-light-green-when-the-co2-intensity-is-lowest": {
+        "description": "This applet will change the color of a Philips Hue light bulb into green when the hour with the lowest CO2 intensity in the electricity production between a starting time and a finish time is reached",
+        "friendly_id": "dqYKE64Q-turn-your-light-green-when-the-co2-intensity-is-lowest",
+        "name": "Turn your light green when the CO2 intensity is lowest",
+        "triggers": [
+            {
+                "id": "lowcarbon",
+                "name": "Lowest CO2 intensity in the electricity",
+                "description": "This trigger fires when the CO2 intensity in the electricity production is lowest between a starting time and a finish time and for a duration specified by you.",
+                "service_slug": "watts",
+                "service_name": "Watts",
+                "device": "dioxide",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set color all hue",
+                "name": "Change color",
+                "description": "This Action will change the color of your hue lights. NOTE: Accepts color names and CSS hex color values. Defaults to white if no color match is found. NOTE: not compatible with hue lux bulbs.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "Gh5DixRE-morning-arm-at-a-specific-time": {
+        "description": "Fail Safe Arming if you forget when you leave to Work",
+        "friendly_id": "Gh5DixRE-morning-arm-at-a-specific-time",
+        "name": "Morning Arm at a Specific Time",
+        "triggers": [
+            {
+                "id": "every weekday at",
+                "name": "Every day of the week at",
+                "description": "This Trigger fires only on specific days of the week at the time you provide.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "start arming mode",
+                "name": "Start arming a mode",
+                "description": "This Action will arm a mode at your location of choice (home, vacation home, etc).",
+                "service_slug": "scoutalarm",
+                "service_name": "Scout Alarm",
+                "device": "alarm",
+                "state": ""
+            }
+        ]
+    },
+    "iw4nV5j6-tell-google-assistant-to-start-your-favorite-dishwasher-program": {
+        "description": "With a simple phrase Google Assistant will start your dishwasher immediately with your favorite program.",
+        "friendly_id": "iw4nV5j6-tell-google-assistant-to-start-your-favorite-dishwasher-program",
+        "name": "Tell Google Assistant to start your favorite dishwasher program",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "dishwasher start program",
+                "name": "Start program",
+                "description": "This action will start the selected dishwasher program.",
+                "service_slug": "hc_dishwasher",
+                "service_name": "Home Connect Dishwasher",
+                "device": "dishwasher",
+                "state": ""
+            }
+        ]
+    },
+    "QMscxWZD-monitor-stock-prices-with-das-keyboard": {
+        "description": "Get a signal on your Das Keyboard at the end of the day indicating the market closing price of a specified stock. ",
+        "friendly_id": "QMscxWZD-monitor-stock-prices-with-das-keyboard",
+        "name": "Monitor stock prices with Das Keyboard",
+        "triggers": [
+            {
+                "id": "price at close stocks",
+                "name": "Price at close",
+                "description": "This Trigger retrieves the closing price of a stock you specify every time the market closes.",
+                "service_slug": "finance",
+                "service_name": "Finance",
+                "device": "price",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "signals",
+                "name": "Create a Signal for Q Device (one zone)",
+                "description": "This action will create a Signal based on the information you receive.",
+                "service_slug": "daskeyboardq",
+                "service_name": "Das Keyboard Q",
+                "device": "keyboard",
+                "state": ""
+            }
+        ]
+    },
+    "SWhBZ2sw-track-new-ios-photos-on-your-welltory-dashboard": {
+        "description": "Find out how your photos correlate with other lifestyle events",
+        "friendly_id": "SWhBZ2sw-track-new-ios-photos-on-your-welltory-dashboard",
+        "name": "Track new iOS Photos on your Welltory Dashboard",
+        "triggers": [
+            {
+                "id": "new photo in camera roll",
+                "name": "Any new photo",
+                "description": "This Trigger fires every time a new photo is added to your camera roll.",
+                "service_slug": "ios_photos",
+                "service_name": "iOS Photos",
+                "device": "camera",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "send event",
+                "name": "Send event",
+                "description": "This action will send info about events you can track in whole numbers to Welltory.",
+                "service_slug": "welltory",
+                "service_name": "Welltory",
+                "device": "event",
+                "state": ""
+            }
+        ]
+    },
+    "mYxea4V9-get-notified-when-your-phone-battery-is-running-low": {
+        "description": "Your Jaguar watch will notify you when your Android device\u2019s battery drops below 15%. ",
+        "friendly_id": "mYxea4V9-get-notified-when-your-phone-battery-is-running-low",
+        "name": "Get notified when your phone battery is running low",
+        "triggers": [
+            {
+                "id": "battery low",
+                "name": "Battery drops below 15%",
+                "description": "This Trigger fires every time your Android device's battery drops below 15%.",
+                "service_slug": "android_battery",
+                "service_name": "Android Battery",
+                "device": "battery",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "notify",
+                "name": "Send a notification to your Jaguar watch",
+                "description": "This action will send a vibration to your Jaguar watch",
+                "service_slug": "jaguar_watches",
+                "service_name": "Jaguar Watches",
+                "device": "watch",
+                "state": ""
+            }
+        ]
+    },
+    "LfWxj5zA-tell-alexa-to-send-help": {
+        "description": "When you need emergency help, say \u201cAlexa, tell SafeTrek to send help!\u201d and our certified Noonlight dispatchers will automatically send emergency services to your home. Cancel anytime with your 4 digit PIN via text or call. ",
+        "friendly_id": "LfWxj5zA-tell-alexa-to-send-help",
+        "name": "Tell Alexa to send help",
+        "triggers": [
+            {
+                "id": "custom utterance uttered",
+                "name": "Say a specific phrase",
+                "description": "This trigger fires every time you say \"Alexa trigger\" + the phrase that you have defined. For instance, if you set \"party time\" as the phrase, you can say \"Alexa trigger party time\" to have your lights loop colors.",
+                "service_slug": "amazon_alexa",
+                "service_name": "Amazon Alexa",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "alert address",
+                "name": "Trigger alarm with address",
+                "description": "This action will send your address to Noonlight dispatchers alerting them of an emergency.",
+                "service_slug": "safetrek",
+                "service_name": "Noonlight",
+                "device": "alarm",
+                "state": ""
+            }
+        ]
+    },
+    "Fv3nzH5R-toggle-hue-lights-with-the-click-of-a-button": {
+        "description": "Toggle Hue Lights with the click of a button",
+        "friendly_id": "Fv3nzH5R-toggle-hue-lights-with-the-click-of-a-button",
+        "name": "Toggle Hue Lights with the click of a button",
+        "triggers": [
+            {
+                "id": "action button click",
+                "name": "Action Button Pressed",
+                "description": "This Trigger fires every time you press the action button on LaMetric Time.",
+                "service_slug": "lametric",
+                "service_name": "LaMetric",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "toggle all hue",
+                "name": "Toggle lights on/off",
+                "description": "This Action will toggle your hue lights on or off.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "iXvbei9E-today-is-a-public-holiday-let-me-sleep-in": {
+        "description": "Tell your LIVISI Home that today is a public holiday. Use Google Calendar to set a State. You have to create a public holiday calendar first. This calendar must contain the public holidays specified to your region (e.g. Bayern , Hessen). The LIVISI Home State will be reset after 24 hours.",
+        "friendly_id": "iXvbei9E-today-is-a-public-holiday-let-me-sleep-in",
+        "name": "Today is a public holiday! Let me sleep in",
+        "triggers": [
+            {
+                "id": "any event starts",
+                "name": "Any event starts",
+                "description": "This Trigger fires a set number of minutes before the starting time of any event on your Google Calendar.",
+                "service_slug": "google_calendar",
+                "service_name": "Google Calendar",
+                "device": "calendar",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "device variableactuator action true",
+                "name": "Set State to 'Yes'",
+                "description": "This action will set a innogy SmartHome State to 'Yes'.",
+                "service_slug": "livisi",
+                "service_name": "LIVISI Home",
+                "device": "presence",
+                "state": ""
+            }
+        ]
+    },
+    "zY6KkTUV-if-nest-protect-detects-smoke-set-your-withings-home-to-active-monitoring": {
+        "description": "Make sure you get access to your live stream when you get a smoke alert coming from your Nest Protect smoke alarm.",
+        "friendly_id": "zY6KkTUV-if-nest-protect-detects-smoke-set-your-withings-home-to-active-monitoring",
+        "name": "if Nest Protect detects smoke, set your Withings Home to Active Monitoring",
+        "triggers": [
+            {
+                "id": "smoke-alarm-warning",
+                "name": "Smoke alarm warning",
+                "description": "This Trigger fires every time the Nest Protect you specify detects warning smoke levels.",
+                "service_slug": "nest_protect",
+                "service_name": "Nest Protect",
+                "device": "smoke",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "changemode",
+                "name": "Change camera mode",
+                "description": "This Action will change your Withings Home camera mode. To get more information about camera modes, you can go to your app Control Center.",
+                "service_slug": "withingshome",
+                "service_name": "Withings Home",
+                "device": "camera",
+                "state": ""
+            }
+        ]
+    },
+    "fqeUbJ68-track-new-android-photos-on-your-welltory-dashboard": {
+        "description": "Find out how your photos correlate with other lifestyle events",
+        "friendly_id": "fqeUbJ68-track-new-android-photos-on-your-welltory-dashboard",
+        "name": "Track new Android Photos on your Welltory Dashboard",
+        "triggers": [
+            {
+                "id": "android new photo",
+                "name": "Any new photo",
+                "description": "This Trigger fires every time a new photo is taken on your Android device.",
+                "service_slug": "android_photos",
+                "service_name": "Android Photos",
+                "device": "camera",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "send event",
+                "name": "Send event",
+                "description": "This action will send info about events you can track in whole numbers to Welltory.",
+                "service_slug": "welltory",
+                "service_name": "Welltory",
+                "device": "event",
+                "state": ""
+            }
+        ]
+    },
+    "fSedikYf-switch-on-a-device-using-alexa": {
+        "description": "Simply say \"Alexa trigger\" and then the phrase you set below.",
+        "friendly_id": "fSedikYf-switch-on-a-device-using-alexa",
+        "name": "Switch on a device using Alexa",
+        "triggers": [
+            {
+                "id": "custom utterance uttered",
+                "name": "Say a specific phrase",
+                "description": "This trigger fires every time you say \"Alexa trigger\" + the phrase that you have defined. For instance, if you set \"party time\" as the phrase, you can say \"Alexa trigger party time\" to have your lights loop colors.",
+                "service_slug": "amazon_alexa",
+                "service_name": "Amazon Alexa",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "switchon",
+                "name": "Switch on",
+                "description": "This Action will turn on your devices that support switching on.",
+                "service_slug": "hager_iot",
+                "service_name": "Hager IoT",
+                "device": "switch",
+                "state": "on"
+            }
+        ]
+    },
+    "V4rmqUJs-when-the-uv-index-rises-too-high-launch-a-connexoon-scenario": {
+        "description": "When the UV index rises to a certain level, launch a Connexoon scenario you chose.\nEx: You can lower down your shades to avoid too much sunlight.",
+        "friendly_id": "V4rmqUJs-when-the-uv-index-rises-too-high-launch-a-connexoon-scenario",
+        "name": "When the UV index rises too high, launch a Connexoon scenario ",
+        "triggers": [
+            {
+                "id": "current uv index rises above",
+                "name": "Current UV index rises above",
+                "description": "This Trigger monitors your local UV levels and fires every time the UV index rises above the value you specify (0-16).",
+                "service_slug": "weather",
+                "service_name": "Weather Underground",
+                "device": "weather",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "launch action group",
+                "name": "Launch a Connexoon scenario",
+                "description": "This action will launch a Connexoon scenario.",
+                "service_slug": "somfy_connexoon_asia_oceania",
+                "service_name": "Connexoon Asia & Oceania",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "LLEGgf9R-turn-switch-off-when-you-leave-the-house": {
+        "description": "Turn Switch off when you leave the house",
+        "friendly_id": "LLEGgf9R-turn-switch-off-when-you-leave-the-house",
+        "name": "Turn Switch off when you leave the house",
+        "triggers": [
+            {
+                "id": "exit region location",
+                "name": "You exit an area",
+                "description": "This Trigger fires every time you exit an area you specify.",
+                "service_slug": "location",
+                "service_name": "Location",
+                "device": "location",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "off",
+                "name": "myStrom device off",
+                "description": "This Action will turn OFF one of your myStrom devices.",
+                "service_slug": "mystrom",
+                "service_name": "myStrom",
+                "device": "switch",
+                "state": "off"
+            }
+        ]
+    },
+    "w8X5UYbK-if-new-email-then-blink-hue": {
+        "description": "You are watching a movie at home, phone is off but you want to know when someone sends you an Email. Let your HUE notify you.",
+        "friendly_id": "w8X5UYbK-if-new-email-then-blink-hue",
+        "name": "If new Email then blink HUE",
+        "triggers": [
+            {
+                "id": "new-email",
+                "name": "Any new email",
+                "description": "This Trigger fires when you receive any new email in your inbox.",
+                "service_slug": "office_365_mail",
+                "service_name": "Office 365 Mail",
+                "device": "email",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "blink all hue",
+                "name": "Blink lights",
+                "description": "This Action will briefly turn your hue lights off then back on.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "aWth2Lmu-mute-tv-with-google-assistant": {
+        "description": "This Applet will mute your BroadLink TV when you ask Google Assistant to: Mute TV.",
+        "friendly_id": "aWth2Lmu-mute-tv-with-google-assistant",
+        "name": "\"Mute TV\"with Google Assistant",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "mute",
+                "name": "Mute adjustment",
+                "description": "This action adjust your device to mute or unmute",
+                "service_slug": "broadlink",
+                "service_name": "BroadLink",
+                "device": "tv",
+                "state": ""
+            }
+        ]
+    },
+    "mHXTgVtd-press-a-button-to-beep-a-wireless-tag-on-your-keys": {
+        "description": "This Applet makes a widget that you can add to the home screen on your phone. When you press the button, your Wireless Tag will beep until you find your keys and move them! ",
+        "friendly_id": "mHXTgVtd-press-a-button-to-beep-a-wireless-tag-on-your-keys",
+        "name": "Press a button to beep a Wireless Tag on your keys",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "beep",
+                "name": "Beep a tag",
+                "description": "This Action will beep the tag. NOTE: Only compatible with the Motion Sensor Tags with buzzer.",
+                "service_slug": "wirelesstag",
+                "service_name": "Wireless Tag",
+                "device": "tag",
+                "state": ""
+            }
+        ]
+    },
+    "rAU6Jnst-set-a-thermostat-zone-temperature": {
+        "description": "Quickly set the target temperature of a zone on your Honeywell Single-zone Thermostat. Be sure to only input digits.",
+        "friendly_id": "rAU6Jnst-set-a-thermostat-zone-temperature",
+        "name": "Set a thermostat zone temperature",
+        "triggers": [
+            {
+                "id": "do note new command common",
+                "name": "Any new note",
+                "description": "This trigger fires every time you submit any new note.",
+                "service_slug": "do_note",
+                "service_name": "Note widget",
+                "device": "app",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "setzonetemperature",
+                "name": "Set a zone temperature",
+                "description": "This action sets an override on target temperature of one of your zones. This can either be permanently set or just for a number of hours.",
+                "service_slug": "honeywell_round",
+                "service_name": "Honeywell Single-zone Thermostat",
+                "device": "temperature",
+                "state": ""
+            }
+        ]
+    },
+    "yjFYdXEv-use-google-assistant-to-turn-on-comfort-mode": {
+        "description": "Activate Comfort Mode on Ambi Climate with your voice via Google Assistant. Choose any phrase you wish to to activate this applet.",
+        "friendly_id": "yjFYdXEv-use-google-assistant-to-turn-on-comfort-mode",
+        "name": "Use Google Assistant to turn on Comfort Mode",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "device mode comfort",
+                "name": "Run your A/C in comfort mode",
+                "description": "This Action will turn on your A/C in the specified room, and run it in Comfort mode.",
+                "service_slug": "ambiclimate",
+                "service_name": "Ambi Climate",
+                "device": "thermostat",
+                "state": ""
+            }
+        ]
+    },
+    "xzKiB8Vj-when-my-meeting-is-about-to-start-blink-an-led-on-my-desk": {
+        "description": "This is a visual indicator to let you know when a scheduled meeting on your calendar is about to start.",
+        "friendly_id": "xzKiB8Vj-when-my-meeting-is-about-to-start-blink-an-led-on-my-desk",
+        "name": "When my meeting is about to start, blink an LED on my desk",
+        "triggers": [
+            {
+                "id": "any event starts",
+                "name": "Any event starts",
+                "description": "This Trigger fires a set number of minutes before the starting time of any event on your Google Calendar.",
+                "service_slug": "google_calendar",
+                "service_name": "Google Calendar",
+                "device": "calendar",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set output",
+                "name": "Set Output Level",
+                "description": "This Action will set the output of your cloudBit to the specified level for the specified length of time.",
+                "service_slug": "littlebits",
+                "service_name": "littleBits",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "DiAeTfgY-start-logitech-circle-recording-button-widget": {
+        "description": "When you press the button a new Logitech Circle camera recording will be started.",
+        "friendly_id": "DiAeTfgY-start-logitech-circle-recording-button-widget",
+        "name": "Start Logitech Circle Recording Button Widget",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "start recording",
+                "name": "Start recording",
+                "description": "This action will start a new recording.",
+                "service_slug": "logitech_circle",
+                "service_name": "Logitech Circle ",
+                "device": "camera",
+                "state": ""
+            }
+        ]
+    },
+    "yFLHJCbB-turn-on-hue-lights-with-a-foursquare-checkin-at-home": {
+        "description": "This will turn on your Phillips Hue light(s) when you checkin at any Foursquare venue categorized as \"Home (Private)\".",
+        "friendly_id": "yFLHJCbB-turn-on-hue-lights-with-a-foursquare-checkin-at-home",
+        "name": "Turn on Hue lights with a Foursquare checkin at home",
+        "triggers": [
+            {
+                "id": "new checkin at category",
+                "name": "New check-in at category",
+                "description": "This Trigger fires every time you check in to a venue in a specific category on Foursquare or Swarm. It only works with public check-ins.",
+                "service_slug": "foursquare",
+                "service_name": "Foursquare",
+                "device": "app",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn on all hue",
+                "name": "Turn on lights",
+                "description": "This Action will turn on your hue lights.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": "on"
+            }
+        ]
+    },
+    "NFMzSXt9-allow-google-assistant-to-start-a-lightwaverf-event": {
+        "description": "Allow Google Assistant to start a LightwaveRF event when you say a phrase",
+        "friendly_id": "NFMzSXt9-allow-google-assistant-to-start-a-lightwaverf-event",
+        "name": "Allow Google Assistant to start a LightwaveRF event",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "start event",
+                "name": "Start an event",
+                "description": "This Action will start an event.",
+                "service_slug": "lightwaverf_events",
+                "service_name": "LightwaveRF Events",
+                "device": "event",
+                "state": ""
+            }
+        ]
+    },
+    "PDB6Kmfw-toggle-your-magichue-lights-with-a-physical-button": {
+        "description": "Use a Flic button to toggle MagicHue Smart Lights on/off. Quick, reliable and simple enough for anyone to use - even your kids!",
+        "friendly_id": "PDB6Kmfw-toggle-your-magichue-lights-with-a-physical-button",
+        "name": "Toggle your MagicHue lights with a physical button ",
+        "triggers": [
+            {
+                "id": "click",
+                "name": "Flic is clicked",
+                "description": "This Trigger fires every time you click the selected Flic.",
+                "service_slug": "flic",
+                "service_name": "Flic",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "togglelight",
+                "name": "Toggle lights on/off",
+                "description": "This action will turn your lights off if they are on, and turn them on if they are off.",
+                "service_slug": "magichue",
+                "service_name": "MagicHue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "fy3VxnLt-when-leaving-the-home-s-area-set-the-mode-to-away": {
+        "description": "Automatically save money and energy when you leave home.",
+        "friendly_id": "fy3VxnLt-when-leaving-the-home-s-area-set-the-mode-to-away",
+        "name": "When leaving the home's area, set the mode to AWAY",
+        "triggers": [
+            {
+                "id": "exit region location",
+                "name": "You exit an area",
+                "description": "This Trigger fires every time you exit an area you specify.",
+                "service_slug": "location",
+                "service_name": "Location",
+                "device": "location",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set residence state",
+                "name": "Set home status",
+                "description": "This action changes the home's status of the selected residence",
+                "service_slug": "maestro_by_stelpro",
+                "service_name": "Maestro by Stelpro",
+                "device": "presence",
+                "state": ""
+            }
+        ]
+    },
+    "hB9EwmUr-quickly-log-your-weight-to-misfit": {
+        "description": "Here is a quick and easy way to log your weight each day or every time you step on the scale! Be sure to only enter a number.",
+        "friendly_id": "hB9EwmUr-quickly-log-your-weight-to-misfit",
+        "name": "Quickly log your weight to Misfit",
+        "triggers": [
+            {
+                "id": "do note new command common",
+                "name": "Any new note",
+                "description": "This trigger fires every time you submit any new note.",
+                "service_slug": "do_note",
+                "service_name": "Note widget",
+                "device": "app",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "update weight",
+                "name": "Log your weight",
+                "description": "This Action will log a new weight measurement to Misfit.",
+                "service_slug": "misfit",
+                "service_name": "Misfit",
+                "device": "body",
+                "state": ""
+            }
+        ]
+    },
+    "LKufEcaj-start-a-harmony-home-activity": {
+        "description": "Start a Harmony Home activity.",
+        "friendly_id": "LKufEcaj-start-a-harmony-home-activity",
+        "name": "Start a Harmony Home activity.",
+        "triggers": [
+            {
+                "id": "knocki",
+                "name": "Gesture with task matching ID occurs",
+                "description": "This trigger fires if you tap a gesture with a custom IFTTT task matching the ID of this trigger.",
+                "service_slug": "knocki",
+                "service_name": "Knocki",
+                "device": "activity",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "start-activity",
+                "name": "Start activity",
+                "description": "This Action will start the Harmony Home activity you specify.",
+                "service_slug": "harmony",
+                "service_name": "Harmony",
+                "device": "activity",
+                "state": ""
+            }
+        ]
+    },
+    "qN9Usm83-set-your-wiser-air-to-home-when-you-come-home": {
+        "description": "Locate your home and when you arrive, your Wiser Air will be set to \"Home\".",
+        "friendly_id": "qN9Usm83-set-your-wiser-air-to-home-when-you-come-home",
+        "name": "Set your Wiser Air to \"Home\" when you come home",
+        "triggers": [
+            {
+                "id": "enter region location",
+                "name": "You enter an area",
+                "description": "This Trigger fires every time you enter an area you specify.",
+                "service_slug": "location",
+                "service_name": "Location",
+                "device": "location",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set thermostat mode",
+                "name": "Set mode",
+                "description": "This Action will set your Wiser Air Thermostat to Home, Away or Sleep mode. Eco IQ is disabled by running this Action.",
+                "service_slug": "wiser_air",
+                "service_name": "Wiser Air",
+                "device": "thermostat",
+                "state": ""
+            }
+        ]
+    },
+    "BEQGrMng-notify-your-das-keyboard-when-a-trello-card-is-asigned": {
+        "description": "Whenever a Trello card is assigned to you, your Das Keyboard will receive a new signal.",
+        "friendly_id": "BEQGrMng-notify-your-das-keyboard-when-a-trello-card-is-asigned",
+        "name": "Notify your Das Keyboard when a Trello card is asigned",
+        "triggers": [
+            {
+                "id": "card assigned to me",
+                "name": "Card assigned to me",
+                "description": "This Trigger fires every time a card is assigned to you.",
+                "service_slug": "trello",
+                "service_name": "Trello",
+                "device": "card",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "signals",
+                "name": "Create a Signal for Q Device (one zone)",
+                "description": "This action will create a Signal based on the information you receive.",
+                "service_slug": "daskeyboardq",
+                "service_name": "Das Keyboard Q",
+                "device": "keyboard",
+                "state": ""
+            }
+        ]
+    },
+    "GXShMZyn-turn-off-lights-when-motion-is-no-longer-detected-by-wyze-motion-sensor": {
+        "description": "Whenever the motion sensor clears on the Wyze Sense motion sensor, turn off a particular light. Please note that it takes several seconds for the Wyze Sense motion sensor to say that it is clear. Check the Wyze app to verify. (Create your own applet to if you wanted the lights to do something else, like flash or change colors).",
+        "friendly_id": "GXShMZyn-turn-off-lights-when-motion-is-no-longer-detected-by-wyze-motion-sensor",
+        "name": "Turn off lights when motion is no longer detected by Wyze Motion Sensor",
+        "triggers": [
+            {
+                "id": "motion sensor no detects trigger",
+                "name": "Motion Sensor becomes clear",
+                "description": "This trigger fires when a Motion Sensor becomes clear.",
+                "service_slug": "wyzecam",
+                "service_name": "Wyze",
+                "device": "motion",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn off all hue",
+                "name": "Turn off lights",
+                "description": "This Action will turn off your hue lights.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": "off"
+            }
+        ]
+    },
+    "gGmPeXEU-tell-alexa-to-turn-on-your-air-conditioner": {
+        "description": "Simply say \u2018Alexa trigger, Turn on AC in master bedroom\u2019 to your Alexa device to turn on your air conditioner",
+        "friendly_id": "gGmPeXEU-tell-alexa-to-turn-on-your-air-conditioner",
+        "name": "Tell Alexa to turn on your air conditioner",
+        "triggers": [
+            {
+                "id": "custom utterance uttered",
+                "name": "Say a specific phrase",
+                "description": "This trigger fires every time you say \"Alexa trigger\" + the phrase that you have defined. For instance, if you set \"party time\" as the phrase, you can say \"Alexa trigger party time\" to have your lights loop colors.",
+                "service_slug": "amazon_alexa",
+                "service_name": "Amazon Alexa",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set oper mode and temp",
+                "name": "Set Operation_Mode and Temperature",
+                "description": "Pick an AC of the current user, Set operation_mode to OFF,Auto,Cool,Dry,Fan or Heat, and Set temperature between 18C-30C (64F-88F).",
+                "service_slug": "fujitsu_general_limited",
+                "service_name": "FUJITSU GENERAL LIMITED",
+                "device": "thermostat",
+                "state": ""
+            }
+        ]
+    },
+    "BAZELyRF-magic-light-off": {
+        "description": "Turn off magic light with google home",
+        "friendly_id": "BAZELyRF-magic-light-off",
+        "name": "Magic light off",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "poweroff",
+                "name": "Turn lights off",
+                "description": "This Action will turn your lights off.",
+                "service_slug": "MagicLight",
+                "service_name": "MagicLight WiFi",
+                "device": "light",
+                "state": "off"
+            }
+        ]
+    },
+    "TsN9rJ6W-play-a-spoken-notification-when-tomorrow-s-forecast-calls-for-rain-celsius": {
+        "description": "This Applet will play a brief message when tomorrow's forecast calls for rain and includes the expected high and low temperature in Celsius. Note: only works with Oticon Opn hearing aids and the iOS app.",
+        "friendly_id": "TsN9rJ6W-play-a-spoken-notification-when-tomorrow-s-forecast-calls-for-rain-celsius",
+        "name": "Play a spoken notification when tomorrow's forecast calls for rain (Celsius) ",
+        "triggers": [
+            {
+                "id": "tomorrows forecast calls for",
+                "name": "Tomorrow's forecast calls for",
+                "description": "This Trigger monitors changes in tomorrow\u2019s forecasted weather condition.",
+                "service_slug": "weather",
+                "service_name": "Weather Underground",
+                "device": "weather",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "playtext tospeech async oticon",
+                "name": "Play the text to speech (iPhone)",
+                "description": "This Action will play the text to speech in the hearing aid if connected through an iPhone",
+                "service_slug": "oticon",
+                "service_name": "Oticon",
+                "device": "player",
+                "state": ""
+            }
+        ]
+    },
+    "JniH7B6Y-good-morning-wake-up-with-sonos-hue": {
+        "description": "Wake up by turning on the lights and playing the Sonos",
+        "friendly_id": "JniH7B6Y-good-morning-wake-up-with-sonos-hue",
+        "name": "Good Morning! Wake up with Sonos & Hue",
+        "triggers": [
+            {
+                "id": "every day at",
+                "name": "Every day at",
+                "description": "This Trigger fires every single day at a specific time set by you.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "play stream",
+                "name": "Play Stream",
+                "description": "This action will stream audio, such as a radio station, from a URL.",
+                "service_slug": "sonos",
+                "service_name": "Sonos",
+                "device": "audio",
+                "state": ""
+            },
+            {
+                "id": "turn on all hue",
+                "name": "Turn on lights",
+                "description": "This Action will turn on your hue lights.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": "on"
+            }
+        ]
+    },
+    "DkXxYJtu-turn-on-your-lights-if-motion-is-detected": {
+        "description": "Turn on your lights using your D-Link Motion Sensor",
+        "friendly_id": "DkXxYJtu-turn-on-your-lights-if-motion-is-detected",
+        "name": "Turn on your lights if motion is detected",
+        "triggers": [
+            {
+                "id": "motion detected",
+                "name": "Motion detected",
+                "description": "This Trigger fires when motion is detected.",
+                "service_slug": "dlink_motion_sensor",
+                "service_name": "D-Link Motion Sensor",
+                "device": "motion",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn on",
+                "name": "Turn on",
+                "description": "This action will turn on a device.",
+                "service_slug": "kasa",
+                "service_name": "TP-Link Kasa",
+                "device": "light",
+                "state": "on"
+            }
+        ]
+    },
+    "JEXbN2t8-turn-on-motion-detection-when-you-are-not-home": {
+        "description": "This applet will turn on motion detection in your camera when you exit your home or an area",
+        "friendly_id": "JEXbN2t8-turn-on-motion-detection-when-you-are-not-home",
+        "name": "Turn on motion detection when you are not home",
+        "triggers": [
+            {
+                "id": "exit region location",
+                "name": "You exit an area",
+                "description": "This Trigger fires every time you exit an area you specify.",
+                "service_slug": "location",
+                "service_name": "Location",
+                "device": "location",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn on motion detection",
+                "name": "Turn on motion detection",
+                "description": "This action will turn on motion detection",
+                "service_slug": "Smitch",
+                "service_name": "Smitch",
+                "device": "motion",
+                "state": "on"
+            }
+        ]
+    },
+    "MMR6vuJH-turn-on-linkjapan-device-with-alexa": {
+        "description": "This Applet will turn on your LinkJapan device when you ask Amazon Alexa to: Turn on LinkJapan device.",
+        "friendly_id": "MMR6vuJH-turn-on-linkjapan-device-with-alexa",
+        "name": "\"Turn on LinkJapan device\" with Alexa",
+        "triggers": [
+            {
+                "id": "custom utterance uttered",
+                "name": "Say a specific phrase",
+                "description": "This trigger fires every time you say \"Alexa trigger\" + the phrase that you have defined. For instance, if you set \"party time\" as the phrase, you can say \"Alexa trigger party time\" to have your lights loop colors.",
+                "service_slug": "amazon_alexa",
+                "service_name": "Amazon Alexa",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "power state",
+                "name": "Turn device on or off",
+                "description": "This action will turn a device on or off",
+                "service_slug": "LinkJapan_eHome",
+                "service_name": "LinkJapan eHome",
+                "device": "switch",
+                "state": ""
+            }
+        ]
+    },
+    "wLzqNP2i-enjoy-a-freshly-brewed-pot-of-coffee-when-you-wake-up": {
+        "description": "Enjoy the convenience of a freshly made pot of coffee when you wake up to help you ease into your day.",
+        "friendly_id": "wLzqNP2i-enjoy-a-freshly-brewed-pot-of-coffee-when-you-wake-up",
+        "name": "Enjoy a freshly brewed pot of coffee when you wake up",
+        "triggers": [
+            {
+                "id": "every day at",
+                "name": "Every day at",
+                "description": "This Trigger fires every single day at a specific time set by you.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "attribute insight on discrete",
+                "name": "Turn on",
+                "description": "This Action will turn a WeMo Insight Switch on. If the WeMo Insight Switch is already on, it will remain on.",
+                "service_slug": "wemo_insight_switch",
+                "service_name": "WeMo Insight Switch",
+                "device": "switch",
+                "state": "on"
+            }
+        ]
+    },
+    "txzkDjcm-change-honeywell-wi-fi-thermostat-settings-by-voice": {
+        "description": "Utilize Google assistant to adjust the temperature settings of Honeywell Wi-Fi connected thermostats.",
+        "friendly_id": "txzkDjcm-change-honeywell-wi-fi-thermostat-settings-by-voice",
+        "name": "Change Honeywell Wi-Fi Thermostat Settings by Voice",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "setsystemtemperature",
+                "name": "Set temperature for a period of time",
+                "description": "This Action will set your Honeywell thermostat to hold a temperature for a specified period of time. The schedule will resume when the time expires.",
+                "service_slug": "honeywell_total_connect_comfort",
+                "service_name": "Honeywell Total Connect Comfort",
+                "device": "thermostat",
+                "state": ""
+            }
+        ]
+    },
+    "HXDE3HdR-set-your-lyric-thermostat-at-a-certain-time": {
+        "description": "This Recipe enables you to set your Lyric Round Wi-Fi thermostat to a permanent hold at a specific time.",
+        "friendly_id": "HXDE3HdR-set-your-lyric-thermostat-at-a-certain-time",
+        "name": "Set your Lyric Thermostat at a certain time",
+        "triggers": [
+            {
+                "id": "every day at",
+                "name": "Every day at",
+                "description": "This Trigger fires every single day at a specific time set by you.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "setsystemtemperaturetopermanenthold",
+                "name": "Set temperature to a permanent hold",
+                "description": "This Action will set your Honeywell thermostat to permanently hold the specified temperature until you change it.",
+                "service_slug": "honeywell_lyric",
+                "service_name": "Honeywell Home",
+                "device": "temperature",
+                "state": ""
+            }
+        ]
+    },
+    "i9xDcnT2-setup-your-sleep-environment-with-eight-night-mode": {
+        "description": "Setup your bedroom for a quality night sleep by dimming your Hue lights, turning down the room temperature with Nest Thermostat, and silence your Android phone. ",
+        "friendly_id": "i9xDcnT2-setup-your-sleep-environment-with-eight-night-mode",
+        "name": "Setup your sleep environment with Eight Night Mode",
+        "triggers": [
+            {
+                "id": "app event",
+                "name": "Day and night mode",
+                "description": "This Trigger fires when you tap the 'Night mode' or 'Day mode' buttons in the Eight App.",
+                "service_slug": "eight",
+                "service_name": "Eight",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set brightness all hue",
+                "name": "Dim lights",
+                "description": "This Action will dim or brighten your hue lights to a value between 0-100.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            },
+            {
+                "id": "mute device",
+                "name": "Mute ringtone",
+                "description": "This action will mute your Android device's ringtone. If your device is already muted, it will remain muted.",
+                "service_slug": "android_device",
+                "service_name": "Android Device",
+                "device": "phone",
+                "state": ""
+            },
+            {
+                "id": "set temperature",
+                "name": "Set temperature",
+                "description": "This Action will set a Nest Thermostat to the temperature you specify. NOTE: works only when Nest is set to Home.",
+                "service_slug": "nest_thermostat",
+                "service_name": "Nest Thermostat",
+                "device": "thermostat",
+                "state": ""
+            }
+        ]
+    },
+    "BM8quVrT-if-its-cold-turn-off-the-fan": {
+        "description": "When ecobee says its cold turn off the fan",
+        "friendly_id": "BM8quVrT-if-its-cold-turn-off-the-fan",
+        "name": "If its cold turn off the fan",
+        "triggers": [
+            {
+                "id": "indoor temperature below",
+                "name": "Thermostat indoor temperature is less than",
+                "description": "This trigger fires every time your ecobee thermostat senses that the indoor temperature is less than a specific value you supply.",
+                "service_slug": "ecobee",
+                "service_name": "ecobee",
+                "device": "temperature",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn off",
+                "name": "Turn off device",
+                "description": "This action will turn off a device.",
+                "service_slug": "bond",
+                "service_name": "BOND",
+                "device": "fan",
+                "state": "off"
+            }
+        ]
+    },
+    "aiumq6Hx-remind-me-when-an-office-365-calendar-event-is-starting-soon": {
+        "description": "When an Office 365 Calendar event is within 15 minutes away, your Nanoleaf Aurora will change to the color you select. Most useful if your Aurora is in the same room where you work =)",
+        "friendly_id": "aiumq6Hx-remind-me-when-an-office-365-calendar-event-is-starting-soon",
+        "name": "Remind me when an Office 365 Calendar event is starting soon",
+        "triggers": [
+            {
+                "id": "event-starting-soon",
+                "name": "Event starting soon",
+                "description": "This Trigger fires within approximately 15 minutes of any event starting on your calendar.",
+                "service_slug": "office_365_calendar",
+                "service_name": "Office 365 Calendar",
+                "device": "calendar",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "change color request",
+                "name": "Change Nanoleaf Light Panels or Canvas color",
+                "description": "This action will change the color of the Nanoleaf Light Panels or Canvas that you select from the device dropdown on this screen. You can enter either a hex value or a keyword for the color. Need help choosing a color? Bookmark nanoleaf.me/ifttt for easy access to a list and color picker.",
+                "service_slug": "nanoleaf",
+                "service_name": "Nanoleaf Smarter Series",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "qsKfN9Gx-turn-on-your-oco-camera": {
+        "description": "Turn on your Oco camera",
+        "friendly_id": "qsKfN9Gx-turn-on-your-oco-camera",
+        "name": "Turn on your Oco camera",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "arm camera",
+                "name": "Turn camera on",
+                "description": "This Action will turn on the Oco camera you specify.",
+                "service_slug": "oco_camera",
+                "service_name": "Oco Camera",
+                "device": "camera",
+                "state": "on"
+            }
+        ]
+    },
+    "q8QMHWqP-track-new-ios-reminders-tasks-on-your-welltory-dashboard": {
+        "description": "Keep track of all your new tasks",
+        "friendly_id": "q8QMHWqP-track-new-ios-reminders-tasks-on-your-welltory-dashboard",
+        "name": "Track new iOS Reminders tasks on your Welltory dashboard",
+        "triggers": [
+            {
+                "id": "new reminder added",
+                "name": "Any new reminder",
+                "description": "This Trigger fires every time you add a new reminder.",
+                "service_slug": "ios_reminders",
+                "service_name": "iOS Reminders",
+                "device": "reminder",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "send event",
+                "name": "Send event",
+                "description": "This action will send info about events you can track in whole numbers to Welltory.",
+                "service_slug": "welltory",
+                "service_name": "Welltory",
+                "device": "event",
+                "state": ""
+            }
+        ]
+    },
+    "rQLV3TPe-skip-mowing-if-there-is-a-party": {
+        "description": "Park your mower if it's on the lawn and there is a party event in your calendar.",
+        "friendly_id": "rQLV3TPe-skip-mowing-if-there-is-a-party",
+        "name": "Skip mowing if there is a party",
+        "triggers": [
+            {
+                "id": "any event starts",
+                "name": "Any event starts",
+                "description": "This Trigger fires a set number of minutes before the starting time of any event on your Google Calendar.",
+                "service_slug": "google_calendar",
+                "service_name": "Google Calendar",
+                "device": "calendar",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "action m o w e r p a r k u n t i l n e x t t a s k",
+                "name": "MOWER: skip this mowing cycle",
+                "description": "This action will send your SILENO to the charging station until the next scheduled mowing.",
+                "service_slug": "gardena_smart_system",
+                "service_name": "GARDENA smart system",
+                "device": "mower",
+                "state": ""
+            }
+        ]
+    },
+    "iUsYNHV3-activate-thermostat-timer-with-a-single-tap": {
+        "description": "Set your room temperature # \u00b0C for # minutes.",
+        "friendly_id": "iUsYNHV3-activate-thermostat-timer-with-a-single-tap",
+        "name": "Activate thermostat timer with a single tap",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "activate overwork timer",
+                "name": "Activate overwork timer",
+                "description": "This Action will set your room temperature to a new set point for a configurable period.",
+                "service_slug": "nefit_easy",
+                "service_name": "Nefit Easy",
+                "device": "temperature",
+                "state": ""
+            }
+        ]
+    },
+    "EDmWAsai-sync-weight-measurements-to-fitbit": {
+        "description": "Sync your Withings scale weight readings to your Fitbit account.",
+        "friendly_id": "EDmWAsai-sync-weight-measurements-to-fitbit",
+        "name": "Sync weight measurements to Fitbit",
+        "triggers": [
+            {
+                "id": "weight",
+                "name": "When I have a new weight",
+                "description": "This trigger fires every time you have a new weight from your Withings scale.",
+                "service_slug": "withings",
+                "service_name": "Withings",
+                "device": "body",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "log-weight",
+                "name": "Log your weight",
+                "description": "This Action will log a new weight measurement to Fitbit.",
+                "service_slug": "fitbit",
+                "service_name": "Fitbit",
+                "device": "body",
+                "state": ""
+            }
+        ]
+    },
+    "GyGMdnEc-wiser-away-mode-off-with-a-button-tap": {
+        "description": "Deactivates Away Mode with a button widget.",
+        "friendly_id": "GyGMdnEc-wiser-away-mode-off-with-a-button-tap",
+        "name": "Wiser Away Mode OFF with a button tap",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set away",
+                "name": "Activate Away mode",
+                "description": "This action will activate Away mode on Wiser Heat.",
+                "service_slug": "wiser_heat",
+                "service_name": "Wiser",
+                "device": "heater",
+                "state": ""
+            }
+        ]
+    },
+    "pHUtk84V-run-a-my-leviton-activity-when-you-leave-home": {
+        "description": "When you leave your home turn off all your lights, turn some on, or anywhere in between by running a My Leviton Activity",
+        "friendly_id": "pHUtk84V-run-a-my-leviton-activity-when-you-leave-home",
+        "name": "Run a My Leviton Activity when you leave home",
+        "triggers": [
+            {
+                "id": "exit region location",
+                "name": "You exit an area",
+                "description": "This Trigger fires every time you exit an area you specify.",
+                "service_slug": "location",
+                "service_name": "Location",
+                "device": "location",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "run activity",
+                "name": "Run a Leviton Activity",
+                "description": "This action will run a My Leviton Activity.",
+                "service_slug": "my_leviton",
+                "service_name": "My Leviton",
+                "device": "activity",
+                "state": ""
+            }
+        ]
+    },
+    "YMqGgHdw-automatically-turn-on-your-hue-lights-when-nest-cam-detects-motion-or-sound": {
+        "description": "The lights will alert whoever (or whatever) is moving around that their presence has been noted! ",
+        "friendly_id": "YMqGgHdw-automatically-turn-on-your-hue-lights-when-nest-cam-detects-motion-or-sound",
+        "name": "Automatically turn on your Hue lights when Nest Cam detects motion or sound",
+        "triggers": [
+            {
+                "id": "any event",
+                "name": "New sound or motion event",
+                "description": "This Trigger fires every time the camera detects a sound or motion event.",
+                "service_slug": "nest_cam",
+                "service_name": "Nest Cam",
+                "device": "camera",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn on all hue",
+                "name": "Turn on lights",
+                "description": "This Action will turn on your hue lights.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": "on"
+            }
+        ]
+    },
+    "VRFe6bQ7-press-your-pebblebee-stone-to-toggle-your-hue-lights-on-and-off": {
+        "description": "When you give your Stone a single press, your Hue lights will turn on or off, depending on their current state. ",
+        "friendly_id": "VRFe6bQ7-press-your-pebblebee-stone-to-toggle-your-hue-lights-on-and-off",
+        "name": "Press your Pebblebee Stone to toggle your Hue lights on and off",
+        "triggers": [
+            {
+                "id": "stone press",
+                "name": "Stone press",
+                "description": "This Trigger fires every time you press the Stone.",
+                "service_slug": "pebblebee",
+                "service_name": "Pebblebee",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "toggle all hue",
+                "name": "Toggle lights on/off",
+                "description": "This Action will toggle your hue lights on or off.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "mA784r3M-prioritize-a-device-with-one-click": {
+        "description": "This creates a widget you can add to the home screen on your phone. When you press it,  a specific device you choose will get a faster internet connection on your TP-Link network.",
+        "friendly_id": "mA784r3M-prioritize-a-device-with-one-click",
+        "name": "Prioritize a device with one click",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "prioritize device",
+                "name": "Prioritize Device",
+                "description": "This action will prioritize a device connected to your TP-Link router for a specified duration (1 hour by default).",
+                "service_slug": "tplink_router",
+                "service_name": "TP-Link Router",
+                "device": "router",
+                "state": ""
+            }
+        ]
+    },
+    "wirMEGtW-set-your-nuheat-signature-thermostat-to-a-certain-temperature-with-a-button-widget": {
+        "description": "With the push of a button on your phone, your Signature thermostat is set to a certain temperature.",
+        "friendly_id": "wirMEGtW-set-your-nuheat-signature-thermostat-to-a-certain-temperature-with-a-button-widget",
+        "name": "Set your Nuheat Signature thermostat to a certain temperature with a Button widget",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "set temperature",
+                "name": "Set temperature",
+                "description": "This action will set the thermostat temperature",
+                "service_slug": "nVent_Nuheat",
+                "service_name": "nVent Nuheat Signature Thermostat",
+                "device": "thermostat",
+                "state": ""
+            }
+        ]
+    },
+    "W3MRp4Zt-keep-your-floors-litter-free-with-irobot": {
+        "description": "Stop worrying about stray litter. Let your iRobot Roomba handle the cleaning!",
+        "friendly_id": "W3MRp4Zt-keep-your-floors-litter-free-with-irobot",
+        "name": "Keep your floors litter-free with iRobot",
+        "triggers": [
+            {
+                "id": "lr3 events",
+                "name": "Litter Robot Events",
+                "description": "This trigger fires when an event is triggered from your litter robot. ie. Clean Cycle Completes",
+                "service_slug": "whisker",
+                "service_name": "Litter-Robot by Whisker",
+                "device": "event",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "start robot",
+                "name": "Start robot",
+                "description": "This action will start your robot.",
+                "service_slug": "irobot",
+                "service_name": "iRobot",
+                "device": "cleaner",
+                "state": ""
+            }
+        ]
+    },
+    "kNsmfZpB-ask-alexa-to-turn-off-your-ge-oven": {
+        "description": "When you say \"Alexa, trigger oven off\" your GE oven will shut down. Dinner time! ",
+        "friendly_id": "kNsmfZpB-ask-alexa-to-turn-off-your-ge-oven",
+        "name": "Ask Alexa to turn off your GE oven",
+        "triggers": [
+            {
+                "id": "custom utterance uttered",
+                "name": "Say a specific phrase",
+                "description": "This trigger fires every time you say \"Alexa trigger\" + the phrase that you have defined. For instance, if you set \"party time\" as the phrase, you can say \"Alexa trigger party time\" to have your lights loop colors.",
+                "service_slug": "amazon_alexa",
+                "service_name": "Amazon Alexa",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "range-off",
+                "name": "Turn off oven",
+                "description": "This Action will turn off your oven.",
+                "service_slug": "ge_appliances_cooking",
+                "service_name": "GE Appliances Cooking",
+                "device": "oven",
+                "state": "off"
+            }
+        ]
+    },
+    "HPh9mxnr-ok-google-turn-the-heating-on": {
+        "description": "Use your Google Home to turn your heating on by using the phrase 'Ok Google, turn the heating on'",
+        "friendly_id": "HPh9mxnr-ok-google-turn-the-heating-on",
+        "name": "Ok Google, turn the heating on",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn-on",
+                "name": "Turn on",
+                "description": "This action will turn the thermostat back on to the mode that was last set. ",
+                "service_slug": "warmup_smart_thermostat",
+                "service_name": "Warmup Smart Thermostat",
+                "device": "thermostat",
+                "state": "on"
+            }
+        ]
+    },
+    "gBeQdmTy-turn-off-the-rachio-sprinklers-and-send-a-gmail-alert-when-it-starts-raining": {
+        "description": "When the Ambient Weather Station detects rain, turn off the Rachio sprinklers and send a gmail email alert.",
+        "friendly_id": "gBeQdmTy-turn-off-the-rachio-sprinklers-and-send-a-gmail-alert-when-it-starts-raining",
+        "name": "Turn off the Rachio sprinklers and send a gmail alert when it starts raining.",
+        "triggers": [
+            {
+                "id": "dailyrainin gt",
+                "name": "Daily Rain rises above",
+                "description": "This trigger fires when the Daily Rain measurement rises above a given threshold.",
+                "service_slug": "ambient_weather",
+                "service_name": "Ambient Weather",
+                "device": "weather",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "stop watering",
+                "name": "Stop watering",
+                "description": "This Action will stop all watering on a device.",
+                "service_slug": "rachio_iro",
+                "service_name": "Rachio",
+                "device": "water",
+                "state": ""
+            },
+            {
+                "id": "send an email",
+                "name": "Send an email",
+                "description": "This Action will send an email to up to twenty recipients from your Gmail account.",
+                "service_slug": "gmail",
+                "service_name": "Gmail",
+                "device": "email",
+                "state": ""
+            }
+        ]
+    },
+    "aYwWfMDg-run-a-remote-key-with-google-home": {
+        "description": "Run a Remote Key by saying a simple phrase to your Google Home.",
+        "friendly_id": "aYwWfMDg-run-a-remote-key-with-google-home",
+        "name": "Run a Remote key with Google Home",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "run remote",
+                "name": "Run a remote key",
+                "description": "This action will push a button on any your remotes",
+                "service_slug": "aico",
+                "service_name": "AICO",
+                "device": "button",
+                "state": ""
+            }
+        ]
+    },
+    "WAzP9diD-bouton-widget-mode-confort": {
+        "description": "Ajout d'un bouton raccourci pour votre smartphone.\nCe bouton permet de contr\u00f4ler votre heatzy pilote.",
+        "friendly_id": "WAzP9diD-bouton-widget-mode-confort",
+        "name": "Bouton widget mode confort",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "a-set-heat-mode",
+                "name": "Set heat mode",
+                "description": "This action will set a specific device on heat mode",
+                "service_slug": "heatzy",
+                "service_name": "Heatzy",
+                "device": "heater",
+                "state": ""
+            }
+        ]
+    },
+    "VbVD4pg6-run-homeseer-event-with-phrase-in-alexa": {
+        "description": "Allows you to run a Homeseer Event with a personalised Phrase in Alexa",
+        "friendly_id": "VbVD4pg6-run-homeseer-event-with-phrase-in-alexa",
+        "name": "Run Homeseer Event with Phrase in Alexa",
+        "triggers": [
+            {
+                "id": "custom utterance uttered",
+                "name": "Say a specific phrase",
+                "description": "This trigger fires every time you say \"Alexa trigger\" + the phrase that you have defined. For instance, if you set \"party time\" as the phrase, you can say \"Alexa trigger party time\" to have your lights loop colors.",
+                "service_slug": "amazon_alexa",
+                "service_name": "Amazon Alexa",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "events",
+                "name": "Run a HomeSeer system event",
+                "description": "This Action will run a HomeSeer system event. HomeSeer events can be programmed to control just about any combination of home automation products installed in your home!",
+                "service_slug": "homeseer",
+                "service_name": "HomeSeer",
+                "device": "event",
+                "state": ""
+            }
+        ]
+    },
+    "qr8ETm6k-turn-my-leeo-smart-alert-lights-on-at-a-certain-time-of-day": {
+        "description": "Select the time every day that you want your Leeo Smart Alert to turn off automatically.",
+        "friendly_id": "qr8ETm6k-turn-my-leeo-smart-alert-lights-on-at-a-certain-time-of-day",
+        "name": "Turn my Leeo Smart Alert lights on at a certain time of day.",
+        "triggers": [
+            {
+                "id": "every day at",
+                "name": "Every day at",
+                "description": "This Trigger fires every single day at a specific time set by you.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn light on",
+                "name": "Turn light on",
+                "description": "This Action will turn the light on your Leeo Smart Alert on. It will not affect your Smart Alert's ability to detect alarms or sense temperature or humidity.",
+                "service_slug": "leeo",
+                "service_name": "Leeo",
+                "device": "light",
+                "state": "on"
+            }
+        ]
+    },
+    "FLQMhguY-change-your-hue-lights-to-the-colors-of-the-american-flag-on-independence-day": {
+        "description": "Changes your hue lights to match the image of an American Flag. Spoiler: it's red, white, and blue.",
+        "friendly_id": "FLQMhguY-change-your-hue-lights-to-the-colors-of-the-american-flag-on-independence-day",
+        "name": "Change your hue lights to the colors of the American Flag on Independence Day",
+        "triggers": [
+            {
+                "id": "every year on",
+                "name": "U.S. Independence Day",
+                "description": "This Trigger fires every year on the Fourth of July at the time you specify.",
+                "service_slug": "us_independence_day",
+                "service_name": "U.S. Independence Day",
+                "device": "time",
+                "state": "on"
+            }
+        ],
+        "actions": [
+            {
+                "id": "set color from image all hue",
+                "name": "Change color from image",
+                "description": "This Action will change the color of your hue lights to match the dominant colors found in an image you specify. NOTE: not compatible with hue lux bulbs.",
+                "service_slug": "hue",
+                "service_name": "Philips Hue",
+                "device": "light",
+                "state": ""
+            }
+        ]
+    },
+    "cXNzWZdA-automatically-turn-off-my-future-home-outside-lights-when-the-sun-rises": {
+        "description": "This Applet will make sure you're not leaving your porch or garden lights on longer than necessary",
+        "friendly_id": "cXNzWZdA-automatically-turn-off-my-future-home-outside-lights-when-the-sun-rises",
+        "name": "Automatically turn off my Future Home outside lights when the sun rises",
+        "triggers": [
+            {
+                "id": "sun rises",
+                "name": "Sunrise",
+                "description": "This Trigger fires within 15 minutes of the sunrise in your location.",
+                "service_slug": "weather",
+                "service_name": "Weather Underground",
+                "device": "weather",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "power off",
+                "name": "Turn off device",
+                "description": "This Action will turn off one of your Futurehome devices.",
+                "service_slug": "futurehome",
+                "service_name": "Futurehome",
+                "device": "light",
+                "state": "off"
+            }
+        ]
+    },
+    "nh9CevAK-turn-on-smart-switch": {
+        "description": "Turns on smart switch when virtual switch is opened.",
+        "friendly_id": "nh9CevAK-turn-on-smart-switch",
+        "name": "Turn On Smart Switch",
+        "triggers": [
+            {
+                "id": "trigger on",
+                "name": "Device turns on",
+                "description": "This trigger fires when your Hubitat device turns on.",
+                "service_slug": "hubitat",
+                "service_name": "Hubitat",
+                "device": "switch",
+                "state": "on"
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn on",
+                "name": "Turn on",
+                "description": "This action will turn on the device/group of your choosing.",
+                "service_slug": "smartlife",
+                "service_name": "Smart Life",
+                "device": "switch",
+                "state": "on"
+            }
+        ]
+    },
+    "rYem5S8Z-turn-on-off-bg-home-device-with-button-widget": {
+        "description": "Turn on/off your BG Home device with button widget",
+        "friendly_id": "rYem5S8Z-turn-on-off-bg-home-device-with-button-widget",
+        "name": "Turn on/off BG Home device with button widget",
+        "triggers": [
+            {
+                "id": "do button new command common",
+                "name": "Button press",
+                "description": "This trigger fires every time you press the button.",
+                "service_slug": "do_button",
+                "service_name": "Button widget",
+                "device": "button",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "power state",
+                "name": "Turns device on or off",
+                "description": "This action will turn a device on or off",
+                "service_slug": "BG_HOME",
+                "service_name": "BG Home",
+                "device": "button",
+                "state": ""
+            }
+        ]
+    },
+    "tYrFcdNG-turn-on-aquarea-with-google-assistant": {
+        "description": "Turn on my AQUAREA in Heat Mode using Google Assistant.",
+        "friendly_id": "tYrFcdNG-turn-on-aquarea-with-google-assistant",
+        "name": "Turn on AQUAREA with Google Assistant",
+        "triggers": [
+            {
+                "id": "simple voice trigger",
+                "name": "Say a simple phrase",
+                "description": "This trigger fires when you say \u201cOk Google\u201d to the Google Assistant followed by a phrase you choose. For example, say \u201cOk Google, I\u2019m running late\u201d to text a family member that you\u2019re on your way home.",
+                "service_slug": "google_assistant",
+                "service_name": "Google Assistant",
+                "device": "player",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "heat-on-curve",
+                "name": "Change Heat Mode settings",
+                "description": "This action will change operation settings for Heat Mode in your device. ",
+                "service_slug": "aquarea_smart_cloud",
+                "service_name": "AQUAREA Smart Cloud",
+                "device": "heater",
+                "state": "on"
+            }
+        ]
+    },
+    "yLWieENC-turn-off-your-wi-fi-for-family-time": {
+        "description": "Your Wi-Fi will turn off at a time you set for family time. That means more time to spend  quality time together without any modern world interference!",
+        "friendly_id": "yLWieENC-turn-off-your-wi-fi-for-family-time",
+        "name": "Turn off your Wi-Fi for family time",
+        "triggers": [
+            {
+                "id": "every day at",
+                "name": "Every day at",
+                "description": "This Trigger fires every single day at a specific time set by you.",
+                "service_slug": "date_and_time",
+                "service_name": "Date & Time",
+                "device": "time",
+                "state": ""
+            }
+        ],
+        "actions": [
+            {
+                "id": "turn wifi off",
+                "name": "Turn WiFi off",
+                "description": "This action will turn your WiFi off.",
+                "service_slug": "asusrouter",
+                "service_name": "ASUS Router",
+                "device": "router",
+                "state": "off"
+            }
+        ]
+    }
+}

@@ -1,0 +1,1211 @@
+{
+    "openhab-myhome-master": {
+        "AZ_OpMode": [
+            "Number",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "modbus=slaveSystem:0",
+            "mode"
+        ],
+        "Salon_FGSD_Smoke": [
+            "Contact",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=9:command=sensor_alarm,alarm_type=1,respond_to_basic=true",
+            "smoke"
+        ],
+        "Salon_FGSD_Heat": [
+            "Contact",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=9:command=sensor_alarm,alarm_type=4,respond_to_basic=true",
+            "heater"
+        ],
+        "Salon_FGSD_Battery": [
+            "Number",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=9:command=battery",
+            "battery"
+        ],
+        "freebox_call_lastnum": [
+            "String",
+            "Dernier appel",
+            "%s",
+            "",
+            [
+                "gfbCalls"
+            ],
+            [],
+            "freebox=call_number",
+            "tv"
+        ],
+        "freebox_sys_temp_cpum": [
+            "Number",
+            "Temp cpum",
+            "%d \u00c2\u00b0C",
+            "temperature",
+            [
+                "gfbSys"
+            ],
+            [],
+            "freebox=temp_cpum",
+            "temperature"
+        ],
+        "freebox_sys_fan_rpm": [
+            "Number",
+            "Fan",
+            "%d rpm",
+            "fan",
+            [
+                "gfbSys"
+            ],
+            [],
+            "freebox=fan",
+            "fan"
+        ],
+        "Inondation_cuisine_alarm": [
+            "Contact",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=6:0:command=sensor_alarm,alarm_type=5,respond_to_basic=true",
+            "alarm"
+        ],
+        "ACuisine_FGD_Dimmer": [
+            "Dimmer",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=19:command=switch_multilevel,refresh_interval=10",
+            "light"
+        ],
+        "ACuisine_FGD_Switch": [
+            "Switch",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=19:command=SWITCH_MULTILEVEL",
+            "switch"
+        ],
+        "ACuisine_FGD_Power": [
+            "Number",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=19:command=SENSOR_MULTILEVEL,meter_scale=E_W",
+            "power"
+        ],
+        "ACuisine_FGMS_Movement": [
+            "Number",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=18:command=sensor_binary",
+            "motion"
+        ],
+        "ACuisine_FGMS_Lux": [
+            "Number",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=18:command=sensor_multilevel,sensor_type=3",
+            "illuminance"
+        ],
+        "Inondation_garage_intrusion": [
+            "Contact",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "zwave=5:0:command=sensor_alarm,alarm_type=0,respond_to_basic=true",
+            "garage"
+        ]
+    },
+    "openweathermap": {
+        "homeCurrentIcon": [
+            "Image",
+            "Icon",
+            "",
+            "",
+            [],
+            [],
+            "channel=openweathermap:weather-and-forecast:home:current#icon",
+            "weather"
+        ],
+        "homeCurrentHumidity": [
+            "Number:Dimensionless",
+            "Current humidity",
+            "%d %unit%",
+            "humidity",
+            [],
+            [],
+            "channel=openweathermap:weather-and-forecast:home:current#humidity",
+            "humidity"
+        ],
+        "homeCurrentTS": [
+            "DateTime",
+            "Timestamp Current",
+            "%1$tY-%1$tm-%1$tdT%1$tH:%1$tM:%1$tS",
+            "time",
+            [],
+            [],
+            "channel=openweathermap:weather-and-forecast:home:current#time-stamp",
+            "time"
+        ]
+    },
+    "openhab-conf-master-3": {
+        "sonoff_2_state": [
+            "Switch",
+            "Sonoff 2",
+            "",
+            "poweroutlet",
+            [
+                "gLights"
+            ],
+            [],
+            "mqtt=>[broker:cmnd/sonoff2/power:command:*:default],<[broker:stat/sonoff2/POWER:state:default],<[broker:tele/sonoff2/POWER:state:default],autoupdate=false",
+            "outlet"
+        ],
+        "Date": [
+            "DateTime",
+            "Date",
+            "%1$tA, %1$td.%1$tm.%1$tY",
+            "calendar",
+            [],
+            [],
+            "ntp=",
+            "time"
+        ],
+        "Kodi_Stue_Volume": [
+            "Dimmer",
+            "",
+            "",
+            "soundvolume",
+            [],
+            [],
+            "channel=kodi:kodi:stue:volume",
+            "sound"
+        ],
+        "Kodi_Stue_Title": [
+            "String",
+            "",
+            "",
+            "text",
+            [],
+            [],
+            "channel=kodi:kodi:stue:title",
+            "player"
+        ],
+        "Sunrise_Time": [
+            "DateTime",
+            "Sunrise",
+            "%1$tH:%1$tM",
+            "sunrise",
+            [],
+            [],
+            "channel=astro:sun:home:rise#start",
+            "geolocation"
+        ]
+    },
+    "openhab_config-master_4": {
+        "netStateProxy_MeterGas": [
+            "Switch",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "nh=192.168.0.60",
+            "gas"
+        ],
+        "netStateProxy_IPhone": [
+            "Switch",
+            "",
+            "",
+            "",
+            [
+                "gNetStateProxyI"
+            ],
+            [],
+            "nh=192.168.0.81",
+            "phone"
+        ]
+    },
+    "resources": {
+        "DiningRoomMotionSensor": [
+            "Switch",
+            "Dining Room Motion Sensor",
+            "",
+            "",
+            [
+                "DiningRoomMotion"
+            ],
+            [],
+            "channel=zwave:device:c98ae6a6:node77:sensor_binary",
+            "motion"
+        ],
+        "MasterClosetMotionSensor": [
+            "Switch",
+            "Master Closet Motion Sensor",
+            "",
+            "",
+            [
+                "MasterClosetMotion"
+            ],
+            [],
+            "channel=zwave:device:c98ae6a6:node88:alarm_motion",
+            "motion"
+        ],
+        "FurnaceRoom": [
+            "Dimmer",
+            "Furnace Room",
+            "",
+            "",
+            [
+                "Utility",
+                "EveningOffOff"
+            ],
+            [],
+            "channel=zwave:device:c98ae6a6:node95:switch_dimmer,expire=30m,command=0",
+            "fireplace"
+        ],
+        "FloodSensor": [
+            "Switch",
+            "Flood Sensor",
+            "",
+            "",
+            [
+                "Utility"
+            ],
+            [],
+            "channel=zwave:device:c98ae6a6:node73:alarm_flood",
+            "water"
+        ],
+        "LaundryRoom": [
+            "Dimmer",
+            "Laundry Room",
+            "",
+            "",
+            [
+                "UpstairsBathroom",
+                "EveningOffOff"
+            ],
+            [],
+            "channel=zwave:device:c98ae6a6:node11:switch_dimmer",
+            "washer"
+        ],
+        "NatalieRoomWindow": [
+            "Dimmer",
+            "Natalie Room Window",
+            "",
+            "",
+            [
+                "NatalieBedroom",
+                "EveningOffOff"
+            ],
+            [],
+            "channel=zwave:device:c98ae6a6:node19:switch_dimmer",
+            "window"
+        ]
+    },
+    "openhab-config-master_3": {
+        "Presence_PC": [
+            "Switch",
+            "Zustand PC",
+            "",
+            "present",
+            [
+                "WZ"
+            ],
+            [],
+            "channel=network:pingdevice:BirkePC:online",
+            "presence"
+        ],
+        "WZ_Goldfruchtpalme_AirTemperature": [
+            "Number",
+            "WZ Goldfruchtpalme Air Temperature",
+            "%.1f \u00c2\u00b0C",
+            "text",
+            [
+                "gWZGoldfruchtpalme",
+                "gAirTemperature"
+            ],
+            [],
+            "mqtt=<[broker:miflora/Goldfruchtpalme:state:JSONPATH($.temperature)]",
+            "conditioner"
+        ],
+        "WZ_zMote_sendkey": [
+            "String",
+            "Send Button",
+            "",
+            "zmote",
+            [
+                "Whg"
+            ],
+            [],
+            "channel=zmote:zmt2:myzmote:sendkey,expire=1s",
+            "button"
+        ],
+        "KU_Senseo_OnOff": [
+            "Switch",
+            "SenseoWifi OnOff",
+            "",
+            "onoff_monochrome",
+            [
+                "Senseo_Group"
+            ],
+            [],
+            "mqtt=<[broker:homie/senseo-w66a/machine/power:state:default],>[broker:homie/senseo-w66a/machine/power/set:command:*:default]",
+            "router"
+        ],
+        "BD_Waschmaschine_State": [
+            "Switch",
+            "Waschmaschine Zustand",
+            "",
+            "",
+            [
+                "BD"
+            ],
+            [],
+            "channel=homematic:HG-HM-ES-PMSw1-Pl:ccu:LEQ1275872:1#STATE",
+            "washer"
+        ],
+        "WZ_SoundSystem": [
+            "Switch",
+            "Logitech System",
+            "",
+            "speaker",
+            [
+                "WZ"
+            ],
+            [],
+            "mqtt=>[broker:tasmota/sonoff-20DCAE/cmnd/POWER:command:*:default],<[broker:tasmota/sonoff-20DCAE/stat/POWER:state:default]",
+            "speaker"
+        ],
+        "WZ_Heizung_BoostMode": [
+            "Switch",
+            "WZ_Heizung Boost-Mode",
+            "",
+            "fire",
+            [
+                "Heating_WZ"
+            ],
+            [],
+            "channel=homematic:HG-HM-CC-RT-DN:ccu:LEQ0785556:4#BOOST_MODE",
+            "fireplace"
+        ],
+        "WZ_Heizung_BoostTime": [
+            "Number",
+            "WZ_Heizung Boost-Restdauer",
+            "%d min",
+            "clock-on",
+            [
+                "Heating_WZ"
+            ],
+            [],
+            "channel=homematic:HG-HM-CC-RT-DN:ccu:LEQ0785556:4#BOOST_STATE",
+            "clock"
+        ]
+    },
+    "fully": {
+        "yiRTSPStreamUrl": [
+            "String",
+            "yitest RTSP Stream",
+            "",
+            "camera",
+            [
+                "Test"
+            ],
+            [],
+            "channel=ipcamera:ONVIF:e6c2af7d:rtspUrl",
+            "camera"
+        ],
+        "openHABianPi_Drive_Name": [
+            "String",
+            "Name",
+            "",
+            "none",
+            [
+                "openHABianPi"
+            ],
+            [],
+            "channel=systeminfo:computer:openhabianpi:drive#name",
+            "computer"
+        ],
+        "Lueftung_Modus": [
+            "Number",
+            "Modus",
+            "M",
+            "",
+            [
+                "ventilation.map"
+            ],
+            [],
+            "channel=valloxmv:valloxmv:dc1106b2:state",
+            "vent"
+        ],
+        "Fischkopp": [
+            "Switch",
+            "unser Fischkopp",
+            "MAP(yesno.map):%s",
+            "water",
+            [
+                "Einstellungen"
+            ],
+            [],
+            "alexa=PowerController.powerState",
+            "water"
+        ],
+        "HomBot_State": [
+            "String",
+            "Luigi Status",
+            "%s",
+            "CleaningRobot",
+            [
+                "HomBot"
+            ],
+            [],
+            "channel=lghombot:LGHomBot:Luigi:state",
+            "cleaner"
+        ],
+        "PC_Markus": [
+            "Switch",
+            "Markus' PC",
+            "MAP(device.map):%s",
+            "switch",
+            [
+                "OG_Markus",
+                "Markus_daheim_Gruppe",
+                "daheim_Gruppe",
+                "PCs",
+                "Praesenz"
+            ],
+            [],
+            "channel=network:pingdevice:ed99ed87:online",
+            "computer"
+        ],
+        "EG_Wohnen_COmelder_CO": [
+            "Number",
+            "CO Wert CO-Melder",
+            "%.1f \u00c2\u00b0C",
+            "carbondioxide",
+            [
+                "EG_Wohnen",
+                "Heizung"
+            ],
+            [],
+            "channel=zwave:device:ddd23e6c:node46:sensor_co",
+            "dioxide"
+        ],
+        "EG_Diele_Klingel": [
+            "Switch",
+            "Klingel",
+            "",
+            "bell",
+            [
+                "EG_Diele"
+            ],
+            [],
+            "channel=zwave:device:ddd23e6c:node109:sensor_binary1",
+            "doorbell"
+        ]
+    },
+    "openhab-rules-master": {
+        "FF_GreatRoom_ChromeCast": [
+            "String",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "sinkName=chromecast:audio:greatRoom",
+            "audio"
+        ]
+    },
+    "openhab-config-master_7": {
+        "AV_Denon3300_IR_MainSleep": [
+            "Switch",
+            "Denon Main Sleep",
+            "",
+            "",
+            [
+                "gMR_MC_IR_Denon"
+            ],
+            [],
+            "exec=>[ON:/usr/bin/irsendSEND_ONCEdenon3300mzKEY_SLEEP],autoupdate=false",
+            "sleep"
+        ],
+        "AV_Denon3300_IR_MainInputGame": [
+            "Switch",
+            "Denon Main input(PS4)",
+            "",
+            "",
+            [
+                "gMR_MC_IR_Denon"
+            ],
+            [],
+            "exec=>[ON:/usr/bin/irsendSEND_ONCEdenon3300mzKEY_G]>[ON:/usr/bin/irsendSEND_ONCEdenon3300mzKEY_G]",
+            "game"
+        ],
+        "AV_Denon3300_IR_MainInputOnlineMusic": [
+            "Switch",
+            "Denon Main input(Online Music)",
+            "",
+            "",
+            [
+                "gMR_MC_IR_Denon"
+            ],
+            [],
+            "exec=>[ON:/usr/bin/irsendSEND_ONCEdenon3300mzKEY_M]>[OFF:/usr/bin/irsendSEND_ONCEdenon3300mzKEY_M]",
+            "player"
+        ],
+        "AV_TV_IR_Freeze": [
+            "Switch",
+            "TV Freeze",
+            "",
+            "",
+            [
+                "gMR_MC_IR_TV"
+            ],
+            [],
+            "exec=>[ON:/usr/bin/irsendSEND_ONCEsharptvKEY_F],autoupdate=false",
+            "tv"
+        ],
+        "AV_TV_IP_InputVideo": [
+            "Switch",
+            "TV input(Video)",
+            "",
+            "",
+            [
+                "gMR_MC_IP_TV"
+            ],
+            [],
+            "exec=>[*:/var/lib/openhab/bin/sharptv.shIAVD6],autoupdate=false",
+            "tv"
+        ]
+    },
+    "openhab-bonati-main": {
+        "Forecast0_Pressure": [
+            "Number:Pressure",
+            "Pressure",
+            "%.1f %unit%",
+            "pressure",
+            [
+                "gForecast0"
+            ],
+            [],
+            "channel=ecobee:thermostat:cbc4f2bf:511812002583:forecast0#pressure",
+            "pressure"
+        ]
+    },
+    "garden-control-master": {
+        "LocalStationLocation": [
+            "Location",
+            "Location",
+            "%2$s\u00c2\u00b0N %3$s\u00c2\u00b0E",
+            "location",
+            [],
+            [],
+            "channel=openweathermap:weather-and-forecast:api:local:station#location",
+            "location"
+        ],
+        "NoIrrigationPreset": [
+            "Switch",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "expire=9h,OFF",
+            "sprinkler"
+        ]
+    },
+    "openhabConfig-master": {
+        "CubeDnevRotationAngle": [
+            "Number:Angle",
+            "Kot vrtenja",
+            "%d \u00c2\u00b0",
+            "",
+            [
+                "cube"
+            ],
+            [],
+            "channel=mihome:sensor_cube:158d00029abcd1:rotationAngle",
+            "cube"
+        ]
+    },
+    "openhab-configuration-master-3": {
+        "dryer": [
+            "String",
+            "Dryer",
+            "%s",
+            "",
+            [],
+            [],
+            "http=<[http://192.168.0.108:8080/api/dryer/state:60000:REGEX((.*))]",
+            "dryer"
+        ]
+    },
+    "ComfoAirQ-Homie-master": {
+        "EQ_Ventilation_Heating_Season": [
+            "String",
+            "Heating Season",
+            "%s",
+            "radiator",
+            [
+                "EQ_Ventilation"
+            ],
+            [],
+            "channel=mqtt:homie300:local:zehnderq450:sensors#heating_2Dseason",
+            "vent"
+        ]
+    },
+    "fully_ver2": {
+        "doorLock": [
+            "Switch",
+            "Z Front lock %s",
+            "",
+            "lock",
+            [],
+            [],
+            "channel=zwave:device:163ce1a0550:node16:lock_door",
+            "lock"
+        ]
+    },
+    "openhab2config-master_2": {
+        "Light_FF_Bed": [
+            "Dimmer",
+            "Zimmerlicht",
+            "",
+            "",
+            [
+                "FF_Bed",
+                "Ligths"
+            ],
+            [],
+            "knx=1/1/2,10/1/2,11/1/2",
+            "light"
+        ],
+        "SceneShutterBedroom": [
+            "Number",
+            "Schlafzimmer",
+            "",
+            "",
+            [],
+            [],
+            "knx=17.001:4/1/0",
+            "scene"
+        ]
+    },
+    "fully_v9": {
+        "LogTemperature": [
+            "Number",
+            "Log temperature channel",
+            "",
+            "",
+            [],
+            [],
+            "channel=mqtt:topic:4cd22b36:LogTemperature-Channel",
+            "temperature"
+        ],
+        "ToonThermostaatCurrentInternalBoilerSetpoint": [
+            "Number:Temperature",
+            "Toon boiler setpoint",
+            "",
+            "",
+            [],
+            [],
+            "channel=http:url:Toon_Thermostaat:currentInternalBoilerSetpoint",
+            "boiler"
+        ],
+        "3DPrinterRelay1Input": [
+            "Switch",
+            "Input",
+            "",
+            "",
+            [],
+            [],
+            "channel=shelly:shelly25-relay:e4cd32:relay1#input",
+            "printer"
+        ],
+        "3DPrinterMeter1CurrentWatts": [
+            "Number:Power",
+            "Meter1 current watts",
+            "",
+            "",
+            [],
+            [],
+            "channel=shelly:shelly25-relay:e4cd32:meter1#currentWatts",
+            "gauge"
+        ]
+    },
+    "openhab-config-master": {
+        "Pool_Controller_Pool_Valve_Start_H": [
+            "Number",
+            "HH: ein",
+            "%.0f h",
+            "",
+            [
+                "gPool_Controller"
+            ],
+            [],
+            "channel=mqtt:topic:mosquitto:pool-controller:timerStartH,autoupdate=true",
+            "valve"
+        ]
+    },
+    "openhab-config-main": {
+        "IndegoStatus": [
+            "Number",
+            "Indego Status",
+            "",
+            "",
+            [],
+            [],
+            "channel=boschindego:indego:790772e3:state",
+            "mower"
+        ]
+    },
+    "openhab-configurations-master-4": {
+        "Netatmo_Winti_Indoor_CO2": [
+            "Number",
+            "Carbon dioxide",
+            "%d ppm",
+            "",
+            [
+                "Netatmo_Winti"
+            ],
+            [],
+            "netatmo=70:ee:50:00:21:92#Co2",
+            "dioxide"
+        ]
+    },
+    "fully_swenden": {
+        "Bathroom_Mirror_Power": [
+            "Number",
+            "Belysning spegel f\u00c3\u00b6rbrukning",
+            "%.1f W",
+            "",
+            [
+                "gBath",
+                "gPower"
+            ],
+            [],
+            "zwave=54:1:command=meter,meter_scale=E_W,refresh_interval=300",
+            "mirror"
+        ]
+    },
+    "my-openhab-config-master": {
+        "gang_panelovn": [
+            "Switch",
+            "Panelovn gang",
+            "",
+            "heating",
+            [
+                "gFirstFloor",
+                "Heating",
+                "away_group"
+            ],
+            [],
+            "http=<[zwave:10000:JS(getHallOvenState.js)]>[ON:GET:http://192.168.1.139:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_10-0-37/command/on]>[OFF:GET:http://192.168.1.139:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_10-0-37/command/off]",
+            "heater"
+        ],
+        "panelovn_kontor_energy": [
+            "Number",
+            "Panelovn totalforbruk:",
+            "%.2f KWh",
+            "energy",
+            [
+                "Energy"
+            ],
+            [],
+            "http=<[zwave:60000:JS(getOfficeOvenTotal.js)]",
+            "power"
+        ],
+        "stein_email": [
+            "String",
+            "STT e-mail",
+            "",
+            "",
+            [],
+            [],
+            "configadmin=steintore:email",
+            "email"
+        ]
+    },
+    "openhab-config-master_15": {
+        "Network_CL_Stairroom_Server": [
+            "Switch",
+            "The house`s server state is",
+            "MAP(network.map):%s",
+            "computer",
+            [
+                "gNetwork"
+            ],
+            [],
+            "channel=network:pingdevice:some.ip.address.166:online",
+            "computer"
+        ],
+        "Network_CL_Stairroom_Nas": [
+            "Switch",
+            "The house`s NAS state is",
+            "MAP(network.map):%s",
+            "nas",
+            [
+                "gNetwork"
+            ],
+            [],
+            "channel=network:servicedevice:a6d2fb2d:online",
+            "nas"
+        ],
+        "Network_GF_Bedroom_SqueezeboxRadio": [
+            "Switch",
+            "Bedroom squeezebox state is",
+            "MAP(network.map):%s",
+            "squeezeboxradio",
+            [
+                "gNetwork"
+            ],
+            [],
+            "channel=network:device:some.ip.address.113:online",
+            "radio"
+        ],
+        "Wallplug_GF_Bedroom_PanelOven_switch": [
+            "Switch",
+            "Bedroom panel oven state is",
+            "%s",
+            "paneloven",
+            [
+                "gRoomBedroom"
+            ],
+            [],
+            "channel=zwave:device:2c3b27f3:node8:switch_binary",
+            "oven"
+        ],
+        "Dimmer_GF_Staircase_NotificationSend1": [
+            "Number",
+            "Send notification",
+            "",
+            "",
+            [
+                "gRoomStaircase"
+            ],
+            [],
+            "channel=zwave:device:2c3b27f3:node5:notification_send1",
+            "notification"
+        ]
+    },
+    "MyOpenhab-master": {
+        "panasonic_kwh_cool": [
+            "Number",
+            "Kwh",
+            "%.1f Kwh",
+            "",
+            [
+                "HeatPump"
+            ],
+            [],
+            "mqtt=<[broker:panasonic/tot_act_en:state:default]",
+            "cooler"
+        ],
+        "panasonic_heat_pump_PumpFlow": [
+            "Number",
+            "Flow",
+            "%.2f L/min",
+            "pump",
+            [
+                "HeatPump"
+            ],
+            [],
+            "mqtt=<[broker:panasonic_heat_pump/sdc/Pump_Flow:state:default]",
+            ""
+        ]
+    },
+    "openhab2-config-master_2": {
+        "projector": [
+            "Switch",
+            "Projektor",
+            "",
+            "",
+            [],
+            [],
+            "http=>[ON:POST:http://localhost:5001/projector/power]>[OFF:DELETE:http://localhost:5001/projector/power]<[http://localhost:5001/projector/power:10000:REGEX((.*))]",
+            "projector"
+        ]
+    },
+    "openhab-config-master-26": {
+        "Sunrise_Time": [
+            "DateTime",
+            "Sunrise",
+            "%1$tH:%1$tM Uhr",
+            "sun",
+            [
+                "Astro"
+            ],
+            [],
+            "channel=astro:sun:local:rise#end",
+            "geolocation"
+        ],
+        "PMETER_MAIN_AMPS": [
+            "Number",
+            "Electric Meter Amps",
+            "",
+            "",
+            [],
+            [],
+            "channel=zwave:device:512:node2:meter_current",
+            "electric"
+        ]
+    },
+    "openhab-config-master_5": {
+        "wr_mailbox": [
+            "Switch",
+            "Briefkasten",
+            "",
+            "keyring",
+            [
+                "Log",
+                "Boot",
+                "Shutdown"
+            ],
+            [],
+            "http=>[ON:POST:http://webrelais.core.bckspc.de/relais/7]>[OFF:DELETE:http://webrelais.core.bckspc.de/relais/7]",
+            "mailbox"
+        ]
+    },
+    "conf_9": {
+        "1stFHallway_Light_Reachable": [
+            "Switch",
+            "Hallway Light: reachable",
+            "",
+            "network",
+            [
+                "gReachableP1"
+            ],
+            [],
+            "mqtt=<[mqttbroker:tele/sonoff_F987B4/LWT:state:MAP(reachable.map)]",
+            "light"
+        ],
+        "2ndFFamilyRoom_Lamp_Reachable": [
+            "Switch",
+            "Family Room Lamp: reachable",
+            "",
+            "network",
+            [
+                "gReachableP2"
+            ],
+            [],
+            "mqtt=<[mqttbroker:tele/sonoff_173CEF/LWT:state:MAP(reachable.map)]",
+            "light"
+        ],
+        "RiegoFlujo": [
+            "Number",
+            "Flujo Agua (l/min)",
+            "%.2f",
+            "faucet",
+            [
+                "Jardin"
+            ],
+            [],
+            "mqtt=<[mqttbroker:mygateway1-out/3/23/1/0/34:state:default]",
+            "faucet"
+        ]
+    },
+    "myOpenHabConfig-master": {
+        "onkyoSrcAppleTv": [
+            "Switch",
+            "SRC AppleTv",
+            "",
+            "",
+            [
+                "gRadio"
+            ],
+            [],
+            "onkyo=ON:hometheater:SOURCE_COMPUTER",
+            "tv"
+        ],
+        "MyMobile": [
+            "Switch",
+            "My Phone",
+            "",
+            "",
+            [
+                "gBluetooth",
+                "Bluetooth"
+            ],
+            [],
+            "bluetooth=EC852F824204",
+            "phone"
+        ]
+    },
+    "brickdc": {
+        "TF_ROLLER": [
+            "Rollershutter",
+            "Roller",
+            "",
+            "",
+            [],
+            [],
+            "tinkerforge=uid=62Zduj,leftspeed=10000,rightspeed=-10000,acceleration=10000,drivemode=brake",
+            "roller"
+        ]
+    },
+    "full_v4": {
+        "Mains_nPower": [
+            "Number",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "channel=zwave:device:fdffd310:node16:meter_watts",
+            "power"
+        ],
+        "B01T103_cAlarm": [
+            "Contact",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "channel=zwave:device:fdffd310:node24:alarm_general",
+            "alarm"
+        ],
+        "B01T105_nBattery": [
+            "Number",
+            "",
+            "",
+            "",
+            [],
+            [],
+            "channel=zwave:device:fdffd310:node11:battery-level",
+            "battery"
+        ]
+    },
+    "openhab2-config01-master": {
+        "MareksPhone": [
+            "Switch",
+            "Marek's phone",
+            "M",
+            "",
+            [
+                "unifi.map"
+            ],
+            [],
+            "channel=unifi:wirelessClient:home:mareksPhone:online",
+            "phone"
+        ],
+        "T1_3_108_Switch_1": [
+            "Switch",
+            "Switch-1",
+            "%s",
+            "",
+            [],
+            [],
+            "channel=mqtt:topic:defaultbroker:g_living_room:PowerSwitch1",
+            "switch"
+        ],
+        "WFCS_2_130_Open": [
+            "Switch",
+            "Curtain Open",
+            "%s",
+            "",
+            [],
+            [],
+            "channel=mqtt:topic:defaultbroker:g_dining_room_curtain:Open",
+            "curtain"
+        ]
+    },
+    "openhab_configuration-master": {
+        "Light_GF_Kitchen_Ceiling": [
+            "Switch",
+            "Deckenlicht",
+            "",
+            "",
+            [
+                "GF_Kitchen",
+                "Lights"
+            ],
+            [],
+            "knx=0/0/2+0/0/4",
+            "light"
+        ],
+        "Light_FF_Office_Desk": [
+            "Dimmer",
+            "Schreibtisch",
+            "",
+            "",
+            [
+                "FF_Office",
+                "Lights"
+            ],
+            [],
+            "knx=1.001:1/4/2,5.001:1/4/3",
+            "light"
+        ],
+        "NetworkDevice_iPhone1": [
+            "Switch",
+            "",
+            "",
+            "",
+            [
+                "MobilePhones"
+            ],
+            [],
+            "nh=NetworkDevice_iPhone1",
+            "phone"
+        ],
+        "Temperature_GF_LivingRoom_DiningRoom": [
+            "Number",
+            "Temperatur Esszimmer",
+            "%.1f \u00c2\u00b0C",
+            "temperature",
+            [
+                "Temperature",
+                "TemperatureKNX",
+                "GF_LivingRoom",
+                "GF_DiningRoom"
+            ],
+            [],
+            "knx=4/0/0",
+            "temperature"
+        ],
+        "Error_Actuator_Heating_GF": [
+            "Switch",
+            "St\u00c3\u00b6rung Heizungsaktor EG",
+            "",
+            "",
+            [
+                "Heater"
+            ],
+            [],
+            "knx=4/3/0",
+            "heater"
+        ]
+    }
+}

@@ -1,0 +1,2580 @@
+{
+  "capability.accelerationSensor": {
+    "attributes": [
+      "acceleration"
+    ],
+    "commands": [],
+    "id": "accelerationSensor",
+    "name": "Acceleration Sensor",
+    "status": "live"
+  },
+  "capability.activityLightingMode": {
+    "attributes": [
+      "lightingMode"
+    ],
+    "commands": [
+      "setLightingMode"
+    ],
+    "id": "activityLightingMode",
+    "name": "Activity Lighting Mode",
+    "status": "proposed"
+  },
+  "capability.activitySensor": {
+    "attributes": [
+      "activity"
+    ],
+    "commands": [],
+    "id": "activitySensor",
+    "name": "Activity Sensor",
+    "status": "live"
+  },
+  "capability.actuator": {
+    "attributes": [],
+    "commands": [],
+    "id": "actuator",
+    "name": "Actuator",
+    "status": "deprecated"
+  },
+  "capability.airConditionerFanMode": {
+    "attributes": [
+      "fanMode",
+      "supportedAcFanModes"
+    ],
+    "commands": [
+      "setFanMode"
+    ],
+    "id": "airConditionerFanMode",
+    "name": "Air Conditioner Fan Mode",
+    "status": "live"
+  },
+  "capability.airConditionerMode": {
+    "attributes": [
+      "supportedAcModes",
+      "airConditionerMode"
+    ],
+    "commands": [
+      "setAirConditionerMode"
+    ],
+    "id": "airConditionerMode",
+    "name": "Air Conditioner Mode",
+    "status": "live"
+  },
+  "capability.airFlowDirection": {
+    "attributes": [
+      "airFlowDirection"
+    ],
+    "commands": [
+      "setAirFlowDirection"
+    ],
+    "id": "airFlowDirection",
+    "name": "Air Flow Direction",
+    "status": "dead"
+  },
+  "capability.airPurifierFanMode": {
+    "attributes": [
+      "supportedAirPurifierFanModes",
+      "airPurifierFanMode"
+    ],
+    "commands": [
+      "setAirPurifierFanMode"
+    ],
+    "id": "airPurifierFanMode",
+    "name": "Air Purifier Fan Mode",
+    "status": "proposed"
+  },
+  "capability.airQualitySensor": {
+    "attributes": [
+      "airQuality"
+    ],
+    "commands": [],
+    "id": "airQualitySensor",
+    "name": "Air Quality Sensor",
+    "status": "live"
+  },
+  "capability.alarm": {
+    "attributes": [
+      "alarm"
+    ],
+    "commands": [
+      "siren",
+      "strobe",
+      "off",
+      "both"
+    ],
+    "id": "alarm",
+    "name": "Alarm",
+    "status": "live"
+  },
+  "capability.alarmSystem": {
+    "attributes": [
+      "alarmSystemStatus"
+    ],
+    "commands": [
+      "sendEvent(alarmSystemStatus,off)",
+      "sendEvent(alarmSystemStatus,away)",
+      "sendEvent(alarmSystemStatus,stay)"
+    ],
+    "id": "alarmSystem",
+    "name": "Alarm System",
+    "status": "dead"
+  },
+  "capability.alarmSystemArmOnly": {
+    "attributes": [
+      "alarmSystemStatus"
+    ],
+    "commands": [
+      "sendEvent(alarmSystemStatus,away)",
+      "sendEvent(alarmSystemStatus,stay)"
+    ],
+    "id": "alarmSystemArmOnly",
+    "name": "Alarm System Arm Only",
+    "status": "dead"
+  },
+  "capability.astronomicalData": {
+    "attributes": [
+      "sunrise",
+      "sunsetTime",
+      "sunset",
+      "sunriseTime"
+    ],
+    "commands": [
+      "sendEvent(sunriseTime)",
+      "sendEvent(sunrise)",
+      "sendEvent(sunset)",
+      "sendEvent(sunsetTime)"
+    ],
+    "id": "astronomicalData",
+    "name": "Astronomical Data",
+    "status": "dead"
+  },
+  "capability.atmosphericPressureMeasurement": {
+    "attributes": [
+      "atmosphericPressure"
+    ],
+    "commands": [],
+    "id": "atmosphericPressureMeasurement",
+    "name": "Atmospheric Pressure Measurement",
+    "status": "proposed"
+  },
+  "capability.audioCapture": {
+    "attributes": [
+      "stream",
+      "clip"
+    ],
+    "commands": [
+      "capture"
+    ],
+    "id": "audioCapture",
+    "name": "Audio Capture",
+    "status": "proposed"
+  },
+  "capability.audioMute": {
+    "attributes": [
+      "mute"
+    ],
+    "commands": [
+      "setMute",
+      "mute",
+      "unmute"
+    ],
+    "id": "audioMute",
+    "name": "Audio Mute",
+    "status": "live"
+  },
+  "capability.audioNotification": {
+    "attributes": [],
+    "commands": [
+      "playTrackAndResume",
+      "playTrackAndRestore",
+      "playTrack"
+    ],
+    "id": "audioNotification",
+    "name": "Audio Notification",
+    "status": "live"
+  },
+  "capability.audioStream": {
+    "attributes": [
+      "uri"
+    ],
+    "commands": [
+      "startAudio",
+      "stopAudio"
+    ],
+    "id": "audioStream",
+    "name": "Audio Stream",
+    "status": "live"
+  },
+  "capability.audioTrackAddressing": {
+    "attributes": [],
+    "commands": [
+      "setAudioTrack"
+    ],
+    "id": "audioTrackAddressing",
+    "name": "Audio Track Addressing",
+    "status": "proposed"
+  },
+  "capability.audioTrackData": {
+    "attributes": [
+      "totalTime",
+      "audioTrackData",
+      "elapsedTime"
+    ],
+    "commands": [],
+    "id": "audioTrackData",
+    "name": "Audio Track Data",
+    "status": "proposed"
+  },
+  "capability.audioVolume": {
+    "attributes": [
+      "volume"
+    ],
+    "commands": [
+      "volumeDown",
+      "volumeUp",
+      "setVolume"
+    ],
+    "id": "audioVolume",
+    "name": "Audio Volume",
+    "status": "live"
+  },
+  "capability.battery": {
+    "attributes": [
+      "battery"
+    ],
+    "commands": [],
+    "id": "battery",
+    "name": "Battery",
+    "status": "live"
+  },
+  "capability.beacon": {
+    "attributes": [
+      "presence"
+    ],
+    "commands": [],
+    "id": "beacon",
+    "name": "Beacon",
+    "status": "deprecated"
+  },
+  "capability.bodyMassIndexMeasurement": {
+    "attributes": [
+      "bmiMeasurement"
+    ],
+    "commands": [],
+    "id": "bodyMassIndexMeasurement",
+    "name": "Body Mass Index Measurement",
+    "status": "live"
+  },
+  "capability.bodyWeightMeasurement": {
+    "attributes": [
+      "bodyWeightMeasurement"
+    ],
+    "commands": [],
+    "id": "bodyWeightMeasurement",
+    "name": "Body Weight Measurement",
+    "status": "proposed"
+  },
+  "capability.bridge": {
+    "attributes": [],
+    "commands": [],
+    "id": "bridge",
+    "name": "Bridge",
+    "status": "deprecated"
+  },
+  "capability.bufferedVideoCapture": {
+    "attributes": [
+      "clip"
+    ],
+    "commands": [
+      "capture"
+    ],
+    "id": "bufferedVideoCapture",
+    "name": "Buffered Video Capture",
+    "status": "deprecated"
+  },
+  "capability.bulb": {
+    "attributes": [
+      "switch"
+    ],
+    "commands": [
+      "off",
+      "on"
+    ],
+    "id": "bulb",
+    "name": "Bulb",
+    "status": "dead"
+  },
+  "capability.button": {
+    "attributes": [
+      "button",
+      "numberOfButtons",
+      "supportedButtonValues"
+    ],
+    "commands": [],
+    "id": "button",
+    "name": "Button",
+    "status": "live"
+  },
+  "capability.bypassable": {
+    "attributes": [
+      "bypassStatus"
+    ],
+    "commands": [],
+    "id": "bypassable",
+    "name": "Bypassable",
+    "status": "live"
+  },
+  "capability.cameraPreset": {
+    "attributes": [
+      "presets"
+    ],
+    "commands": [
+      "create",
+      "update",
+      "execute",
+      "delete"
+    ],
+    "id": "cameraPreset",
+    "name": "Camera Preset",
+    "status": "proposed"
+  },
+  "capability.carbonDioxideHealthConcern": {
+    "attributes": [
+      "carbonDioxideHealthConcern"
+    ],
+    "commands": [],
+    "id": "carbonDioxideHealthConcern",
+    "name": "Carbon Dioxide Health Concern",
+    "status": "live"
+  },
+  "capability.carbonDioxideMeasurement": {
+    "attributes": [
+      "carbonDioxide"
+    ],
+    "commands": [],
+    "id": "carbonDioxideMeasurement",
+    "name": "Carbon Dioxide Measurement",
+    "status": "live"
+  },
+  "capability.carbonMonoxideDetector": {
+    "attributes": [
+      "carbonMonoxide"
+    ],
+    "commands": [],
+    "id": "carbonMonoxideDetector",
+    "name": "Carbon Monoxide Detector",
+    "status": "live"
+  },
+  "capability.carbonMonoxideMeasurement": {
+    "attributes": [
+      "carbonMonoxideLevel"
+    ],
+    "commands": [],
+    "id": "carbonMonoxideMeasurement",
+    "name": "Carbon Monoxide Measurement",
+    "status": "live"
+  },
+  "capability.chime": {
+    "attributes": [
+      "chime"
+    ],
+    "commands": [
+      "off",
+      "chime"
+    ],
+    "id": "chime",
+    "name": "Chime",
+    "status": "proposed"
+  },
+  "capability.color": {
+    "attributes": [
+      "colorValue"
+    ],
+    "commands": [
+      "setColorValue"
+    ],
+    "id": "color",
+    "name": "Color",
+    "status": "proposed"
+  },
+  "capability.colorControl": {
+    "attributes": [
+      "saturation",
+      "color",
+      "hue"
+    ],
+    "commands": [
+      "setColor",
+      "setHue",
+      "setSaturation"
+    ],
+    "id": "colorControl",
+    "name": "Color Control",
+    "status": "live"
+  },
+  "capability.colorMode": {
+    "attributes": [
+      "colorMode"
+    ],
+    "commands": [],
+    "id": "colorMode",
+    "name": "Color Mode",
+    "status": "proposed"
+  },
+  "capability.colorTemperature": {
+    "attributes": [
+      "colorTemperature"
+    ],
+    "commands": [
+      "setColorTemperature"
+    ],
+    "id": "colorTemperature",
+    "name": "Color Temperature",
+    "status": "live"
+  },
+  "capability.configuration": {
+    "attributes": [],
+    "commands": [
+      "configure"
+    ],
+    "id": "configuration",
+    "name": "Configuration",
+    "status": "live"
+  },
+  "capability.consumable": {
+    "attributes": [
+      "consumableStatus"
+    ],
+    "commands": [
+      "setConsumableStatus"
+    ],
+    "id": "consumable",
+    "name": "Consumable",
+    "status": "proposed"
+  },
+  "capability.contactSensor": {
+    "attributes": [
+      "contact"
+    ],
+    "commands": [],
+    "id": "contactSensor",
+    "name": "Contact Sensor",
+    "status": "live"
+  },
+  "capability.currentMeasurement": {
+    "attributes": [
+      "current"
+    ],
+    "commands": [],
+    "id": "currentMeasurement",
+    "name": "Current Measurement",
+    "status": "proposed"
+  },
+  "capability.demandResponseLoadControl": {
+    "attributes": [
+      "drlcStatus"
+    ],
+    "commands": [
+      "overrideDrlcAction",
+      "requestDrlcAction"
+    ],
+    "id": "demandResponseLoadControl",
+    "name": "Demand Response Load Control",
+    "status": "proposed"
+  },
+  "capability.dewPoint": {
+    "attributes": [
+      "dewpoint"
+    ],
+    "commands": [],
+    "id": "dewPoint",
+    "name": "Dew Point",
+    "status": "live"
+  },
+  "capability.dishwasherMode": {
+    "attributes": [
+      "dishwasherMode"
+    ],
+    "commands": [
+      "setDishwasherMode"
+    ],
+    "id": "dishwasherMode",
+    "name": "Dishwasher Mode",
+    "status": "proposed"
+  },
+  "capability.dishwasherOperatingState": {
+    "attributes": [
+      "completionTime",
+      "machineState",
+      "supportedMachineStates",
+      "dishwasherJobState"
+    ],
+    "commands": [
+      "setMachineState"
+    ],
+    "id": "dishwasherOperatingState",
+    "name": "Dishwasher Operating State",
+    "status": "proposed"
+  },
+  "capability.dishwasherOperationalState": {
+    "attributes": [
+      "completionTime",
+      "machineState",
+      "supportedMachineStates",
+      "dishwasherJobState"
+    ],
+    "commands": [
+      "setMachineState"
+    ],
+    "id": "dishwasherOperationalState",
+    "name": "Dishwasher Operational State",
+    "status": "deprecated"
+  },
+  "capability.doorControl": {
+    "attributes": [
+      "door"
+    ],
+    "commands": [
+      "close",
+      "open"
+    ],
+    "id": "doorControl",
+    "name": "Door Control",
+    "status": "live"
+  },
+  "capability.drivingStatus": {
+    "attributes": [
+      "drivingStatus"
+    ],
+    "commands": [],
+    "id": "drivingStatus",
+    "name": "Driving Status",
+    "status": "proposed"
+  },
+  "capability.dryerMode": {
+    "attributes": [
+      "dryerMode"
+    ],
+    "commands": [
+      "setDryerMode"
+    ],
+    "id": "dryerMode",
+    "name": "Dryer Mode",
+    "status": "proposed"
+  },
+  "capability.dryerOperatingState": {
+    "attributes": [
+      "completionTime",
+      "machineState",
+      "supportedMachineStates",
+      "dryerJobState"
+    ],
+    "commands": [
+      "setMachineState"
+    ],
+    "id": "dryerOperatingState",
+    "name": "Dryer Operating State",
+    "status": "proposed"
+  },
+  "capability.dustHealthConcern": {
+    "attributes": [
+      "dustHealthConcern"
+    ],
+    "commands": [],
+    "id": "dustHealthConcern",
+    "name": "Dust Health Concern",
+    "status": "proposed"
+  },
+  "capability.dustSensor": {
+    "attributes": [
+      "dustLevel",
+      "fineDustLevel"
+    ],
+    "commands": [],
+    "id": "dustSensor",
+    "name": "Dust Sensor",
+    "status": "live"
+  },
+  "capability.elevatorCall": {
+    "attributes": [
+      "callStatus"
+    ],
+    "commands": [
+      "call"
+    ],
+    "id": "elevatorCall",
+    "name": "Elevator Call",
+    "status": "live"
+  },
+  "capability.energyMeter": {
+    "attributes": [
+      "energy"
+    ],
+    "commands": [
+      "resetEnergyMeter"
+    ],
+    "id": "energyMeter",
+    "name": "Energy Meter",
+    "status": "live"
+  },
+  "capability.equivalentCarbonDioxideMeasurement": {
+    "attributes": [
+      "equivalentCarbonDioxideMeasurement"
+    ],
+    "commands": [],
+    "id": "equivalentCarbonDioxideMeasurement",
+    "name": "Equivalent Carbon Dioxide Measurement",
+    "status": "live"
+  },
+  "capability.estimatedTimeOfArrival": {
+    "attributes": [
+      "eta"
+    ],
+    "commands": [],
+    "id": "estimatedTimeOfArrival",
+    "name": "Estimated Time Of Arrival",
+    "status": "proposed"
+  },
+  "capability.execute": {
+    "attributes": [
+      "data"
+    ],
+    "commands": [
+      "execute"
+    ],
+    "id": "execute",
+    "name": "Execute",
+    "status": "live"
+  },
+  "capability.fanOscillationMode": {
+    "attributes": [
+      "supportedFanOscillationModes",
+      "fanOscillationMode"
+    ],
+    "commands": [
+      "setFanOscillationMode"
+    ],
+    "id": "fanOscillationMode",
+    "name": "Fan Oscillation Mode",
+    "status": "live"
+  },
+  "capability.fanSpeed": {
+    "attributes": [
+      "fanSpeed"
+    ],
+    "commands": [
+      "setFanSpeed"
+    ],
+    "id": "fanSpeed",
+    "name": "Fan Speed",
+    "status": "live"
+  },
+  "capability.feederOperatingState": {
+    "attributes": [
+      "feederOperatingState"
+    ],
+    "commands": [
+      "startFeeding"
+    ],
+    "id": "feederOperatingState",
+    "name": "Feeder Operating State",
+    "status": "proposed"
+  },
+  "capability.feederPortion": {
+    "attributes": [
+      "feedPortion"
+    ],
+    "commands": [
+      "setPortion"
+    ],
+    "id": "feederPortion",
+    "name": "Feeder Portion",
+    "status": "proposed"
+  },
+  "capability.filterState": {
+    "attributes": [
+      "filterLifeRemaining"
+    ],
+    "commands": [],
+    "id": "filterState",
+    "name": "Filter State",
+    "status": "live"
+  },
+  "capability.filterStatus": {
+    "attributes": [
+      "filterStatus"
+    ],
+    "commands": [],
+    "id": "filterStatus",
+    "name": "Filter Status",
+    "status": "proposed"
+  },
+  "capability.fineDustHealthConcern": {
+    "attributes": [
+      "fineDustHealthConcern"
+    ],
+    "commands": [],
+    "id": "fineDustHealthConcern",
+    "name": "Fine Dust Health Concern",
+    "status": "live"
+  },
+  "capability.fineDustSensor": {
+    "attributes": [
+      "fineDustLevel"
+    ],
+    "commands": [],
+    "id": "fineDustSensor",
+    "name": "Fine Dust Sensor",
+    "status": "live"
+  },
+  "capability.firmwareUpdate": {
+    "attributes": [
+      "lastUpdateStatusReason",
+      "availableVersion",
+      "lastUpdateStatus",
+      "state",
+      "currentVersion",
+      "lastUpdateTime"
+    ],
+    "commands": [
+      "updateFirmware",
+      "checkForFirmwareUpdate"
+    ],
+    "id": "firmwareUpdate",
+    "name": "Firmware Update",
+    "status": "live"
+  },
+  "capability.formaldehydeMeasurement": {
+    "attributes": [
+      "formaldehydeLevel"
+    ],
+    "commands": [],
+    "id": "formaldehydeMeasurement",
+    "name": "Formaldehyde Measurement",
+    "status": "live"
+  },
+  "capability.garageDoorControl": {
+    "attributes": [
+      "door"
+    ],
+    "commands": [
+      "close",
+      "open"
+    ],
+    "id": "garageDoorControl",
+    "name": "Garage Door Control",
+    "status": "deprecated"
+  },
+  "capability.gasDetector": {
+    "attributes": [
+      "gas"
+    ],
+    "commands": [],
+    "id": "gasDetector",
+    "name": "Gas Detector",
+    "status": "proposed"
+  },
+  "capability.gasMeter": {
+    "attributes": [
+      "gasMeterPrecision",
+      "gasMeterCalorific",
+      "gasMeterTime",
+      "gasMeterConversion",
+      "gasMeterVolume",
+      "gasMeter"
+    ],
+    "commands": [],
+    "id": "gasMeter",
+    "name": "Gas Meter",
+    "status": "live"
+  },
+  "capability.geofence": {
+    "attributes": [
+      "enableState",
+      "geofence",
+      "name"
+    ],
+    "commands": [
+      "setName",
+      "setEnableState",
+      "setGeofence"
+    ],
+    "id": "geofence",
+    "name": "Geofence",
+    "status": "proposed"
+  },
+  "capability.geofences": {
+    "attributes": [
+      "geofences"
+    ],
+    "commands": [],
+    "id": "geofences",
+    "name": "Geofences",
+    "status": "deprecated"
+  },
+  "capability.geolocation": {
+    "attributes": [
+      "method",
+      "heading",
+      "latitude",
+      "accuracy",
+      "altitudeAccuracy",
+      "speed",
+      "longitude",
+      "lastUpdateTime"
+    ],
+    "commands": [],
+    "id": "geolocation",
+    "name": "Geolocation",
+    "status": "proposed"
+  },
+  "capability.healthCheck": {
+    "attributes": [
+      "checkInterval",
+      "healthStatus",
+      "DeviceWatch-Enroll",
+      "DeviceWatch-DeviceStatus"
+    ],
+    "commands": [
+      "ping"
+    ],
+    "id": "healthCheck",
+    "name": "Health Check",
+    "status": "live"
+  },
+  "capability.holdableButton": {
+    "attributes": [
+      "button",
+      "numberOfButtons"
+    ],
+    "commands": [],
+    "id": "holdableButton",
+    "name": "Holdable Button",
+    "status": "deprecated"
+  },
+  "capability.humidifierMode": {
+    "attributes": [
+      "humidifierMode"
+    ],
+    "commands": [
+      "setHumidifierMode"
+    ],
+    "id": "humidifierMode",
+    "name": "Humidifier Mode",
+    "status": "live"
+  },
+  "capability.illuminanceMeasurement": {
+    "attributes": [
+      "illuminance"
+    ],
+    "commands": [],
+    "id": "illuminanceMeasurement",
+    "name": "Illuminance Measurement",
+    "status": "live"
+  },
+  "capability.imageCapture": {
+    "attributes": [
+      "image",
+      "encrypted",
+      "captureTime"
+    ],
+    "commands": [
+      "take"
+    ],
+    "id": "imageCapture",
+    "name": "Image Capture",
+    "status": "live"
+  },
+  "capability.indicator": {
+    "attributes": [
+      "indicatorStatus"
+    ],
+    "commands": [
+      "indicatorNever",
+      "indicatorWhenOn",
+      "indicatorWhenOff"
+    ],
+    "id": "indicator",
+    "name": "Indicator",
+    "status": "deprecated"
+  },
+  "capability.infraredLevel": {
+    "attributes": [
+      "infraredLevel"
+    ],
+    "commands": [
+      "setInfraredLevel"
+    ],
+    "id": "infraredLevel",
+    "name": "Infrared Level",
+    "status": "live"
+  },
+  "capability.keypadInput": {
+    "attributes": [
+      "supportedKeyCodes"
+    ],
+    "commands": [
+      "sendKey"
+    ],
+    "id": "keypadInput",
+    "name": "Keypad Input",
+    "status": "proposed"
+  },
+  "capability.languageSetting": {
+    "attributes": [
+      "supportedLanguages",
+      "language"
+    ],
+    "commands": [
+      "setLanguage"
+    ],
+    "id": "languageSetting",
+    "name": "Language Setting",
+    "status": "proposed"
+  },
+  "capability.light": {
+    "attributes": [
+      "switch"
+    ],
+    "commands": [
+      "off",
+      "on"
+    ],
+    "id": "light",
+    "name": "Light",
+    "status": "deprecated"
+  },
+  "capability.locationMode": {
+    "attributes": [
+      "mode"
+    ],
+    "commands": [
+      "setMode"
+    ],
+    "id": "locationMode",
+    "name": "Location Mode",
+    "status": "live"
+  },
+  "capability.lock": {
+    "attributes": [
+      "lock"
+    ],
+    "commands": [
+      "unlock",
+      "lock"
+    ],
+    "id": "lock",
+    "name": "Lock",
+    "status": "live"
+  },
+  "capability.lockCodes": {
+    "attributes": [
+      "codeLength",
+      "maxCodes",
+      "maxCodeLength",
+      "codeChanged",
+      "lock",
+      "minCodeLength",
+      "codeReport",
+      "scanCodes",
+      "lockCodes"
+    ],
+    "commands": [
+      "setCodeLength",
+      "reloadAllCodes",
+      "unlock",
+      "unlockWithTimeout",
+      "setCode",
+      "updateCodes",
+      "requestCode",
+      "lock",
+      "nameSlot",
+      "deleteCode"
+    ],
+    "id": "lockCodes",
+    "name": "Lock Codes",
+    "status": "live"
+  },
+  "capability.lockOnly": {
+    "attributes": [
+      "lock"
+    ],
+    "commands": [
+      "lock"
+    ],
+    "id": "lockOnly",
+    "name": "Lock Only",
+    "status": "deprecated"
+  },
+  "capability.logTrigger": {
+    "attributes": [
+      "logState",
+      "logRequestState",
+      "logInfo"
+    ],
+    "commands": [
+      "triggerLogWithUrl",
+      "triggerLogWithLogInfo",
+      "triggerLog"
+    ],
+    "id": "logTrigger",
+    "name": "Log Trigger",
+    "status": "proposed"
+  },
+  "capability.mediaController": {
+    "attributes": [
+      "currentActivity",
+      "activities"
+    ],
+    "commands": [
+      "startActivity"
+    ],
+    "id": "mediaController",
+    "name": "Media Controller",
+    "status": "proposed"
+  },
+  "capability.mediaGroup": {
+    "attributes": [
+      "groupMute",
+      "groupPrimaryDeviceId",
+      "groupId",
+      "groupVolume",
+      "groupRole"
+    ],
+    "commands": [
+      "groupVolumeUp",
+      "groupVolumeDown",
+      "muteGroup",
+      "setGroupVolume",
+      "unmuteGroup",
+      "setGroupMute"
+    ],
+    "id": "mediaGroup",
+    "name": "Media Group",
+    "status": "proposed"
+  },
+  "capability.mediaInputSource": {
+    "attributes": [
+      "supportedInputSources",
+      "inputSource"
+    ],
+    "commands": [
+      "setInputSource"
+    ],
+    "id": "mediaInputSource",
+    "name": "Media Input Source",
+    "status": "live"
+  },
+  "capability.mediaPlayback": {
+    "attributes": [
+      "supportedPlaybackCommands",
+      "playbackStatus"
+    ],
+    "commands": [
+      "play",
+      "rewind",
+      "stop",
+      "fastForward",
+      "setPlaybackStatus",
+      "pause"
+    ],
+    "id": "mediaPlayback",
+    "name": "Media Playback",
+    "status": "live"
+  },
+  "capability.mediaPlaybackRepeat": {
+    "attributes": [
+      "playbackRepeatMode"
+    ],
+    "commands": [
+      "setPlaybackRepeatMode"
+    ],
+    "id": "mediaPlaybackRepeat",
+    "name": "Media Playback Repeat",
+    "status": "proposed"
+  },
+  "capability.mediaPlaybackShuffle": {
+    "attributes": [
+      "playbackShuffle"
+    ],
+    "commands": [
+      "setPlaybackShuffle"
+    ],
+    "id": "mediaPlaybackShuffle",
+    "name": "Media Playback Shuffle",
+    "status": "proposed"
+  },
+  "capability.mediaPresets": {
+    "attributes": [
+      "presets"
+    ],
+    "commands": [
+      "playPreset"
+    ],
+    "id": "mediaPresets",
+    "name": "Media Presets",
+    "status": "proposed"
+  },
+  "capability.mediaTrackControl": {
+    "attributes": [
+      "supportedTrackControlCommands"
+    ],
+    "commands": [
+      "previousTrack",
+      "nextTrack"
+    ],
+    "id": "mediaTrackControl",
+    "name": "Media Track Control",
+    "status": "live"
+  },
+  "capability.mode": {
+    "attributes": [
+      "mode",
+      "supportedModes"
+    ],
+    "commands": [
+      "setMode"
+    ],
+    "id": "mode",
+    "name": "Mode",
+    "status": "proposed"
+  },
+  "capability.moldHealthConcern": {
+    "attributes": [
+      "moldHealthConcern"
+    ],
+    "commands": [],
+    "id": "moldHealthConcern",
+    "name": "Mold Health Concern",
+    "status": "live"
+  },
+  "capability.momentary": {
+    "attributes": [],
+    "commands": [
+      "push"
+    ],
+    "id": "momentary",
+    "name": "Momentary",
+    "status": "live"
+  },
+  "capability.motionSensor": {
+    "attributes": [
+      "motion"
+    ],
+    "commands": [],
+    "id": "motionSensor",
+    "name": "Motion Sensor",
+    "status": "live"
+  },
+  "capability.musicPlayer": {
+    "attributes": [
+      "trackDescription",
+      "level",
+      "mute",
+      "trackData",
+      "status"
+    ],
+    "commands": [
+      "play",
+      "restoreTrack",
+      "resumeTrack",
+      "stop",
+      "previousTrack",
+      "nextTrack",
+      "mute",
+      "setTrack",
+      "unmute",
+      "playTrack",
+      "pause",
+      "setLevel"
+    ],
+    "id": "musicPlayer",
+    "name": "Music Player",
+    "status": "deprecated"
+  },
+  "capability.networkMeter": {
+    "attributes": [
+      "uplinkSpeed",
+      "downlinkSpeed"
+    ],
+    "commands": [],
+    "id": "networkMeter",
+    "name": "Network Meter",
+    "status": "live"
+  },
+  "capability.notification": {
+    "attributes": [],
+    "commands": [
+      "deviceNotification"
+    ],
+    "id": "notification",
+    "name": "Notification",
+    "status": "live"
+  },
+  "capability.objectDetection": {
+    "attributes": [
+      "detected",
+      "supportedValues"
+    ],
+    "commands": [],
+    "id": "objectDetection",
+    "name": "Object Detection",
+    "status": "live"
+  },
+  "capability.occupancySensor": {
+    "attributes": [
+      "occupancy"
+    ],
+    "commands": [],
+    "id": "occupancySensor",
+    "name": "Occupancy Sensor",
+    "status": "live"
+  },
+  "capability.ocf": {
+    "attributes": [
+      "st",
+      "mndt",
+      "mnfv",
+      "mnhw",
+      "di",
+      "mnsl",
+      "dmv",
+      "n",
+      "mnmo",
+      "vid",
+      "mnmn",
+      "mnml",
+      "mnpv",
+      "mnos",
+      "pi",
+      "icv"
+    ],
+    "commands": [
+      "postOcfCommand"
+    ],
+    "id": "ocf",
+    "name": "Ocf",
+    "status": "proposed"
+  },
+  "capability.odorSensor": {
+    "attributes": [
+      "odorLevel"
+    ],
+    "commands": [],
+    "id": "odorSensor",
+    "name": "Odor Sensor",
+    "status": "live"
+  },
+  "capability.operatingState": {
+    "attributes": [
+      "machineState",
+      "supportedMachineStates"
+    ],
+    "commands": [
+      "setMachineState"
+    ],
+    "id": "operatingState",
+    "name": "Operating State",
+    "status": "proposed"
+  },
+  "capability.outlet": {
+    "attributes": [
+      "switch"
+    ],
+    "commands": [
+      "off",
+      "on"
+    ],
+    "id": "outlet",
+    "name": "Outlet",
+    "status": "deprecated"
+  },
+  "capability.ovenMode": {
+    "attributes": [
+      "supportedOvenModes",
+      "ovenMode"
+    ],
+    "commands": [
+      "setOvenMode"
+    ],
+    "id": "ovenMode",
+    "name": "Oven Mode",
+    "status": "proposed"
+  },
+  "capability.ovenOperatingState": {
+    "attributes": [
+      "completionTime",
+      "machineState",
+      "progress",
+      "supportedMachineStates",
+      "ovenJobState",
+      "operationTime"
+    ],
+    "commands": [
+      "stop",
+      "setMachineState",
+      "start"
+    ],
+    "id": "ovenOperatingState",
+    "name": "Oven Operating State",
+    "status": "proposed"
+  },
+  "capability.ovenOperationalState": {
+    "attributes": [
+      "completionTime",
+      "machineState",
+      "progress",
+      "supportedMachineStates",
+      "ovenJobState",
+      "operationTime"
+    ],
+    "commands": [
+      "stop",
+      "setMachineState"
+    ],
+    "id": "ovenOperationalState",
+    "name": "Oven Operational State",
+    "status": "deprecated"
+  },
+  "capability.ovenSetpoint": {
+    "attributes": [
+      "ovenSetpoint"
+    ],
+    "commands": [
+      "setOvenSetpoint"
+    ],
+    "id": "ovenSetpoint",
+    "name": "Oven Setpoint",
+    "status": "proposed"
+  },
+  "capability.pHMeasurement": {
+    "attributes": [
+      "pH"
+    ],
+    "commands": [],
+    "id": "pHMeasurement",
+    "name": "pH Measurement",
+    "status": "live"
+  },
+  "capability.panicAlarm": {
+    "attributes": [
+      "panicAlarm"
+    ],
+    "commands": [],
+    "id": "panicAlarm",
+    "name": "Panic Alarm",
+    "status": "live"
+  },
+  "capability.pestControl": {
+    "attributes": [
+      "pestControl"
+    ],
+    "commands": [],
+    "id": "pestControl",
+    "name": "Pest Control",
+    "status": "proposed"
+  },
+  "capability.polling": {
+    "attributes": [],
+    "commands": [
+      "poll"
+    ],
+    "id": "polling",
+    "name": "Polling",
+    "status": "deprecated"
+  },
+  "capability.powerConsumptionReport": {
+    "attributes": [
+      "powerConsumption"
+    ],
+    "commands": [],
+    "id": "powerConsumptionReport",
+    "name": "Power Consumption Report",
+    "status": "live"
+  },
+  "capability.powerMeter": {
+    "attributes": [
+      "power"
+    ],
+    "commands": [],
+    "id": "powerMeter",
+    "name": "Power Meter",
+    "status": "live"
+  },
+  "capability.powerSource": {
+    "attributes": [
+      "powerSource"
+    ],
+    "commands": [],
+    "id": "powerSource",
+    "name": "Power Source",
+    "status": "live"
+  },
+  "capability.precipitationMeasurement": {
+    "attributes": [
+      "precipitationLevel"
+    ],
+    "commands": [
+      "resetPrecipitationLevel"
+    ],
+    "id": "precipitationMeasurement",
+    "name": "Precipitation Measurement",
+    "status": "proposed"
+  },
+  "capability.precipitationRate": {
+    "attributes": [
+      "precipitationRate"
+    ],
+    "commands": [],
+    "id": "precipitationRate",
+    "name": "Precipitation Rate",
+    "status": "proposed"
+  },
+  "capability.precipitationSensor": {
+    "attributes": [
+      "precipitationIntensity"
+    ],
+    "commands": [],
+    "id": "precipitationSensor",
+    "name": "Precipitation Sensor",
+    "status": "proposed"
+  },
+  "capability.presenceSensor": {
+    "attributes": [
+      "presence"
+    ],
+    "commands": [],
+    "id": "presenceSensor",
+    "name": "Presence Sensor",
+    "status": "live"
+  },
+  "capability.radonHealthConcern": {
+    "attributes": [
+      "radonHealthConcern"
+    ],
+    "commands": [],
+    "id": "radonHealthConcern",
+    "name": "Radon Health Concern",
+    "status": "proposed"
+  },
+  "capability.radonMeasurement": {
+    "attributes": [
+      "radonLevel"
+    ],
+    "commands": [],
+    "id": "radonMeasurement",
+    "name": "Radon Measurement",
+    "status": "live"
+  },
+  "capability.rapidCooling": {
+    "attributes": [
+      "rapidCooling"
+    ],
+    "commands": [
+      "setRapidCooling"
+    ],
+    "id": "rapidCooling",
+    "name": "Rapid Cooling",
+    "status": "proposed"
+  },
+  "capability.refresh": {
+    "attributes": [],
+    "commands": [
+      "refresh"
+    ],
+    "id": "refresh",
+    "name": "Refresh",
+    "status": "live"
+  },
+  "capability.refrigeration": {
+    "attributes": [
+      "defrost",
+      "rapidCooling",
+      "rapidFreezing"
+    ],
+    "commands": [
+      "setDefrost",
+      "setRapidFreezing",
+      "setRapidCooling"
+    ],
+    "id": "refrigeration",
+    "name": "Refrigeration",
+    "status": "live"
+  },
+  "capability.refrigerationSetpoint": {
+    "attributes": [
+      "refrigerationSetpoint"
+    ],
+    "commands": [
+      "setRefrigerationSetpoint"
+    ],
+    "id": "refrigerationSetpoint",
+    "name": "Refrigeration Setpoint",
+    "status": "proposed"
+  },
+  "capability.relativeBrightness": {
+    "attributes": [
+      "brightnessIntensity"
+    ],
+    "commands": [],
+    "id": "relativeBrightness",
+    "name": "Relative Brightness",
+    "status": "proposed"
+  },
+  "capability.relativeHumidityMeasurement": {
+    "attributes": [
+      "humidity"
+    ],
+    "commands": [],
+    "id": "relativeHumidityMeasurement",
+    "name": "Relative Humidity Measurement",
+    "status": "live"
+  },
+  "capability.relaySwitch": {
+    "attributes": [
+      "switch"
+    ],
+    "commands": [
+      "off",
+      "on"
+    ],
+    "id": "relaySwitch",
+    "name": "Relay Switch",
+    "status": "deprecated"
+  },
+  "capability.remoteControlStatus": {
+    "attributes": [
+      "remoteControlEnabled"
+    ],
+    "commands": [],
+    "id": "remoteControlStatus",
+    "name": "Remote Control Status",
+    "status": "live"
+  },
+  "capability.robotCleanerCleaningMode": {
+    "attributes": [
+      "robotCleanerCleaningMode"
+    ],
+    "commands": [
+      "setRobotCleanerCleaningMode"
+    ],
+    "id": "robotCleanerCleaningMode",
+    "name": "Robot Cleaner Cleaning Mode",
+    "status": "live"
+  },
+  "capability.robotCleanerMovement": {
+    "attributes": [
+      "robotCleanerMovement"
+    ],
+    "commands": [
+      "setRobotCleanerMovement"
+    ],
+    "id": "robotCleanerMovement",
+    "name": "Robot Cleaner Movement",
+    "status": "proposed"
+  },
+  "capability.robotCleanerState": {
+    "attributes": [
+      "robotCleanerTurboState",
+      "robotCleanerCleaningState",
+      "supportedRobotCleanerStates",
+      "robotCleanerControlState"
+    ],
+    "commands": [
+      "setRobotCleanerCleaningState",
+      "stop",
+      "setRobotCleanerControlState",
+      "setRobotCleanerTurboState"
+    ],
+    "id": "robotCleanerState",
+    "name": "Robot Cleaner State",
+    "status": "deprecated"
+  },
+  "capability.robotCleanerTurboMode": {
+    "attributes": [
+      "robotCleanerTurboMode"
+    ],
+    "commands": [
+      "setRobotCleanerTurboMode"
+    ],
+    "id": "robotCleanerTurboMode",
+    "name": "Robot Cleaner Turbo Mode",
+    "status": "live"
+  },
+  "capability.samsungTV": {
+    "attributes": [
+      "volume",
+      "pictureMode",
+      "messageButton",
+      "soundMode",
+      "mute",
+      "switch"
+    ],
+    "commands": [
+      "setPictureMode",
+      "volumeDown",
+      "setSoundMode",
+      "showMessage",
+      "volumeUp",
+      "mute",
+      "unmute",
+      "setVolume",
+      "off",
+      "on"
+    ],
+    "id": "samsungTV",
+    "name": "Samsung TV",
+    "status": "live"
+  },
+  "capability.scenes": {
+    "attributes": [
+      "supportedScenes",
+      "scene"
+    ],
+    "commands": [
+      "setScene"
+    ],
+    "id": "scenes",
+    "name": "Scenes",
+    "status": "proposed"
+  },
+  "capability.scent": {
+    "attributes": [
+      "scentName",
+      "scentIntensity"
+    ],
+    "commands": [
+      "setScentIntensity"
+    ],
+    "id": "scent",
+    "name": "Scent",
+    "status": "proposed"
+  },
+  "capability.securitySystem": {
+    "attributes": [
+      "alarm",
+      "securitySystemStatus"
+    ],
+    "commands": [
+      "armStay",
+      "disarm",
+      "armAway"
+    ],
+    "id": "securitySystem",
+    "name": "Security System",
+    "status": "live"
+  },
+  "capability.sensor": {
+    "attributes": [],
+    "commands": [],
+    "id": "sensor",
+    "name": "Sensor",
+    "status": "deprecated"
+  },
+  "capability.shockSensor": {
+    "attributes": [
+      "shock"
+    ],
+    "commands": [],
+    "id": "shockSensor",
+    "name": "Shock Sensor",
+    "status": "deprecated"
+  },
+  "capability.signalStrength": {
+    "attributes": [
+      "rssi",
+      "lqi"
+    ],
+    "commands": [],
+    "id": "signalStrength",
+    "name": "Signal Strength",
+    "status": "live"
+  },
+  "capability.sleepSensor": {
+    "attributes": [
+      "sleeping"
+    ],
+    "commands": [],
+    "id": "sleepSensor",
+    "name": "Sleep Sensor",
+    "status": "live"
+  },
+  "capability.smokeDetector": {
+    "attributes": [
+      "smoke"
+    ],
+    "commands": [],
+    "id": "smokeDetector",
+    "name": "Smoke Detector",
+    "status": "live"
+  },
+  "capability.soundDetection": {
+    "attributes": [
+      "supportedSoundTypes",
+      "soundDetectionState",
+      "soundDetected"
+    ],
+    "commands": [
+      "disableSoundDetection",
+      "enableSoundDetection"
+    ],
+    "id": "soundDetection",
+    "name": "Sound Detection",
+    "status": "live"
+  },
+  "capability.soundPressureLevel": {
+    "attributes": [
+      "soundPressureLevel"
+    ],
+    "commands": [],
+    "id": "soundPressureLevel",
+    "name": "Sound Pressure Level",
+    "status": "live"
+  },
+  "capability.soundSensor": {
+    "attributes": [
+      "sound"
+    ],
+    "commands": [],
+    "id": "soundSensor",
+    "name": "Sound Sensor",
+    "status": "live"
+  },
+  "capability.speechRecognition": {
+    "attributes": [
+      "phraseSpoken"
+    ],
+    "commands": [],
+    "id": "speechRecognition",
+    "name": "Speech Recognition",
+    "status": "proposed"
+  },
+  "capability.speechSynthesis": {
+    "attributes": [],
+    "commands": [
+      "speak"
+    ],
+    "id": "speechSynthesis",
+    "name": "Speech Synthesis",
+    "status": "proposed"
+  },
+  "capability.statelessAirCleanerModeButton": {
+    "attributes": [
+      "availableAirCleanerModeButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessAirCleanerModeButton",
+    "name": "Stateless Air Cleaner Mode Button",
+    "status": "proposed"
+  },
+  "capability.statelessAudioMuteButton": {
+    "attributes": [
+      "availableAudioMuteButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessAudioMuteButton",
+    "name": "Stateless Audio Mute Button",
+    "status": "live"
+  },
+  "capability.statelessAudioVolumeButton": {
+    "attributes": [
+      "availableAudioVolumeButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessAudioVolumeButton",
+    "name": "Stateless Audio Volume Button",
+    "status": "live"
+  },
+  "capability.statelessChannelButton": {
+    "attributes": [
+      "availableChannelButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessChannelButton",
+    "name": "Stateless Channel Button",
+    "status": "live"
+  },
+  "capability.statelessCurtainPowerButton": {
+    "attributes": [
+      "availableCurtainPowerButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessCurtainPowerButton",
+    "name": "Stateless Curtain Power Button",
+    "status": "proposed"
+  },
+  "capability.statelessCustomButton": {
+    "attributes": [
+      "availableCustomButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessCustomButton",
+    "name": "Stateless Custom Button",
+    "status": "live"
+  },
+  "capability.statelessFanspeedButton": {
+    "attributes": [
+      "availableFanspeedButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessFanspeedButton",
+    "name": "Stateless Fanspeed Button",
+    "status": "live"
+  },
+  "capability.statelessFanspeedModeButton": {
+    "attributes": [
+      "availableFanspeedModeButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessFanspeedModeButton",
+    "name": "Stateless Fanspeed Mode Button",
+    "status": "proposed"
+  },
+  "capability.statelessHumidifierModeButton": {
+    "attributes": [
+      "availableHumidifierModeButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessHumidifierModeButton",
+    "name": "Stateless Humidifier Mode Button",
+    "status": "proposed"
+  },
+  "capability.statelessMediaPlaybackButton": {
+    "attributes": [
+      "availableMediaPlaybackButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessMediaPlaybackButton",
+    "name": "Stateless Media Playback Button",
+    "status": "proposed"
+  },
+  "capability.statelessPowerButton": {
+    "attributes": [
+      "availablePowerButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessPowerButton",
+    "name": "Stateless Power Button",
+    "status": "live"
+  },
+  "capability.statelessPowerToggleButton": {
+    "attributes": [
+      "availablePowerToggleButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessPowerToggleButton",
+    "name": "Stateless Power Toggle Button",
+    "status": "live"
+  },
+  "capability.statelessRobotCleanerActionButton": {
+    "attributes": [
+      "availableRobotCleanerActionButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessRobotCleanerActionButton",
+    "name": "Stateless Robot Cleaner Action Button",
+    "status": "proposed"
+  },
+  "capability.statelessRobotCleanerHomeButton": {
+    "attributes": [
+      "availableRobotCleanerHomeButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessRobotCleanerHomeButton",
+    "name": "Stateless Robot Cleaner Home Button",
+    "status": "proposed"
+  },
+  "capability.statelessRobotCleanerToggleButton": {
+    "attributes": [
+      "availableRobotCleanerToggleButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessRobotCleanerToggleButton",
+    "name": "Stateless Robot Cleaner Toggle Button",
+    "status": "proposed"
+  },
+  "capability.statelessScenes": {
+    "attributes": [
+      "supportedScenes"
+    ],
+    "commands": [
+      "setScene"
+    ],
+    "id": "statelessScenes",
+    "name": "Stateless Scenes",
+    "status": "proposed"
+  },
+  "capability.statelessSetChannelButton": {
+    "attributes": [],
+    "commands": [
+      "setChannel"
+    ],
+    "id": "statelessSetChannelButton",
+    "name": "Stateless Set Channel Button",
+    "status": "proposed"
+  },
+  "capability.statelessSetChannelByContentButton": {
+    "attributes": [],
+    "commands": [
+      "setChannelByContent"
+    ],
+    "id": "statelessSetChannelByContentButton",
+    "name": "Stateless Set Channel By Content Button",
+    "status": "proposed"
+  },
+  "capability.statelessSetChannelByNameButton": {
+    "attributes": [],
+    "commands": [
+      "setChannelByName"
+    ],
+    "id": "statelessSetChannelByNameButton",
+    "name": "Stateless Set Channel By Name Button",
+    "status": "proposed"
+  },
+  "capability.statelessTemperatureButton": {
+    "attributes": [
+      "availableTemperatureButtons"
+    ],
+    "commands": [
+      "setButton"
+    ],
+    "id": "statelessTemperatureButton",
+    "name": "Stateless Temperature Button",
+    "status": "live"
+  },
+  "capability.statelessVolumeButtonWithRepetition": {
+    "attributes": [],
+    "commands": [
+      "volumeDown",
+      "volumeUp"
+    ],
+    "id": "statelessVolumeButtonWithRepetition",
+    "name": "Stateless Volume Button With Repetition",
+    "status": "proposed"
+  },
+  "capability.stepSensor": {
+    "attributes": [
+      "goal",
+      "steps"
+    ],
+    "commands": [],
+    "id": "stepSensor",
+    "name": "Step Sensor",
+    "status": "proposed"
+  },
+  "capability.switch": {
+    "attributes": [
+      "switch"
+    ],
+    "commands": [
+      "off",
+      "on"
+    ],
+    "id": "switch",
+    "name": "Switch",
+    "status": "live"
+  },
+  "capability.switchLevel": {
+    "attributes": [
+      "level"
+    ],
+    "commands": [
+      "setLevel"
+    ],
+    "id": "switchLevel",
+    "name": "Switch Level",
+    "status": "live"
+  },
+  "capability.tV": {
+    "attributes": [
+      "volume",
+      "movieMode",
+      "sound",
+      "channel",
+      "power",
+      "picture"
+    ],
+    "commands": [
+      "volumeDown",
+      "volumeUp",
+      "channelDown",
+      "channelUp"
+    ],
+    "id": "tV",
+    "name": "TV",
+    "status": "live"
+  },
+  "capability.tamperAlert": {
+    "attributes": [
+      "tamper"
+    ],
+    "commands": [],
+    "id": "tamperAlert",
+    "name": "Tamper Alert",
+    "status": "live"
+  },
+  "capability.temperatureAlarm": {
+    "attributes": [
+      "temperatureAlarm"
+    ],
+    "commands": [],
+    "id": "temperatureAlarm",
+    "name": "Temperature Alarm",
+    "status": "live"
+  },
+  "capability.temperatureMeasurement": {
+    "attributes": [
+      "temperature"
+    ],
+    "commands": [],
+    "id": "temperatureMeasurement",
+    "name": "Temperature Measurement",
+    "status": "live"
+  },
+  "capability.testCapability": {
+    "attributes": [],
+    "commands": [],
+    "id": "testCapability",
+    "name": "Test Capability",
+    "status": "live"
+  },
+  "capability.thermostat": {
+    "attributes": [
+      "thermostatSetpointRange",
+      "heatingSetpointRange",
+      "thermostatSetpoint",
+      "supportedThermostatFanModes",
+      "schedule",
+      "coolingSetpointRange",
+      "heatingSetpoint",
+      "coolingSetpoint",
+      "thermostatOperatingState",
+      "temperature",
+      "thermostatFanMode",
+      "thermostatMode",
+      "supportedThermostatModes"
+    ],
+    "commands": [
+      "heat",
+      "setSchedule",
+      "auto",
+      "cool",
+      "emergencyHeat",
+      "setThermostatFanMode",
+      "fanAuto",
+      "fanCirculate",
+      "off",
+      "setCoolingSetpoint",
+      "setHeatingSetpoint",
+      "setThermostatMode",
+      "fanOn"
+    ],
+    "id": "thermostat",
+    "name": "Thermostat",
+    "status": "deprecated"
+  },
+  "capability.thermostatCoolingSetpoint": {
+    "attributes": [
+      "coolingSetpoint"
+    ],
+    "commands": [
+      "setCoolingSetpoint"
+    ],
+    "id": "thermostatCoolingSetpoint",
+    "name": "Thermostat Cooling Setpoint",
+    "status": "live"
+  },
+  "capability.thermostatFanMode": {
+    "attributes": [
+      "thermostatFanMode",
+      "supportedThermostatFanModes"
+    ],
+    "commands": [
+      "fanOn",
+      "setThermostatFanMode",
+      "fanAuto",
+      "fanCirculate"
+    ],
+    "id": "thermostatFanMode",
+    "name": "Thermostat Fan Mode",
+    "status": "live"
+  },
+  "capability.thermostatHeatingSetpoint": {
+    "attributes": [
+      "heatingSetpoint"
+    ],
+    "commands": [
+      "setHeatingSetpoint"
+    ],
+    "id": "thermostatHeatingSetpoint",
+    "name": "Thermostat Heating Setpoint",
+    "status": "live"
+  },
+  "capability.thermostatMode": {
+    "attributes": [
+      "thermostatMode",
+      "supportedThermostatModes"
+    ],
+    "commands": [
+      "heat",
+      "auto",
+      "setThermostatMode",
+      "cool",
+      "emergencyHeat",
+      "off"
+    ],
+    "id": "thermostatMode",
+    "name": "Thermostat Mode",
+    "status": "live"
+  },
+  "capability.thermostatOperatingState": {
+    "attributes": [
+      "thermostatOperatingState"
+    ],
+    "commands": [],
+    "id": "thermostatOperatingState",
+    "name": "Thermostat Operating State",
+    "status": "live"
+  },
+  "capability.thermostatSchedule": {
+    "attributes": [
+      "schedule"
+    ],
+    "commands": [
+      "setSchedule"
+    ],
+    "id": "thermostatSchedule",
+    "name": "Thermostat Schedule",
+    "status": "deprecated"
+  },
+  "capability.thermostatSetpoint": {
+    "attributes": [
+      "thermostatSetpoint"
+    ],
+    "commands": [],
+    "id": "thermostatSetpoint",
+    "name": "Thermostat Setpoint",
+    "status": "deprecated"
+  },
+  "capability.threeAxis": {
+    "attributes": [
+      "threeAxis"
+    ],
+    "commands": [],
+    "id": "threeAxis",
+    "name": "Three Axis",
+    "status": "live"
+  },
+  "capability.timedSession": {
+    "attributes": [
+      "completionTime",
+      "sessionStatus"
+    ],
+    "commands": [
+      "cancel",
+      "stop",
+      "start",
+      "setCompletionTime",
+      "pause"
+    ],
+    "id": "timedSession",
+    "name": "Timed Session",
+    "status": "proposed"
+  },
+  "capability.tone": {
+    "attributes": [],
+    "commands": [
+      "beep"
+    ],
+    "id": "tone",
+    "name": "Tone",
+    "status": "live"
+  },
+  "capability.touchSensor": {
+    "attributes": [
+      "touch"
+    ],
+    "commands": [],
+    "id": "touchSensor",
+    "name": "Touch Sensor",
+    "status": "deprecated"
+  },
+  "capability.tvChannel": {
+    "attributes": [
+      "tvChannel",
+      "tvChannelName"
+    ],
+    "commands": [
+      "channelDown",
+      "setTvChannel",
+      "channelUp",
+      "setTvChannelName"
+    ],
+    "id": "tvChannel",
+    "name": "Tv Channel",
+    "status": "proposed"
+  },
+  "capability.tvocHealthConcern": {
+    "attributes": [
+      "tvocHealthConcern"
+    ],
+    "commands": [],
+    "id": "tvocHealthConcern",
+    "name": "Tvoc Health Concern",
+    "status": "proposed"
+  },
+  "capability.tvocMeasurement": {
+    "attributes": [
+      "tvocLevel"
+    ],
+    "commands": [],
+    "id": "tvocMeasurement",
+    "name": "Tvoc Measurement",
+    "status": "live"
+  },
+  "capability.ultravioletIndex": {
+    "attributes": [
+      "ultravioletIndex"
+    ],
+    "commands": [],
+    "id": "ultravioletIndex",
+    "name": "Ultraviolet Index",
+    "status": "live"
+  },
+  "capability.valve": {
+    "attributes": [
+      "valve"
+    ],
+    "commands": [
+      "close",
+      "open"
+    ],
+    "id": "valve",
+    "name": "Valve",
+    "status": "live"
+  },
+  "capability.vehicleEngine": {
+    "attributes": [
+      "engineState"
+    ],
+    "commands": [
+      "startEngine",
+      "stopEngine"
+    ],
+    "id": "vehicleEngine",
+    "name": "Vehicle Engine",
+    "status": "proposed"
+  },
+  "capability.vehicleFuelLevel": {
+    "attributes": [
+      "fuelLevel"
+    ],
+    "commands": [],
+    "id": "vehicleFuelLevel",
+    "name": "Vehicle Fuel Level",
+    "status": "proposed"
+  },
+  "capability.vehicleInformation": {
+    "attributes": [
+      "vehicleColor",
+      "vehicleYear",
+      "vehicleImage",
+      "vehicleTrim",
+      "vehiclePlate",
+      "vehicleModel",
+      "vehicleId",
+      "vehicleMake"
+    ],
+    "commands": [],
+    "id": "vehicleInformation",
+    "name": "Vehicle Information",
+    "status": "proposed"
+  },
+  "capability.vehicleOdometer": {
+    "attributes": [
+      "odometerReading"
+    ],
+    "commands": [],
+    "id": "vehicleOdometer",
+    "name": "Vehicle Odometer",
+    "status": "proposed"
+  },
+  "capability.vehicleRange": {
+    "attributes": [
+      "estimatedRemainingRange"
+    ],
+    "commands": [],
+    "id": "vehicleRange",
+    "name": "Vehicle Range",
+    "status": "proposed"
+  },
+  "capability.vehicleTirePressureMonitor": {
+    "attributes": [
+      "tirePressureState"
+    ],
+    "commands": [],
+    "id": "vehicleTirePressureMonitor",
+    "name": "Vehicle Tire Pressure Monitor",
+    "status": "proposed"
+  },
+  "capability.veryFineDustHealthConcern": {
+    "attributes": [
+      "veryFineDustHealthConcern"
+    ],
+    "commands": [],
+    "id": "veryFineDustHealthConcern",
+    "name": "Very Fine Dust Health Concern",
+    "status": "live"
+  },
+  "capability.veryFineDustSensor": {
+    "attributes": [
+      "veryFineDustLevel"
+    ],
+    "commands": [],
+    "id": "veryFineDustSensor",
+    "name": "Very Fine Dust Sensor",
+    "status": "live"
+  },
+  "capability.videoCamera": {
+    "attributes": [
+      "settings",
+      "mute",
+      "camera",
+      "statusMessage"
+    ],
+    "commands": [
+      "mute",
+      "unmute",
+      "flip",
+      "off",
+      "on"
+    ],
+    "id": "videoCamera",
+    "name": "Video Camera",
+    "status": "live"
+  },
+  "capability.videoCapture": {
+    "attributes": [
+      "stream",
+      "clip"
+    ],
+    "commands": [
+      "capture"
+    ],
+    "id": "videoCapture",
+    "name": "Video Capture",
+    "status": "live"
+  },
+  "capability.videoClips": {
+    "attributes": [
+      "videoClip"
+    ],
+    "commands": [
+      "captureClip"
+    ],
+    "id": "videoClips",
+    "name": "Video Clips",
+    "status": "proposed"
+  },
+  "capability.videoStream": {
+    "attributes": [
+      "stream"
+    ],
+    "commands": [
+      "stopStream",
+      "startStream"
+    ],
+    "id": "videoStream",
+    "name": "Video Stream",
+    "status": "live"
+  },
+  "capability.voltageMeasurement": {
+    "attributes": [
+      "voltage"
+    ],
+    "commands": [],
+    "id": "voltageMeasurement",
+    "name": "Voltage Measurement",
+    "status": "live"
+  },
+  "capability.washerMode": {
+    "attributes": [
+      "washerMode"
+    ],
+    "commands": [
+      "setWasherMode"
+    ],
+    "id": "washerMode",
+    "name": "Washer Mode",
+    "status": "proposed"
+  },
+  "capability.washerOperatingState": {
+    "attributes": [
+      "completionTime",
+      "machineState",
+      "washerJobState",
+      "supportedMachineStates"
+    ],
+    "commands": [
+      "setMachineState"
+    ],
+    "id": "washerOperatingState",
+    "name": "Washer Operating State",
+    "status": "live"
+  },
+  "capability.washerOperationalState": {
+    "attributes": [
+      "completionTime",
+      "machineState",
+      "washerJobState",
+      "supportedMachineStates"
+    ],
+    "commands": [
+      "setMachineState"
+    ],
+    "id": "washerOperationalState",
+    "name": "Washer Operational State",
+    "status": "deprecated"
+  },
+  "capability.waterSensor": {
+    "attributes": [
+      "water"
+    ],
+    "commands": [],
+    "id": "waterSensor",
+    "name": "Water Sensor",
+    "status": "live"
+  },
+  "capability.webrtc": {
+    "attributes": [
+      "sdpAnswer",
+      "talkback",
+      "supportedFeatures",
+      "audioOnly",
+      "stunUrl"
+    ],
+    "commands": [
+      "sdpOffer",
+      "end"
+    ],
+    "id": "webrtc",
+    "name": "webrtc",
+    "status": "live"
+  },
+  "capability.wifiMeshRouter": {
+    "attributes": [
+      "disconnectedRouterCount",
+      "wifiGuestNetworkStatus",
+      "connectedRouterCount",
+      "connectedDeviceCount",
+      "wifiNetworkName",
+      "wifiGuestNetworkName",
+      "wifiNetworkStatus"
+    ],
+    "commands": [
+      "enableWifiGuestNetwork",
+      "disableWifiNetwork",
+      "enableWifiNetwork",
+      "disableWifiGuestNetwork"
+    ],
+    "id": "wifiMeshRouter",
+    "name": "Wifi Mesh Router",
+    "status": "proposed"
+  },
+  "capability.windSpeed": {
+    "attributes": [
+      "windspeed"
+    ],
+    "commands": [],
+    "id": "windSpeed",
+    "name": "Wind Speed",
+    "status": "proposed"
+  },
+  "capability.windowShade": {
+    "attributes": [
+      "supportedWindowShadeCommands",
+      "windowShade"
+    ],
+    "commands": [
+      "close",
+      "open",
+      "pause"
+    ],
+    "id": "windowShade",
+    "name": "Window Shade",
+    "status": "live"
+  },
+  "capability.windowShadeLevel": {
+    "attributes": [
+      "shadeLevel"
+    ],
+    "commands": [
+      "setShadeLevel"
+    ],
+    "id": "windowShadeLevel",
+    "name": "Window Shade Level",
+    "status": "live"
+  },
+  "capability.windowShadePreset": {
+    "attributes": [],
+    "commands": [
+      "presetPosition"
+    ],
+    "id": "windowShadePreset",
+    "name": "Window Shade Preset",
+    "status": "live"
+  },
+  "capability.wirelessOperatingMode": {
+    "attributes": [
+      "wirelessOperatingMode"
+    ],
+    "commands": [
+      "setWirelessOperatingMode"
+    ],
+    "id": "wirelessOperatingMode",
+    "name": "Wireless Operating Mode",
+    "status": "proposed"
+  },
+  "capability.zwMultichannel": {
+    "attributes": [
+      "epEvent",
+      "epInfo"
+    ],
+    "commands": [
+      "enableEpEvents",
+      "epCmd"
+    ],
+    "id": "zwMultichannel",
+    "name": "Zw Multichannel",
+    "status": "live"
+  }
+}
