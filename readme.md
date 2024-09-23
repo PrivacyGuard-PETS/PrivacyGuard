@@ -84,7 +84,7 @@ GitHub Repository: [https://github.com/PrivacyGuard-PETS/PrivacyGuard](https://g
 
 #### Install Software
 - Install [Docker](https://docs.docker.com/engine/install/)
-- X11 forwarding setup for GUI
+- X11 forwarding setup for GUI (The steps below only work on a local machine, not via SSH)
     - macOS
         - Install [XQuartz](https://www.xquartz.org/)
         - Configure XQuartz
@@ -155,6 +155,8 @@ python3 -m Python.artifacts.generate_examples
 ```bash
 python3 -m Python.artifacts.privacy_leakage_analysis both
 ```
+
+If everything is working correctly, you should be able to see the `PrivacyGuard` GUI application on the host machine. If the GUI is not visible, you'll need to set up X11 forwarding properly. However, even without X11 forwarding, you can still complete experiments 1 through 3, only experiment 4 requires the GUI.
 
 ## Artifact Evaluation
 
