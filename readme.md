@@ -36,9 +36,9 @@
 
 Paper title: **PrivacyGuard: Exploring Hidden Cross-App Privacy Leakage Threats In IoT Apps**
 
-Artifacts HotCRP Id: **#Enter your HotCRP Id here** (not your paper Id, but the artifacts id)
+Artifacts HotCRP Id: #14
 
-Requested Badge: **Reproduced**
+Requested Badge: **Available**,**Functional**,**Reproduced**
 
 ## Description
 The artifact contains all the Groovy code, Python code, datasets, and examples used in our paper, covering all the experiments and evaluations presented, allowing users to fully reproduce the findings and recreate the plots discussed in the paper.
