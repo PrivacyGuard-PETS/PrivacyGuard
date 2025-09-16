@@ -490,6 +490,20 @@ If everything is working correctly, you should be able to see the `PrivacyGuard`
 - Result or Claim:
   - [Main Result 7: Privacy Leakage Analysis](#main-result-7-privacy-leakage-analysis)
 
+## Citing this work
+```
+@article{wang2025privacyguard,
+title = {PrivacyGuard: Exploring Hidden Cross-App Privacy Leakage Threats In IoT Apps},
+author = {Wang, Zhaohui and Luo, Bo and Li, Fengjun},
+year = {2025},
+month = {01},
+pages = {776-791},
+volume = {2025},
+journal = {Proceedings on Privacy Enhancing Technologies},
+doi = {10.56553/popets-2025-0040}
+}
+``` 
+
 ## Limitations
 Since the IoT apps used in the experiments are randomly selected from the dataset, the results may vary slightly.
 
